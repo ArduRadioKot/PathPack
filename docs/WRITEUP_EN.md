@@ -126,7 +126,7 @@ Learning edit probabilities from the history of the repository itself, with expl
 
 ## Reproducibility
 
-Code, manifests, freeze files and run summaries: https://github.com/ArduRadioKot/PathPack (commit 650744b7e49fca5283397a43d2f5a0326149ebdc). Full paper: https://github.com/ArduRadioKot/PathPack/blob/main/docs/PAPER_EN.md.
+Code, manifests, freeze files and run summaries: https://github.com/ArduRadioKot/PathPack (commit 650744b7e49fca5283397a43d2f5a0326149ebdc). Full paper: https://github.com/ArduRadioKot/PathPack/blob/main/docs/PAPER_EN.md (PDF: https://github.com/ArduRadioKot/PathPack/blob/main/docs/pdf/PathPack_Research_Paper.pdf).
 
 ## References
 

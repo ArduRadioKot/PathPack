@@ -124,7 +124,7 @@ PathPack-H возвращает большую часть покрытия фу�
 
 ## Воспроизводимость
 
-Код, манифесты, файлы заморозки и сводки прогонов: https://github.com/ArduRadioKot/PathPack (коммит 650744b7e49fca5283397a43d2f5a0326149ebdc). Полный текст статьи: https://github.com/ArduRadioKot/PathPack/blob/main/docs/PAPER_RU.md.
+Код, манифесты, файлы заморозки и сводки прогонов: https://github.com/ArduRadioKot/PathPack (коммит 650744b7e49fca5283397a43d2f5a0326149ebdc). Полный текст статьи: https://github.com/ArduRadioKot/PathPack/blob/main/docs/PAPER_RU.md (PDF: https://github.com/ArduRadioKot/PathPack/blob/main/docs/pdf/PathPack_Research_Paper_RU.pdf).
 
 
 ## Литература

@@ -14,8 +14,8 @@ The project contains:
 
 ## Documents
 
-- Full research paper, English: [docs/PAPER_EN.md](docs/PAPER_EN.md)
-- Full research paper, Russian: [docs/PAPER_RU.md](docs/PAPER_RU.md)
+- Full research paper, English: [docs/PAPER_EN.md](docs/PAPER_EN.md), PDF: [docs/pdf/PathPack_Research_Paper.pdf](docs/pdf/PathPack_Research_Paper.pdf)
+- Full research paper, Russian: [docs/PAPER_RU.md](docs/PAPER_RU.md), PDF: [docs/pdf/PathPack_Research_Paper_RU.pdf](docs/pdf/PathPack_Research_Paper_RU.pdf)
 - Competition write-up, English (3000-word limit): [docs/WRITEUP_EN.md](docs/WRITEUP_EN.md)
 - Competition write-up, Russian: [docs/WRITEUP_RU.md](docs/WRITEUP_RU.md)
 - Figures: [docs/figures_en](docs/figures_en) (English) and [docs/figures](docs/figures) (Russian)

@@ -14,8 +14,8 @@ PathPack: исследовательский код для выбора фраг
 
 ## Документы
 
-- Полная статья на русском: [docs/PAPER_RU.md](docs/PAPER_RU.md)
-- Полная статья на английском: [docs/PAPER_EN.md](docs/PAPER_EN.md)
+- Полная статья на русском: [docs/PAPER_RU.md](docs/PAPER_RU.md), PDF: [docs/pdf/PathPack_Research_Paper_RU.pdf](docs/pdf/PathPack_Research_Paper_RU.pdf)
+- Полная статья на английском: [docs/PAPER_EN.md](docs/PAPER_EN.md), PDF: [docs/pdf/PathPack_Research_Paper.pdf](docs/pdf/PathPack_Research_Paper.pdf)
 - Текст для конкурса на русском: [docs/WRITEUP_RU.md](docs/WRITEUP_RU.md)
 - Текст для конкурса на английском (лимит 3000 слов): [docs/WRITEUP_EN.md](docs/WRITEUP_EN.md)
 - Рисунки: [docs/figures](docs/figures) (русские подписи) и [docs/figures_en](docs/figures_en) (английские)
