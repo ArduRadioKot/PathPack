@@ -545,7 +545,7 @@ On the new tasks, v0.4 loses to BM25 on Function, Complete, and Changed Line. On
 
 ## 9. Reproducibility
 
-Repository: https://github.com/ArduRadioKot/PathPack. Commit: [SHA to be inserted]. Freeze files: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_e. Splits and manifests: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_r_splits_v2. Notebook with tables and figures: https://github.com/ArduRadioKot/PathPack/blob/main/notebooks/11_pathpack_h.ipynb. Run summaries: https://github.com/ArduRadioKot/PathPack/tree/main/output.
+Repository: https://github.com/ArduRadioKot/PathPack. Commit: 650744b7e49fca5283397a43d2f5a0326149ebdc. Freeze files: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_e. Splits and manifests: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_r_splits_v2. Notebook with tables and figures: https://github.com/ArduRadioKot/PathPack/blob/main/notebooks/11_pathpack_h.ipynb. Run summaries: https://github.com/ArduRadioKot/PathPack/tree/main/output.
 
 ```bash
 # splits (frozen)

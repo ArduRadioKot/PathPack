@@ -545,7 +545,7 @@ BM25 сильнее PathPack-H по Complete Function Recall при всех б�
 
 ## 9. Воспроизводимость
 
-Репозиторий: https://github.com/ArduRadioKot/PathPack. Коммит: [SHA будет указан до подачи]. Файлы заморозки: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_e. Сплиты и манифесты: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_r_splits_v2. Ноутбук с таблицами и рисунками: https://github.com/ArduRadioKot/PathPack/blob/main/notebooks/11_pathpack_h.ipynb. Сводки прогонов: https://github.com/ArduRadioKot/PathPack/tree/main/output.
+Репозиторий: https://github.com/ArduRadioKot/PathPack. Коммит: 650744b7e49fca5283397a43d2f5a0326149ebdc. Файлы заморозки: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_e. Сплиты и манифесты: https://github.com/ArduRadioKot/PathPack/tree/main/output/pathpack_r_splits_v2. Ноутбук с таблицами и рисунками: https://github.com/ArduRadioKot/PathPack/blob/main/notebooks/11_pathpack_h.ipynb. Сводки прогонов: https://github.com/ArduRadioKot/PathPack/tree/main/output.
 
 ```bash
 # сплиты (заморожены)
