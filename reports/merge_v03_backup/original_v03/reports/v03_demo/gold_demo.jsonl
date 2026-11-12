@@ -1,4 +1,0 @@
-{"instance_id": "demo-login", "gold_python_files": ["store.py"]}
-{"instance_id": "demo-invoice", "gold_python_files": ["taxes.py"]}
-{"instance_id": "demo-upload", "gold_python_files": ["filesys.py"]}
-{"instance_id": "demo-notify", "gold_python_files": ["packets.py"]}

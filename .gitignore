@@ -23,3 +23,8 @@ output/pathpack_r_cache/
 !output/pathpack_holdout3/scores.jsonl
 !output/pathpack_holdout3_loro/scores.jsonl
 !output/llm_probe/*.jsonl
+
+# Task inputs (problem statements and base commits, no gold patches) needed to re-run the splits
+!output/benchmark/issues.jsonl
+!output/pathpack_r_splits_v2/*_issues.jsonl
+!output/pathpack_r_splits_v2/train_110.jsonl

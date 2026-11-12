@@ -1,7 +1,0 @@
-{
-  "status": "not_run",
-  "model": "google/gemma-2-2b",
-  "revision": "",
-  "reason": "OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.",
-  "note": "No method was recounted with a different counter."
-}

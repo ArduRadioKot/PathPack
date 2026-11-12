@@ -1,8 +1,0 @@
-instance_id,method,budget_est,tokens_est,latency_sec,remaining_tokens,utilization,selected_files,selected_functions,selected_chunks
-django__django-12276,bm25,2048,2042,0.03873770812060684,6,0.9970703125,3,8,8
-django__django-12276,pathpack-v5,2048,2033,0.45022008288651705,15,0.99267578125,18,18,18
-django__django-12276,pathpack-v5/no-hierarchy,2048,2048,0.5121333339484408,0,1.0,21,19,21
-django__django-12276,pathpack-v5/no-graph,2048,2048,0.44635337486397475,0,1.0,17,16,17
-django__django-12276,pathpack-v5/no-diversity,2048,2046,0.23179799900390208,2,0.9990234375,9,21,21
-django__django-12276,pathpack-v5/no-chunking,2048,2010,0.40646600001491606,38,0.9814453125,18,17,18
-django__django-12276,pathpack-v5/no-file-score,2048,2042,0.5049567080568522,6,0.9970703125,17,17,17
