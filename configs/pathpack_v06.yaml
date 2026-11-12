@@ -1,0 +1,32 @@
+# PathPack v0.6. Frozen before the dev measurement. Do not retune after seeing it.
+# Parent prior comes from whole functions. Context is an AST slice.
+# Graph depth is 3 in both directions. There is no file top-k and no first-chunk bonus.
+target_chunk_tokens: 128
+max_chunk_tokens: 256
+min_chunk_tokens: 32
+chunk_overlap_lines: 2
+lexical_weight: 0.50
+symbol_weight: 0.15
+parent_weight: 0.20
+graph_weight: 0.15
+redundancy_strength: 0.50
+same_function_penalty: 0.25
+cost_offset: 32.0
+cost_exponent: 0.5
+hops: 3
+seeds: 3
+distance_decay: 0.8
+edge_weights:
+  calls: 1.0
+  imports: 0.45
+  inherits: 0.65
+  defines: 0.22
+candidate_limit: 512
+min_relevance: 0.0
+enable_graph: true
+enable_diversity: true
+enable_chunking: true
+enable_parent: true
+enable_symbol: true
+enable_cost: true
+graph_direction: both

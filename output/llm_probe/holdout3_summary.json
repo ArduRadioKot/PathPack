@@ -1,0 +1,135 @@
+{
+ "model": "gemma4:e2b-mlx",
+ "summary": {
+  "bm25": {
+   "n": 125,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.416,
+   "llm_function_acc": 0.3584905660377358,
+   "n_function": 106,
+   "mean_sec": 0.5504
+  },
+  "pathpack-h/nomemory": {
+   "n": 125,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.544,
+   "llm_function_acc": 0.4056603773584906,
+   "n_function": 106,
+   "mean_sec": 0.55144
+  },
+  "pathpack-r/fusion": {
+   "n": 125,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.536,
+   "llm_function_acc": 0.3584905660377358,
+   "n_function": 106,
+   "mean_sec": 0.47168
+  },
+  "pathpack-u": {
+   "n": 125,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.568,
+   "llm_function_acc": 0.37735849056603776,
+   "n_function": 106,
+   "mean_sec": 0.49256
+  },
+  "pathpack-v4": {
+   "n": 125,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.432,
+   "llm_function_acc": 0.2641509433962264,
+   "n_function": 106,
+   "mean_sec": 0.48607999999999996
+  }
+ },
+ "paired": {
+  "bm25 vs pathpack-v4 llm_file_hit": {
+   "n": 125,
+   "difference": -0.016,
+   "ci95": [
+    -0.096,
+    0.064
+   ],
+   "wins": 11,
+   "ties": 101,
+   "losses": 13
+  },
+  "bm25 vs pathpack-v4 llm_function_hit": {
+   "n": 106,
+   "difference": 0.09434,
+   "ci95": [
+    0.0,
+    0.198113
+   ],
+   "wins": 20,
+   "ties": 76,
+   "losses": 10
+  },
+  "pathpack-h/nomemory vs pathpack-v4 llm_file_hit": {
+   "n": 125,
+   "difference": 0.112,
+   "ci95": [
+    0.032,
+    0.2
+   ],
+   "wins": 21,
+   "ties": 97,
+   "losses": 7
+  },
+  "pathpack-h/nomemory vs pathpack-v4 llm_function_hit": {
+   "n": 106,
+   "difference": 0.141509,
+   "ci95": [
+    0.04717,
+    0.235849
+   ],
+   "wins": 21,
+   "ties": 79,
+   "losses": 6
+  },
+  "pathpack-r/fusion vs pathpack-v4 llm_file_hit": {
+   "n": 125,
+   "difference": 0.104,
+   "ci95": [
+    0.024,
+    0.184
+   ],
+   "wins": 21,
+   "ties": 96,
+   "losses": 8
+  },
+  "pathpack-r/fusion vs pathpack-v4 llm_function_hit": {
+   "n": 106,
+   "difference": 0.09434,
+   "ci95": [
+    0.0,
+    0.179245
+   ],
+   "wins": 18,
+   "ties": 80,
+   "losses": 8
+  },
+  "pathpack-u vs pathpack-v4 llm_file_hit": {
+   "n": 125,
+   "difference": 0.136,
+   "ci95": [
+    0.064,
+    0.216
+   ],
+   "wins": 22,
+   "ties": 98,
+   "losses": 5
+  },
+  "pathpack-u vs pathpack-v4 llm_function_hit": {
+   "n": 106,
+   "difference": 0.113208,
+   "ci95": [
+    0.018868,
+    0.207547
+   ],
+   "wins": 19,
+   "ties": 80,
+   "losses": 7
+  }
+ }
+}

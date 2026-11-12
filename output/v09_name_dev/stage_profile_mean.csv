@@ -1,0 +1,2 @@
+method,queries,candidate_sec,graph_sec,file_rank_sec,chunk_score_sec,diversity_sec,anchor_sec,pack_stream_sec,prefix_sec,query_sec
+pathpack-v9,20,0.5792738458549138,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5792738458549138

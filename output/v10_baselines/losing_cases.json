@@ -1,0 +1,23 @@
+[
+  {
+    "instance_id": "sphinx-doc__sphinx-7985",
+    "budget": 4096,
+    "baseline": "bm25",
+    "metric": "function_recall",
+    "v4": 0.0,
+    "baseline_value": 1.0,
+    "diagnostics": [
+      "correct_file_missed_function",
+      "ranked_target_did_not_fit"
+    ]
+  },
+  {
+    "instance_id": "scikit-learn__scikit-learn-9288",
+    "budget": 4096,
+    "baseline": "bm25",
+    "metric": "file_recall",
+    "v4": 0.0,
+    "baseline_value": 1.0,
+    "diagnostics": []
+  }
+]

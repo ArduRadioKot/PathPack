@@ -1,0 +1,42 @@
+{
+ "written": "2026-11-11T00:00:58.826116",
+ "written_before_any_holdout_measurement": true,
+ "code_sha256": "e82d4ee9f694217ea18d27d72a16011b6b1d5fd3e54b6cd9e28f2b5006a9379c",
+ "models": {
+  "model": "438d59fa29dff56e71a4f3e6720290235248fad93267e80694248736bc0c410e",
+  "model_history": "ae4136b30af0aafa2a9fb94cce1aea978f4146ca88e183ccab0b991fa8e08fee",
+  "model_both": "97b7dd2e6d2da5cb537adffa736bbbb40848e5437cc9c6f70deb76ac73a9d8dc"
+ },
+ "config": "configs/pathpack_r.yaml",
+ "config_sha256": "0675a181ae4bd9794eb7d0d4ef1c09e86839cd4f8484444f5e117e2b4c180d6c",
+ "holdout_manifest": "output/pathpack_r_splits_v2/final_holdout_100_manifest.json",
+ "selection_rule": "File >= v0.4 - 0.05 and at least two of Function/Complete/ChangedLine above v0.4 with 95% CI excluding 0, at budget 2048, on validation (99 tasks)",
+ "validation_run": "output/pathpack_val_all",
+ "primary": "pathpack-h/nomemory",
+ "primary_reason": "passes the rule; highest validation point estimates among history-supervised variants. Chosen on validation only.",
+ "secondary": [
+  "pathpack-h",
+  "pathpack-h/nohist",
+  "pathpack-h/nograph",
+  "pathpack-e",
+  "pathpack-r/fusion",
+  "pathpack-v10e"
+ ],
+ "baselines": [
+  "bm25",
+  "pathpack-v4"
+ ],
+ "primary_comparisons": [
+  "primary vs pathpack-v4",
+  "primary vs pathpack-r/fusion"
+ ],
+ "budgets": [
+  1024,
+  2048,
+  4096
+ ],
+ "headline_budget": 2048,
+ "note": "Holdout is run once. No configuration changes after this file. Variants other than primary are reported as secondary/ablations.",
+ "source_tree_sha256": "2228d21761ef5ebe896493c1bfd2a6ab8bff0ab822a1b1da17c5091b07ea41f2",
+ "note_code_sha256": "code_fingerprint() does not cover pathpack_r; source_tree_sha256 covers every src/codegraph_rag/**/*.py"
+}

@@ -1,0 +1,22 @@
+{
+  "tasks": 20,
+  "complete_labels": 4,
+  "changed_line_evaluable": 14,
+  "function_evaluable": 18,
+  "insertion_only_tasks": 6,
+  "changed_lines_outside_functions": 19,
+  "removed_lines_out_of_range": 0,
+  "nested_functions": 1,
+  "class_methods": 15,
+  "exclusion_reasons": {
+    "module_level_change": 5,
+    "new_definition_no_base_function": 14,
+    "insertion_boundary_unmapped": 13,
+    "insertion_only_no_exact_old_changed_line": 23
+  },
+  "rules": {
+    "changed_line_recall": "non-empty removed/replaced base lines; pure insertions excluded",
+    "insertion_anchor_recall": "separate; blank skip of one line; not mixed into changed_line_recall",
+    "name_match": "function recall uses owned body lines, not the function id string"
+  }
+}

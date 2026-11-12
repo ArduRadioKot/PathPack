@@ -1,0 +1,1140 @@
+{
+  "schema_version": "0.1",
+  "nodes": [
+    {
+      "id": "examples/sample_repo/__init__.py::__module__",
+      "path": "examples/sample_repo/__init__.py",
+      "module": "examples.sample_repo",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 1
+    },
+    {
+      "id": "examples/sample_repo/service.py::__module__",
+      "path": "examples/sample_repo/service.py",
+      "module": "examples.sample_repo.service",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 6
+    },
+    {
+      "id": "examples/sample_repo/service.py::login",
+      "path": "examples/sample_repo/service.py",
+      "module": "examples.sample_repo.service",
+      "qualname": "login",
+      "kind": "function",
+      "line_start": 4,
+      "line_end": 6
+    },
+    {
+      "id": "examples/sample_repo/storage.py::__module__",
+      "path": "examples/sample_repo/storage.py",
+      "module": "examples.sample_repo.storage",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 5
+    },
+    {
+      "id": "examples/sample_repo/storage.py::get_user",
+      "path": "examples/sample_repo/storage.py",
+      "module": "examples.sample_repo.storage",
+      "qualname": "get_user",
+      "kind": "function",
+      "line_start": 4,
+      "line_end": 5
+    },
+    {
+      "id": "src/codegraph_rag/__init__.py::__module__",
+      "path": "src/codegraph_rag/__init__.py",
+      "module": "codegraph_rag",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 2
+    },
+    {
+      "id": "src/codegraph_rag/__main__.py::__module__",
+      "path": "src/codegraph_rag/__main__.py",
+      "module": "codegraph_rag.__main__",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 4
+    },
+    {
+      "id": "src/codegraph_rag/benchmark.py::__module__",
+      "path": "src/codegraph_rag/benchmark.py",
+      "module": "codegraph_rag.benchmark",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 105
+    },
+    {
+      "id": "src/codegraph_rag/benchmark.py::build_manifests",
+      "path": "src/codegraph_rag/benchmark.py",
+      "module": "codegraph_rag.benchmark",
+      "qualname": "build_manifests",
+      "kind": "function",
+      "line_start": 53,
+      "line_end": 92
+    },
+    {
+      "id": "src/codegraph_rag/benchmark.py::choose_instances",
+      "path": "src/codegraph_rag/benchmark.py",
+      "module": "codegraph_rag.benchmark",
+      "qualname": "choose_instances",
+      "kind": "function",
+      "line_start": 30,
+      "line_end": 50
+    },
+    {
+      "id": "src/codegraph_rag/benchmark.py::files_in_patch",
+      "path": "src/codegraph_rag/benchmark.py",
+      "module": "codegraph_rag.benchmark",
+      "qualname": "files_in_patch",
+      "kind": "function",
+      "line_start": 15,
+      "line_end": 27
+    },
+    {
+      "id": "src/codegraph_rag/benchmark.py::load_verified",
+      "path": "src/codegraph_rag/benchmark.py",
+      "module": "codegraph_rag.benchmark",
+      "qualname": "load_verified",
+      "kind": "function",
+      "line_start": 100,
+      "line_end": 105
+    },
+    {
+      "id": "src/codegraph_rag/benchmark.py::read_jsonl",
+      "path": "src/codegraph_rag/benchmark.py",
+      "module": "codegraph_rag.benchmark",
+      "qualname": "read_jsonl",
+      "kind": "function",
+      "line_start": 95,
+      "line_end": 97
+    },
+    {
+      "id": "src/codegraph_rag/cli.py::__module__",
+      "path": "src/codegraph_rag/cli.py",
+      "module": "codegraph_rag.cli",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 54
+    },
+    {
+      "id": "src/codegraph_rag/cli.py::main",
+      "path": "src/codegraph_rag/cli.py",
+      "module": "codegraph_rag.cli",
+      "qualname": "main",
+      "kind": "function",
+      "line_start": 12,
+      "line_end": 50
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::CodeGraph",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "CodeGraph",
+      "kind": "class",
+      "line_start": 28,
+      "line_end": 66
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::CodeGraph.add_edge",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "CodeGraph.add_edge",
+      "kind": "method",
+      "line_start": 36,
+      "line_end": 38
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::CodeGraph.add_symbol",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "CodeGraph.add_symbol",
+      "kind": "method",
+      "line_start": 33,
+      "line_end": 34
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::CodeGraph.save",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "CodeGraph.save",
+      "kind": "method",
+      "line_start": 63,
+      "line_end": 66
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::CodeGraph.stats",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "CodeGraph.stats",
+      "kind": "method",
+      "line_start": 40,
+      "line_end": 53
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::CodeGraph.to_dict",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "CodeGraph.to_dict",
+      "kind": "method",
+      "line_start": 55,
+      "line_end": 61
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::Edge",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "Edge",
+      "kind": "class",
+      "line_start": 21,
+      "line_end": 24
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::Symbol",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "Symbol",
+      "kind": "class",
+      "line_start": 10,
+      "line_end": 17
+    },
+    {
+      "id": "src/codegraph_rag/graph.py::__module__",
+      "path": "src/codegraph_rag/graph.py",
+      "module": "codegraph_rag.graph",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 66
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor",
+      "kind": "class",
+      "line_start": 88,
+      "line_end": 109
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor.__init__",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor.__init__",
+      "kind": "method",
+      "line_start": 90,
+      "line_end": 91
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor.visit_AsyncFunctionDef",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor.visit_AsyncFunctionDef",
+      "kind": "method",
+      "line_start": 102,
+      "line_end": 103
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor.visit_Call",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor.visit_Call",
+      "kind": "method",
+      "line_start": 93,
+      "line_end": 97
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor.visit_ClassDef",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor.visit_ClassDef",
+      "kind": "method",
+      "line_start": 108,
+      "line_end": 109
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor.visit_FunctionDef",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor.visit_FunctionDef",
+      "kind": "method",
+      "line_start": 99,
+      "line_end": 100
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::CallVisitor.visit_Lambda",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "CallVisitor.visit_Lambda",
+      "kind": "method",
+      "line_start": 105,
+      "line_end": 106
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector",
+      "kind": "class",
+      "line_start": 45,
+      "line_end": 85
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector.__init__",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector.__init__",
+      "kind": "method",
+      "line_start": 46,
+      "line_end": 52
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector._add",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector._add",
+      "kind": "method",
+      "line_start": 54,
+      "line_end": 61
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector._function",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector._function",
+      "kind": "method",
+      "line_start": 71,
+      "line_end": 79
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector.visit_AsyncFunctionDef",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector.visit_AsyncFunctionDef",
+      "kind": "method",
+      "line_start": 84,
+      "line_end": 85
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector.visit_ClassDef",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector.visit_ClassDef",
+      "kind": "method",
+      "line_start": 63,
+      "line_end": 69
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::Collector.visit_FunctionDef",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "Collector.visit_FunctionDef",
+      "kind": "method",
+      "line_start": 81,
+      "line_end": 82
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::ParsedFile",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "ParsedFile",
+      "kind": "class",
+      "line_start": 37,
+      "line_end": 42
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::__module__",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 233
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::_absolute_import",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "_absolute_import",
+      "kind": "function",
+      "line_start": 118,
+      "line_end": 126
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::_package",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "_package",
+      "kind": "function",
+      "line_start": 112,
+      "line_end": 115
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::expression_parts",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "expression_parts",
+      "kind": "function",
+      "line_start": 27,
+      "line_end": 33
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::module_name",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "module_name",
+      "kind": "function",
+      "line_start": 18,
+      "line_end": 24
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::scan_repository",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "scan_repository",
+      "kind": "function",
+      "line_start": 129,
+      "line_end": 233
+    },
+    {
+      "id": "src/codegraph_rag/parser.py::scan_repository.resolve",
+      "path": "src/codegraph_rag/parser.py",
+      "module": "codegraph_rag.parser",
+      "qualname": "scan_repository.resolve",
+      "kind": "function",
+      "line_start": 192,
+      "line_end": 215
+    },
+    {
+      "id": "src/codegraph_rag/visualize.py::__module__",
+      "path": "src/codegraph_rag/visualize.py",
+      "module": "codegraph_rag.visualize",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 110
+    },
+    {
+      "id": "src/codegraph_rag/visualize.py::draw_graph",
+      "path": "src/codegraph_rag/visualize.py",
+      "module": "codegraph_rag.visualize",
+      "qualname": "draw_graph",
+      "kind": "function",
+      "line_start": 36,
+      "line_end": 105
+    },
+    {
+      "id": "src/codegraph_rag/visualize.py::select_graph",
+      "path": "src/codegraph_rag/visualize.py",
+      "module": "codegraph_rag.visualize",
+      "qualname": "select_graph",
+      "kind": "function",
+      "line_start": 11,
+      "line_end": 33
+    },
+    {
+      "id": "src/codegraph_rag/visualize.py::visualize_file",
+      "path": "src/codegraph_rag/visualize.py",
+      "module": "codegraph_rag.visualize",
+      "qualname": "visualize_file",
+      "kind": "function",
+      "line_start": 108,
+      "line_end": 110
+    },
+    {
+      "id": "tests/test_benchmark.py::BenchmarkTests",
+      "path": "tests/test_benchmark.py",
+      "module": "tests.test_benchmark",
+      "qualname": "BenchmarkTests",
+      "kind": "class",
+      "line_start": 8,
+      "line_end": 26
+    },
+    {
+      "id": "tests/test_benchmark.py::BenchmarkTests.test_file_labels_and_no_patch_in_inputs",
+      "path": "tests/test_benchmark.py",
+      "module": "tests.test_benchmark",
+      "qualname": "BenchmarkTests.test_file_labels_and_no_patch_in_inputs",
+      "kind": "method",
+      "line_start": 14,
+      "line_end": 26
+    },
+    {
+      "id": "tests/test_benchmark.py::BenchmarkTests.test_pre_fix_paths_for_rename_and_new_file",
+      "path": "tests/test_benchmark.py",
+      "module": "tests.test_benchmark",
+      "qualname": "BenchmarkTests.test_pre_fix_paths_for_rename_and_new_file",
+      "kind": "method",
+      "line_start": 9,
+      "line_end": 12
+    },
+    {
+      "id": "tests/test_benchmark.py::__module__",
+      "path": "tests/test_benchmark.py",
+      "module": "tests.test_benchmark",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 30
+    },
+    {
+      "id": "tests/test_graph.py::GraphTests",
+      "path": "tests/test_graph.py",
+      "module": "tests.test_graph",
+      "qualname": "GraphTests",
+      "kind": "class",
+      "line_start": 9,
+      "line_end": 55
+    },
+    {
+      "id": "tests/test_graph.py::GraphTests.test_bad_syntax_not_fatal",
+      "path": "tests/test_graph.py",
+      "module": "tests.test_graph",
+      "qualname": "GraphTests.test_bad_syntax_not_fatal",
+      "kind": "method",
+      "line_start": 37,
+      "line_end": 47
+    },
+    {
+      "id": "tests/test_graph.py::GraphTests.test_cross_file_relative_import_and_call",
+      "path": "tests/test_graph.py",
+      "module": "tests.test_graph",
+      "qualname": "GraphTests.test_cross_file_relative_import_and_call",
+      "kind": "method",
+      "line_start": 10,
+      "line_end": 25
+    },
+    {
+      "id": "tests/test_graph.py::GraphTests.test_methods_and_inheritance",
+      "path": "tests/test_graph.py",
+      "module": "tests.test_graph",
+      "qualname": "GraphTests.test_methods_and_inheritance",
+      "kind": "method",
+      "line_start": 27,
+      "line_end": 35
+    },
+    {
+      "id": "tests/test_graph.py::GraphTests.test_self_method_call",
+      "path": "tests/test_graph.py",
+      "module": "tests.test_graph",
+      "qualname": "GraphTests.test_self_method_call",
+      "kind": "method",
+      "line_start": 49,
+      "line_end": 55
+    },
+    {
+      "id": "tests/test_graph.py::__module__",
+      "path": "tests/test_graph.py",
+      "module": "tests.test_graph",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 59
+    },
+    {
+      "id": "tests/test_viz.py::VizTests",
+      "path": "tests/test_viz.py",
+      "module": "tests.test_viz",
+      "qualname": "VizTests",
+      "kind": "class",
+      "line_start": 7,
+      "line_end": 22
+    },
+    {
+      "id": "tests/test_viz.py::VizTests.test_selection_and_render",
+      "path": "tests/test_viz.py",
+      "module": "tests.test_viz",
+      "qualname": "VizTests.test_selection_and_render",
+      "kind": "method",
+      "line_start": 8,
+      "line_end": 22
+    },
+    {
+      "id": "tests/test_viz.py::__module__",
+      "path": "tests/test_viz.py",
+      "module": "tests.test_viz",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 22
+    }
+  ],
+  "edges": [
+    {
+      "source": "examples/sample_repo/__init__.py::__module__",
+      "target": "examples/sample_repo/service.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "examples/sample_repo/__init__.py::__module__",
+      "target": "examples/sample_repo/service.py::login",
+      "kind": "imports"
+    },
+    {
+      "source": "examples/sample_repo/service.py::__module__",
+      "target": "examples/sample_repo/service.py::login",
+      "kind": "defines"
+    },
+    {
+      "source": "examples/sample_repo/service.py::__module__",
+      "target": "examples/sample_repo/storage.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "examples/sample_repo/service.py::__module__",
+      "target": "examples/sample_repo/storage.py::get_user",
+      "kind": "imports"
+    },
+    {
+      "source": "examples/sample_repo/service.py::login",
+      "target": "examples/sample_repo/storage.py::get_user",
+      "kind": "calls"
+    },
+    {
+      "source": "examples/sample_repo/storage.py::__module__",
+      "target": "examples/sample_repo/storage.py::get_user",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/__main__.py::__module__",
+      "target": "src/codegraph_rag/cli.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/__main__.py::__module__",
+      "target": "src/codegraph_rag/cli.py::main",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::build_manifests",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::choose_instances",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::files_in_patch",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::load_verified",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::read_jsonl",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::build_manifests",
+      "target": "src/codegraph_rag/benchmark.py::choose_instances",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/benchmark.py::build_manifests",
+      "target": "src/codegraph_rag/benchmark.py::files_in_patch",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/cli.py::main",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::build_manifests",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::load_verified",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::read_jsonl",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/parser.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::__module__",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::main",
+      "target": "src/codegraph_rag/benchmark.py::build_manifests",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::main",
+      "target": "src/codegraph_rag/benchmark.py::load_verified",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::main",
+      "target": "src/codegraph_rag/benchmark.py::read_jsonl",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/cli.py::main",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.add_edge",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.add_symbol",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.save",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.stats",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.to_dict",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph.add_edge",
+      "target": "src/codegraph_rag/graph.py::Edge",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph.save",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.to_dict",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::CodeGraph.to_dict",
+      "target": "src/codegraph_rag/graph.py::CodeGraph.stats",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::__module__",
+      "target": "src/codegraph_rag/graph.py::CodeGraph",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::__module__",
+      "target": "src/codegraph_rag/graph.py::Edge",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/graph.py::__module__",
+      "target": "src/codegraph_rag/graph.py::Symbol",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor",
+      "target": "src/codegraph_rag/parser.py::CallVisitor.__init__",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor",
+      "target": "src/codegraph_rag/parser.py::CallVisitor.visit_AsyncFunctionDef",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor",
+      "target": "src/codegraph_rag/parser.py::CallVisitor.visit_Call",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor",
+      "target": "src/codegraph_rag/parser.py::CallVisitor.visit_ClassDef",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor",
+      "target": "src/codegraph_rag/parser.py::CallVisitor.visit_FunctionDef",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor",
+      "target": "src/codegraph_rag/parser.py::CallVisitor.visit_Lambda",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::CallVisitor.visit_Call",
+      "target": "src/codegraph_rag/parser.py::expression_parts",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector",
+      "target": "src/codegraph_rag/parser.py::Collector.__init__",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector",
+      "target": "src/codegraph_rag/parser.py::Collector._add",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector",
+      "target": "src/codegraph_rag/parser.py::Collector._function",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector",
+      "target": "src/codegraph_rag/parser.py::Collector.visit_AsyncFunctionDef",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector",
+      "target": "src/codegraph_rag/parser.py::Collector.visit_ClassDef",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector",
+      "target": "src/codegraph_rag/parser.py::Collector.visit_FunctionDef",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector._add",
+      "target": "src/codegraph_rag/graph.py::Symbol",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector._function",
+      "target": "src/codegraph_rag/parser.py::Collector._add",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector.visit_AsyncFunctionDef",
+      "target": "src/codegraph_rag/parser.py::Collector._function",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector.visit_ClassDef",
+      "target": "src/codegraph_rag/parser.py::Collector._add",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::Collector.visit_FunctionDef",
+      "target": "src/codegraph_rag/parser.py::Collector._function",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::CallVisitor",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::Collector",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::ParsedFile",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::_absolute_import",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::_package",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::expression_parts",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::module_name",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/graph.py::CodeGraph",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/graph.py::Symbol",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::__module__",
+      "target": "src/codegraph_rag/graph.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::expression_parts",
+      "target": "src/codegraph_rag/parser.py::expression_parts",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/graph.py::CodeGraph",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/graph.py::Symbol",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::CallVisitor",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::Collector",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::ParsedFile",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::_absolute_import",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::_package",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::expression_parts",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::module_name",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/parser.py::scan_repository",
+      "target": "src/codegraph_rag/parser.py::scan_repository.resolve",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/visualize.py::__module__",
+      "target": "src/codegraph_rag/visualize.py::draw_graph",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/visualize.py::__module__",
+      "target": "src/codegraph_rag/visualize.py::select_graph",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/visualize.py::__module__",
+      "target": "src/codegraph_rag/visualize.py::visualize_file",
+      "kind": "defines"
+    },
+    {
+      "source": "src/codegraph_rag/visualize.py::draw_graph",
+      "target": "src/codegraph_rag/visualize.py::select_graph",
+      "kind": "calls"
+    },
+    {
+      "source": "src/codegraph_rag/visualize.py::visualize_file",
+      "target": "src/codegraph_rag/visualize.py::draw_graph",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_benchmark.py::BenchmarkTests",
+      "target": "tests/test_benchmark.py::BenchmarkTests.test_file_labels_and_no_patch_in_inputs",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_benchmark.py::BenchmarkTests",
+      "target": "tests/test_benchmark.py::BenchmarkTests.test_pre_fix_paths_for_rename_and_new_file",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_benchmark.py::BenchmarkTests.test_file_labels_and_no_patch_in_inputs",
+      "target": "src/codegraph_rag/benchmark.py::build_manifests",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_benchmark.py::BenchmarkTests.test_file_labels_and_no_patch_in_inputs",
+      "target": "src/codegraph_rag/benchmark.py::files_in_patch",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_benchmark.py::BenchmarkTests.test_file_labels_and_no_patch_in_inputs",
+      "target": "src/codegraph_rag/benchmark.py::read_jsonl",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_benchmark.py::BenchmarkTests.test_pre_fix_paths_for_rename_and_new_file",
+      "target": "src/codegraph_rag/benchmark.py::files_in_patch",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_benchmark.py::__module__",
+      "target": "tests/test_benchmark.py::BenchmarkTests",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::build_manifests",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::files_in_patch",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_benchmark.py::__module__",
+      "target": "src/codegraph_rag/benchmark.py::read_jsonl",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests",
+      "target": "tests/test_graph.py::GraphTests.test_bad_syntax_not_fatal",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests",
+      "target": "tests/test_graph.py::GraphTests.test_cross_file_relative_import_and_call",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests",
+      "target": "tests/test_graph.py::GraphTests.test_methods_and_inheritance",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests",
+      "target": "tests/test_graph.py::GraphTests.test_self_method_call",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests.test_bad_syntax_not_fatal",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests.test_cross_file_relative_import_and_call",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests.test_methods_and_inheritance",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_graph.py::GraphTests.test_self_method_call",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_graph.py::__module__",
+      "target": "tests/test_graph.py::GraphTests",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_graph.py::__module__",
+      "target": "src/codegraph_rag/parser.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_graph.py::__module__",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_viz.py::VizTests",
+      "target": "tests/test_viz.py::VizTests.test_selection_and_render",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_viz.py::VizTests.test_selection_and_render",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "calls"
+    },
+    {
+      "source": "tests/test_viz.py::__module__",
+      "target": "tests/test_viz.py::VizTests",
+      "kind": "defines"
+    },
+    {
+      "source": "tests/test_viz.py::__module__",
+      "target": "src/codegraph_rag/parser.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "tests/test_viz.py::__module__",
+      "target": "src/codegraph_rag/parser.py::scan_repository",
+      "kind": "imports"
+    }
+  ],
+  "stats": {
+    "nodes": 63,
+    "edges": 110,
+    "symbols": {
+      "class": 9,
+      "function": 17,
+      "method": 24,
+      "module": 13
+    },
+    "relations": {
+      "calls": 37,
+      "defines": 50,
+      "imports": 23
+    },
+    "parse_errors": {}
+  }
+}

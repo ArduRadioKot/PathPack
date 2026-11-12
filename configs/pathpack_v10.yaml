@@ -1,0 +1,25 @@
+# PathPack v1.0 / Evidence Graph Optimization.
+# Written before the diagnostic measurement. Weights are the stated objective,
+# not a fit to task ids. repeat_weight 0 means a repeated evidence alone does
+# not spend more tokens. A resolved callee is added only when it shares query
+# terms (lexical >= min_neighbor_lexical) or it is the seed's only callee.
+# Embeddings stay off unless sentence-transformers and the pinned checkpoint
+# are already installed. No reference answer is read.
+mode: joint
+nested: false
+enable_structural: true
+bm25_limit: 64
+symbol_limit: 64
+path_limit: 32
+graph_limit: 48
+test_limit: 8
+graph_hops: 1
+alpha: 1.0
+beta: 0.35
+gamma: 0.25
+delta: 0.5
+repeat_weight: 0.0
+min_neighbor_lexical: 0.15
+beam_width: 3
+beam_expand: 8
+timeout_sec: 8.0

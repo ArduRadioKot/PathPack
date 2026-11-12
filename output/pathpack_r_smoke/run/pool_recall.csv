@@ -1,0 +1,10 @@
+instance_id,method,budget,pool_regions,file_pool_recall,function_pool_recall,file_packed_recall,function_packed_recall
+psf__requests-1766,pathpack-v10e,2048,64,1.0,1.0,0.0,0.0
+psf__requests-1766,pathpack-r,2048,179,1.0,1.0,1.0,1.0
+psf__requests-1766,pathpack-r/semantic,2048,40,1.0,1.0,1.0,1.0
+psf__requests-1766,pathpack-r/fusion,2048,179,1.0,1.0,1.0,0.0
+psf__requests-1766,pathpack-r/reranker,2048,170,1.0,1.0,1.0,1.0
+psf__requests-1766,pathpack-r/reranker-graph,2048,179,1.0,1.0,1.0,1.0
+psf__requests-1766,pathpack-r/reranker-active,2048,179,1.0,1.0,1.0,1.0
+psf__requests-1766,pathpack-r/active-bm25-seeds,2048,179,1.0,1.0,1.0,1.0
+psf__requests-1766,pathpack-r/ranked,2048,179,1.0,1.0,1.0,1.0

@@ -1,0 +1,2 @@
+instance_id,scan_sec,legacy_index_sec,adaptive_index_sec,nodes,edges,chunks,functions,parse_errors
+django__django-12276,5.783115249942057,0.0,2.2211995830293745,35490,63841,12971,7890,41

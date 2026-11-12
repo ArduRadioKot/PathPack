@@ -1,0 +1,31 @@
+{
+  "target_chunk_tokens": 128,
+  "max_chunk_tokens": 256,
+  "min_chunk_tokens": 32,
+  "chunk_overlap_lines": 2,
+  "lexical_weight": 0.45,
+  "symbol_weight": 0.2,
+  "graph_weight": 0.25,
+  "diversity_weight": 0.1,
+  "redundancy_strength": 0.5,
+  "file_diversity_exponent": 1.0,
+  "cost_offset": 32.0,
+  "cost_exponent": 0.5,
+  "hops": 3,
+  "seeds": 3,
+  "distance_decay": 0.8,
+  "edge_weights": {
+    "calls": 1.0,
+    "imports": 0.45,
+    "inherits": 0.65,
+    "defines": 0.22
+  },
+  "candidate_limit": 512,
+  "min_relevance": 0.0,
+  "enable_graph": true,
+  "enable_diversity": true,
+  "enable_chunking": true,
+  "enable_symbol": true,
+  "enable_cost": true,
+  "graph_direction": "both"
+}

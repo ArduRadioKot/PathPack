@@ -1,0 +1,2162 @@
+[
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.3,
+    "ci95": [
+      -0.5,
+      -0.1
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 6
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.083333,
+    "ci95": [
+      -0.222222,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.027778,
+    "ci95": [
+      -0.083333,
+      0.166667
+    ],
+    "wins": 1,
+    "ties": 16,
+    "losses": 1
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.275,
+    "ci95": [
+      -0.475,
+      -0.1
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 6
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.087302,
+    "ci95": [
+      -0.22619,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.02381,
+    "ci95": [
+      -0.083333,
+      0.162698
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.005102,
+    "ci95": [
+      -0.015306,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.1,
+    "ci95": [
+      -0.325,
+      0.125
+    ],
+    "wins": 2,
+    "ties": 13,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.02381,
+    "ci95": [
+      -0.170635,
+      0.238095
+    ],
+    "wins": 2,
+    "ties": 13,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.031746,
+    "ci95": [
+      -0.087302,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.025,
+    "ci95": [
+      -0.25,
+      0.275
+    ],
+    "wins": 4,
+    "ties": 12,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.051587,
+    "ci95": [
+      -0.146825,
+      0.27381
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.003968,
+    "ci95": [
+      -0.083333,
+      0.079365
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.025,
+    "ci95": [
+      -0.25,
+      0.175
+    ],
+    "wins": 3,
+    "ties": 14,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.031746,
+    "ci95": [
+      -0.134921,
+      0.194444
+    ],
+    "wins": 3,
+    "ties": 14,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.087302,
+    "ci95": [
+      0.0,
+      0.222222
+    ],
+    "wins": 3,
+    "ties": 15,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.063492,
+    "ci95": [
+      0.0,
+      0.190476
+    ],
+    "wins": 1,
+    "ties": 13,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.025,
+    "ci95": [
+      -0.275,
+      0.225
+    ],
+    "wins": 3,
+    "ties": 13,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.051587,
+    "ci95": [
+      -0.146825,
+      0.27381
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.003968,
+    "ci95": [
+      -0.083333,
+      0.079365
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.025,
+    "ci95": [
+      -0.275,
+      0.2
+    ],
+    "wins": 3,
+    "ties": 13,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.051587,
+    "ci95": [
+      -0.146825,
+      0.27381
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.003968,
+    "ci95": [
+      -0.083333,
+      0.079365
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.025,
+    "ci95": [
+      -0.275,
+      0.225
+    ],
+    "wins": 3,
+    "ties": 13,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.051587,
+    "ci95": [
+      -0.146825,
+      0.27381
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.003968,
+    "ci95": [
+      -0.083333,
+      0.079365
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.025,
+    "ci95": [
+      -0.25,
+      0.275
+    ],
+    "wins": 4,
+    "ties": 12,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.051587,
+    "ci95": [
+      -0.146825,
+      0.27381
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.003968,
+    "ci95": [
+      -0.083333,
+      0.079365
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.25,
+    "ci95": [
+      -0.5,
+      0.025
+    ],
+    "wins": 2,
+    "ties": 10,
+    "losses": 8
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.198413,
+    "ci95": [
+      -0.392857,
+      -0.055556
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.087302,
+    "ci95": [
+      -0.222222,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.147959,
+    "ci95": [
+      -0.362245,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 11,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.05,
+    "ci95": [
+      -0.325,
+      0.2
+    ],
+    "wins": 4,
+    "ties": 11,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.083333,
+    "ci95": [
+      -0.222222,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.027778,
+    "ci95": [
+      -0.083333,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.071429,
+    "ci95": [
+      -0.214286,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.075,
+    "ci95": [
+      -0.15,
+      0.275
+    ],
+    "wins": 4,
+    "ties": 14,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.051587,
+    "ci95": [
+      -0.011905,
+      0.166667
+    ],
+    "wins": 1,
+    "ties": 16,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.003968,
+    "ci95": [
+      -0.011905,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.090136,
+    "ci95": [
+      -0.010204,
+      0.238095
+    ],
+    "wins": 2,
+    "ties": 11,
+    "losses": 1
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.375,
+    "ci95": [
+      -0.6,
+      -0.175
+    ],
+    "wins": 0,
+    "ties": 12,
+    "losses": 8
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.09127,
+    "ci95": [
+      -0.230159,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.019841,
+    "ci95": [
+      -0.083333,
+      0.15873
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.005102,
+    "ci95": [
+      -0.015306,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.4,
+    "ci95": [
+      -0.6,
+      -0.225
+    ],
+    "wins": 0,
+    "ties": 11,
+    "losses": 9
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.09127,
+    "ci95": [
+      -0.230159,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.019841,
+    "ci95": [
+      -0.083333,
+      0.15873
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.005102,
+    "ci95": [
+      -0.015306,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.2,
+    "ci95": [
+      -0.45,
+      0.05
+    ],
+    "wins": 2,
+    "ties": 11,
+    "losses": 7
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.019841,
+    "ci95": [
+      -0.174603,
+      0.22619
+    ],
+    "wins": 2,
+    "ties": 13,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.035714,
+    "ci95": [
+      -0.095238,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.05,
+    "ci95": [
+      -0.3,
+      0.175
+    ],
+    "wins": 3,
+    "ties": 13,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.154762,
+      0.269841
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.075,
+    "ci95": [
+      -0.3,
+      0.15
+    ],
+    "wins": 3,
+    "ties": 13,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.031746,
+    "ci95": [
+      -0.134921,
+      0.194444
+    ],
+    "wins": 3,
+    "ties": 14,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.142857,
+    "ci95": [
+      0.007937,
+      0.309524
+    ],
+    "wins": 4,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.145125,
+    "ci95": [
+      0.0,
+      0.34127
+    ],
+    "wins": 3,
+    "ties": 11,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.1,
+    "ci95": [
+      -0.35,
+      0.15
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.154762,
+      0.269841
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.1,
+    "ci95": [
+      -0.35,
+      0.15
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.154762,
+      0.269841
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.1,
+    "ci95": [
+      -0.35,
+      0.15
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.154762,
+      0.269841
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.05,
+    "ci95": [
+      -0.3,
+      0.175
+    ],
+    "wins": 3,
+    "ties": 13,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.154762,
+      0.269841
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.35,
+    "ci95": [
+      -0.575,
+      -0.1
+    ],
+    "wins": 1,
+    "ties": 10,
+    "losses": 9
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.146825,
+    "ci95": [
+      -0.369048,
+      0.055556
+    ],
+    "wins": 1,
+    "ties": 12,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.09127,
+    "ci95": [
+      -0.222222,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.052721,
+    "ci95": [
+      -0.314626,
+      0.204082
+    ],
+    "wins": 2,
+    "ties": 9,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.25,
+    "ci95": [
+      -0.525,
+      0.025
+    ],
+    "wins": 3,
+    "ties": 9,
+    "losses": 8
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.031746,
+    "ci95": [
+      -0.194444,
+      0.154762
+    ],
+    "wins": 1,
+    "ties": 14,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.031746,
+    "ci95": [
+      -0.087302,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.071429,
+    "ci95": [
+      -0.214286,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.025,
+    "ci95": [
+      -0.25,
+      0.175
+    ],
+    "wins": 3,
+    "ties": 14,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.02381,
+      0.166667
+    ],
+    "wins": 1,
+    "ties": 16,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.02381,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.090136,
+    "ci95": [
+      -0.010204,
+      0.238095
+    ],
+    "wins": 2,
+    "ties": 11,
+    "losses": 1
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.25,
+    "ci95": [
+      -0.475,
+      -0.025
+    ],
+    "wins": 1,
+    "ties": 12,
+    "losses": 7
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.031746,
+    "ci95": [
+      -0.202381,
+      0.15873
+    ],
+    "wins": 1,
+    "ties": 14,
+    "losses": 3
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.079365,
+    "ci95": [
+      -0.059524,
+      0.269841
+    ],
+    "wins": 2,
+    "ties": 14,
+    "losses": 2
+  },
+  {
+    "candidate": "bm25",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.071429,
+    "ci95": [
+      0.0,
+      0.214286
+    ],
+    "wins": 1,
+    "ties": 13,
+    "losses": 0
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.375,
+    "ci95": [
+      -0.6,
+      -0.125
+    ],
+    "wins": 1,
+    "ties": 10,
+    "losses": 9
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.126984,
+      0.222222
+    ],
+    "wins": 2,
+    "ties": 14,
+    "losses": 2
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.15873,
+    "ci95": [
+      -0.007937,
+      0.333333
+    ],
+    "wins": 3,
+    "ties": 14,
+    "losses": 1
+  },
+  {
+    "candidate": "graph-expand",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.129819,
+    "ci95": [
+      -0.010204,
+      0.328231
+    ],
+    "wins": 2,
+    "ties": 11,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.275,
+    "ci95": [
+      -0.5,
+      -0.05
+    ],
+    "wins": 1,
+    "ties": 12,
+    "losses": 7
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.019841,
+    "ci95": [
+      -0.174603,
+      0.22619
+    ],
+    "wins": 2,
+    "ties": 13,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.035714,
+    "ci95": [
+      -0.095238,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.125,
+    "ci95": [
+      -0.325,
+      0.05
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.075397,
+    "ci95": [
+      -0.146825,
+      0.31746
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/active-bm25-seeds",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.1,
+    "ci95": [
+      -0.3,
+      0.1
+    ],
+    "wins": 1,
+    "ties": 16,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.095238,
+    "ci95": [
+      -0.099206,
+      0.301587
+    ],
+    "wins": 4,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.206349,
+    "ci95": [
+      0.051587,
+      0.388889
+    ],
+    "wins": 5,
+    "ties": 13,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-r/fusion",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.226757,
+    "ci95": [
+      0.040816,
+      0.433107
+    ],
+    "wins": 4,
+    "ties": 10,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.175,
+    "ci95": [
+      -0.4,
+      0.025
+    ],
+    "wins": 1,
+    "ties": 14,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.075397,
+    "ci95": [
+      -0.146825,
+      0.31746
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/ranked",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.175,
+    "ci95": [
+      -0.4,
+      0.05
+    ],
+    "wins": 1,
+    "ties": 14,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.075397,
+    "ci95": [
+      -0.146825,
+      0.31746
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.175,
+    "ci95": [
+      -0.4,
+      0.025
+    ],
+    "wins": 1,
+    "ties": 14,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.075397,
+    "ci95": [
+      -0.146825,
+      0.31746
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker-active",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.125,
+    "ci95": [
+      -0.325,
+      0.05
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 4
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.075397,
+    "ci95": [
+      -0.146825,
+      0.31746
+    ],
+    "wins": 3,
+    "ties": 12,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.083333,
+      0.075397
+    ],
+    "wins": 1,
+    "ties": 15,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-r/reranker-graph",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.185374,
+    "ci95": [
+      -0.005102,
+      0.39966
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.325,
+    "ci95": [
+      -0.55,
+      -0.075
+    ],
+    "wins": 1,
+    "ties": 11,
+    "losses": 8
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.146825,
+    "ci95": [
+      -0.369048,
+      0.055556
+    ],
+    "wins": 1,
+    "ties": 12,
+    "losses": 5
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.09127,
+    "ci95": [
+      -0.222222,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-r/semantic",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.052721,
+    "ci95": [
+      -0.314626,
+      0.204082
+    ],
+    "wins": 2,
+    "ties": 9,
+    "losses": 3
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.3,
+    "ci95": [
+      -0.6,
+      -0.05
+    ],
+    "wins": 2,
+    "ties": 10,
+    "losses": 8
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      -0.166667,
+      0.166667
+    ],
+    "wins": 1,
+    "ties": 16,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v10",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.034014,
+    "ci95": [
+      -0.180272,
+      0.238095
+    ],
+    "wins": 3,
+    "ties": 10,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      -0.2,
+      0.2
+    ],
+    "wins": 2,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.047619,
+    "ci95": [
+      -0.02381,
+      0.166667
+    ],
+    "wins": 1,
+    "ties": 16,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.007937,
+    "ci95": [
+      -0.02381,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v10e",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.090136,
+    "ci95": [
+      -0.010204,
+      0.238095
+    ],
+    "wins": 2,
+    "ties": 11,
+    "losses": 1
+  }
+]

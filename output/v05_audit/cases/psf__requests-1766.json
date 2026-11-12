@@ -1,0 +1,996 @@
+{
+  "instance_id": "psf__requests-1766",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "A",
+    "D",
+    "F"
+  ],
+  "graph_subtype": "unreached",
+  "illustrative": true,
+  "problem_statement": "quote qop options in Digest Auth\nBased on RFC2617 (http://tools.ietf.org/html/rfc2617), the value of\n'qop-options' directive should be quoted with double quotes:\n\n```\nqop-options\n     This directive is optional, but is made so only for backward\n     compatibility with RFC 2069 [6]; it SHOULD be used by all\n     implementations compliant with this version of the Digest\n     scheme. If present, it is a quoted string of one or more\n     tokens indicating the \"quality of protection\" values supported by\n     the server.  The value \"auth\" indicates authentication; the\n     value \"auth-int\" indicates authentication with\n     integrity protection; see the\n```\n\ncurl comamnd-line tool also appends these quotes. You can see this\nby `curl -v --digest --user user:passwd http://example.com/digest-auth`.\nUnfortunately, some minor server-side implementations seem to be sensitive\non this difference.\n\n",
+  "gold_files": [
+    "requests/auth.py"
+  ],
+  "gold_functions": [
+    {
+      "id": "requests/auth.py::HTTPDigestAuth.build_digest_header",
+      "qualname": "HTTPDigestAuth.build_digest_header",
+      "path": "requests/auth.py",
+      "coverage": 0.0,
+      "best_candidate": {
+        "id": "requests/auth.py::HTTPDigestAuth.build_digest_header::chunk_4",
+        "order": 35,
+        "decision": "after_budget_cutoff",
+        "score": 0.2662797105601304,
+        "utility": 0.019472300943717727,
+        "lexical_score": 0.5455874553105483,
+        "symbol_score": 0.023255813953488372,
+        "graph_score": 0.0,
+        "line_start": 122,
+        "line_end": 133,
+        "tokens_est": 155,
+        "reason": ""
+      }
+    }
+  ],
+  "changed_lines": {
+    "requests/auth.py": [
+      108,
+      147
+    ]
+  },
+  "insertion_anchors": {},
+  "exclusions": [],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 0,
+    "changed_lines_outside_function_bodies": [],
+    "removed_lines_out_of_range": [],
+    "class_methods": [
+      "requests/auth.py::HTTPDigestAuth.build_digest_header"
+    ],
+    "nested_functions": [],
+    "module_level_exclusions": 0,
+    "new_definition_exclusions": 0
+  },
+  "metrics": {
+    "file_recall": 1.0,
+    "function_recall": 0.0,
+    "complete_function_recall": 0.0,
+    "changed_line_recall": 0.0,
+    "label_completeness": "complete"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": null,
+    "insertion_anchor_reason": "no_insertion_hunk",
+    "base_touch_recall": 0.0,
+    "base_touch_reason": null,
+    "relevant_line_density": 0.0,
+    "relevant_line_density_reason": null,
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 1,
+    "evaluable_anchor_lines": 0,
+    "emitted_nonempty_lines": 10
+  },
+  "selected_files": [
+    "docs/conf.py",
+    "requests/adapters.py",
+    "requests/api.py",
+    "requests/auth.py",
+    "requests/cookies.py",
+    "requests/packages/charade/chardistribution.py",
+    "requests/packages/charade/langgreekmodel.py",
+    "requests/packages/charade/langthaimodel.py",
+    "requests/packages/urllib3/_collections.py",
+    "requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py",
+    "requests/packages/urllib3/request.py",
+    "requests/packages/urllib3/util.py",
+    "requests/utils.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "requests/utils.py::parse_dict_header::chunk_0",
+      "path": "requests/utils.py",
+      "qualname": "parse_dict_header",
+      "function_id": "requests/utils.py::parse_dict_header",
+      "line_start": 190,
+      "line_end": 190,
+      "tokens_est": 37,
+      "source_spans": [
+        [
+          190,
+          0,
+          30
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/charade/langgreekmodel.py::__module__::chunk_1",
+      "path": "requests/packages/charade/langgreekmodel.py",
+      "qualname": "__module__",
+      "function_id": "requests/packages/charade/langgreekmodel.py::__module__",
+      "line_start": 10,
+      "line_end": 18,
+      "tokens_est": 130,
+      "source_spans": [
+        [
+          10,
+          0,
+          34
+        ],
+        [
+          11,
+          0,
+          2
+        ],
+        [
+          12,
+          0,
+          64
+        ],
+        [
+          13,
+          0,
+          61
+        ],
+        [
+          14,
+          0,
+          63
+        ],
+        [
+          15,
+          0,
+          69
+        ],
+        [
+          16,
+          0,
+          2
+        ],
+        [
+          17,
+          0,
+          66
+        ],
+        [
+          18,
+          0,
+          65
+        ]
+      ]
+    },
+    {
+      "id": "requests/auth.py::HTTPDigestAuth.handle_401::chunk_0",
+      "path": "requests/auth.py",
+      "qualname": "HTTPDigestAuth.handle_401",
+      "function_id": "requests/auth.py::HTTPDigestAuth.handle_401",
+      "line_start": 151,
+      "line_end": 158,
+      "tokens_est": 122,
+      "source_spans": [
+        [
+          151,
+          0,
+          39
+        ],
+        [
+          152,
+          0,
+          73
+        ],
+        [
+          154,
+          0,
+          33
+        ],
+        [
+          155,
+          0,
+          70
+        ],
+        [
+          156,
+          0,
+          44
+        ],
+        [
+          157,
+          0,
+          42
+        ],
+        [
+          158,
+          0,
+          58
+        ]
+      ]
+    },
+    {
+      "id": "requests/utils.py::parse_dict_header::chunk_1",
+      "path": "requests/utils.py",
+      "qualname": "parse_dict_header",
+      "function_id": "requests/utils.py::parse_dict_header",
+      "line_start": 191,
+      "line_end": 210,
+      "tokens_est": 180,
+      "source_spans": [
+        [
+          191,
+          0,
+          78
+        ],
+        [
+          192,
+          0,
+          37
+        ],
+        [
+          193,
+          0,
+          1
+        ],
+        [
+          194,
+          0,
+          64
+        ],
+        [
+          195,
+          0,
+          24
+        ],
+        [
+          196,
+          0,
+          9
+        ],
+        [
+          197,
+          0,
+          26
+        ],
+        [
+          198,
+          0,
+          47
+        ],
+        [
+          199,
+          0,
+          1
+        ],
+        [
+          200,
+          0,
+          54
+        ],
+        [
+          201,
+          0,
+          1
+        ],
+        [
+          202,
+          0,
+          47
+        ],
+        [
+          203,
+          0,
+          32
+        ],
+        [
+          204,
+          0,
+          1
+        ],
+        [
+          205,
+          0,
+          61
+        ],
+        [
+          206,
+          0,
+          34
+        ],
+        [
+          207,
+          0,
+          1
+        ],
+        [
+          208,
+          0,
+          47
+        ],
+        [
+          209,
+          0,
+          27
+        ],
+        [
+          210,
+          0,
+          8
+        ]
+      ]
+    },
+    {
+      "id": "docs/conf.py::__module__::chunk_0",
+      "path": "docs/conf.py",
+      "qualname": "__module__",
+      "function_id": "docs/conf.py::__module__",
+      "line_start": 1,
+      "line_end": 14,
+      "tokens_est": 123,
+      "source_spans": [
+        [
+          1,
+          0,
+          24
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          62
+        ],
+        [
+          4,
+          0,
+          49
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          6,
+          0,
+          81
+        ],
+        [
+          7,
+          0,
+          2
+        ],
+        [
+          8,
+          0,
+          70
+        ],
+        [
+          9,
+          0,
+          22
+        ],
+        [
+          10,
+          0,
+          2
+        ],
+        [
+          11,
+          0,
+          73
+        ],
+        [
+          12,
+          0,
+          29
+        ],
+        [
+          13,
+          0,
+          1
+        ],
+        [
+          14,
+          0,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/urllib3/util.py::make_headers::chunk_1",
+      "path": "requests/packages/urllib3/util.py",
+      "qualname": "make_headers",
+      "function_id": "requests/packages/urllib3/util.py::make_headers",
+      "line_start": 435,
+      "line_end": 445,
+      "tokens_est": 132,
+      "source_spans": [
+        [
+          435,
+          0,
+          1
+        ],
+        [
+          436,
+          0,
+          28
+        ],
+        [
+          437,
+          0,
+          43
+        ],
+        [
+          438,
+          0,
+          47
+        ],
+        [
+          439,
+          0,
+          39
+        ],
+        [
+          440,
+          0,
+          41
+        ],
+        [
+          441,
+          0,
+          1
+        ],
+        [
+          442,
+          0,
+          23
+        ],
+        [
+          443,
+          0,
+          61
+        ],
+        [
+          444,
+          0,
+          29
+        ],
+        [
+          445,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py::_dnsname_match::chunk_0",
+      "path": "requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py",
+      "qualname": "_dnsname_match",
+      "function_id": "requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py::_dnsname_match",
+      "line_start": 14,
+      "line_end": 27,
+      "tokens_est": 120,
+      "source_spans": [
+        [
+          14,
+          0,
+          51
+        ],
+        [
+          15,
+          0,
+          53
+        ],
+        [
+          16,
+          0,
+          1
+        ],
+        [
+          17,
+          0,
+          53
+        ],
+        [
+          18,
+          0,
+          8
+        ],
+        [
+          19,
+          0,
+          14
+        ],
+        [
+          20,
+          0,
+          15
+        ],
+        [
+          21,
+          0,
+          21
+        ],
+        [
+          25,
+          0,
+          27
+        ],
+        [
+          26,
+          0,
+          24
+        ],
+        [
+          27,
+          0,
+          26
+        ]
+      ]
+    },
+    {
+      "id": "requests/api.py::request::chunk_3",
+      "path": "requests/api.py",
+      "qualname": "request",
+      "function_id": "requests/api.py::request",
+      "line_start": 28,
+      "line_end": 32,
+      "tokens_est": 144,
+      "source_spans": [
+        [
+          28,
+          0,
+          80
+        ],
+        [
+          29,
+          0,
+          76
+        ],
+        [
+          30,
+          0,
+          110
+        ],
+        [
+          31,
+          0,
+          84
+        ],
+        [
+          32,
+          0,
+          113
+        ]
+      ]
+    },
+    {
+      "id": "requests/adapters.py::HTTPAdapter.get_connection::chunk_1",
+      "path": "requests/adapters.py",
+      "qualname": "HTTPAdapter.get_connection",
+      "function_id": "requests/adapters.py::HTTPAdapter.get_connection",
+      "line_start": 187,
+      "line_end": 194,
+      "tokens_est": 141,
+      "source_spans": [
+        [
+          187,
+          0,
+          49
+        ],
+        [
+          188,
+          0,
+          78
+        ],
+        [
+          189,
+          0,
+          80
+        ],
+        [
+          190,
+          0,
+          62
+        ],
+        [
+          191,
+          0,
+          1
+        ],
+        [
+          192,
+          0,
+          43
+        ],
+        [
+          193,
+          0,
+          96
+        ],
+        [
+          194,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/urllib3/_collections.py::RecentlyUsedContainer.clear::chunk_0",
+      "path": "requests/packages/urllib3/_collections.py",
+      "qualname": "RecentlyUsedContainer.clear",
+      "function_id": "requests/packages/urllib3/_collections.py::RecentlyUsedContainer.clear",
+      "line_start": 90,
+      "line_end": 99,
+      "tokens_est": 128,
+      "source_spans": [
+        [
+          90,
+          0,
+          21
+        ],
+        [
+          91,
+          0,
+          24
+        ],
+        [
+          92,
+          0,
+          65
+        ],
+        [
+          93,
+          0,
+          71
+        ],
+        [
+          94,
+          0,
+          52
+        ],
+        [
+          95,
+          0,
+          36
+        ],
+        [
+          96,
+          0,
+          1
+        ],
+        [
+          97,
+          0,
+          30
+        ],
+        [
+          98,
+          0,
+          33
+        ],
+        [
+          99,
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/charade/langthaimodel.py::__module__::chunk_2",
+      "path": "requests/packages/charade/langthaimodel.py",
+      "qualname": "__module__",
+      "function_id": "requests/packages/charade/langthaimodel.py::__module__",
+      "line_start": 17,
+      "line_end": 27,
+      "tokens_est": 157,
+      "source_spans": [
+        [
+          17,
+          0,
+          66
+        ],
+        [
+          18,
+          0,
+          65
+        ],
+        [
+          19,
+          0,
+          68
+        ],
+        [
+          20,
+          0,
+          50
+        ],
+        [
+          21,
+          0,
+          2
+        ],
+        [
+          22,
+          0,
+          67
+        ],
+        [
+          23,
+          0,
+          70
+        ],
+        [
+          24,
+          0,
+          60
+        ],
+        [
+          25,
+          0,
+          18
+        ],
+        [
+          26,
+          0,
+          70
+        ],
+        [
+          27,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "requests/utils.py::unquote_header_value::chunk_1",
+      "path": "requests/utils.py",
+      "qualname": "unquote_header_value",
+      "function_id": "requests/utils.py::unquote_header_value",
+      "line_start": 229,
+      "line_end": 244,
+      "tokens_est": 251,
+      "source_spans": [
+        [
+          229,
+          0,
+          47
+        ],
+        [
+          230,
+          0,
+          8
+        ],
+        [
+          231,
+          0,
+          47
+        ],
+        [
+          232,
+          0,
+          70
+        ],
+        [
+          233,
+          0,
+          68
+        ],
+        [
+          234,
+          0,
+          67
+        ],
+        [
+          235,
+          0,
+          60
+        ],
+        [
+          236,
+          0,
+          28
+        ],
+        [
+          237,
+          0,
+          1
+        ],
+        [
+          238,
+          0,
+          70
+        ],
+        [
+          239,
+          0,
+          76
+        ],
+        [
+          240,
+          0,
+          73
+        ],
+        [
+          241,
+          0,
+          64
+        ],
+        [
+          242,
+          0,
+          64
+        ],
+        [
+          243,
+          0,
+          51
+        ],
+        [
+          244,
+          0,
+          67
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/charade/chardistribution.py::CharDistributionAnalysis.get_order::chunk_0",
+      "path": "requests/packages/charade/chardistribution.py",
+      "qualname": "CharDistributionAnalysis.get_order",
+      "function_id": "requests/packages/charade/chardistribution.py::CharDistributionAnalysis.get_order",
+      "line_start": 103,
+      "line_end": 108,
+      "tokens_est": 114,
+      "source_spans": [
+        [
+          103,
+          0,
+          31
+        ],
+        [
+          104,
+          0,
+          77
+        ],
+        [
+          105,
+          0,
+          75
+        ],
+        [
+          106,
+          0,
+          78
+        ],
+        [
+          107,
+          0,
+          17
+        ],
+        [
+          108,
+          0,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "requests/cookies.py::RequestsCookieJar.__setitem__::chunk_0",
+      "path": "requests/cookies.py",
+      "qualname": "RequestsCookieJar.__setitem__",
+      "function_id": "requests/cookies.py::RequestsCookieJar.__setitem__",
+      "line_start": 269,
+      "line_end": 274,
+      "tokens_est": 106,
+      "source_spans": [
+        [
+          269,
+          0,
+          40
+        ],
+        [
+          270,
+          0,
+          86
+        ],
+        [
+          271,
+          0,
+          89
+        ],
+        [
+          272,
+          0,
+          42
+        ],
+        [
+          273,
+          0,
+          1
+        ],
+        [
+          274,
+          0,
+          30
+        ]
+      ]
+    },
+    {
+      "id": "requests/auth.py::HTTPDigestAuth.handle_401::chunk_3",
+      "path": "requests/auth.py",
+      "qualname": "HTTPDigestAuth.handle_401",
+      "function_id": "requests/auth.py::HTTPDigestAuth.handle_401",
+      "line_start": 179,
+      "line_end": 183,
+      "tokens_est": 53,
+      "source_spans": [
+        [
+          179,
+          0,
+          1
+        ],
+        [
+          180,
+          0,
+          22
+        ],
+        [
+          182,
+          0,
+          42
+        ],
+        [
+          183,
+          0,
+          17
+        ]
+      ]
+    },
+    {
+      "id": "requests/packages/urllib3/request.py::RequestMethods.request::chunk_1",
+      "path": "requests/packages/urllib3/request.py",
+      "qualname": "RequestMethods.request",
+      "function_id": "requests/packages/urllib3/request.py::RequestMethods.request",
+      "line_start": 59,
+      "line_end": 63,
+      "tokens_est": 100,
+      "source_spans": [
+        [
+          59,
+          0,
+          77
+        ],
+        [
+          60,
+          0,
+          12
+        ],
+        [
+          61,
+          0,
+          78
+        ],
+        [
+          62,
+          0,
+          49
+        ],
+        [
+          63,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "context": "# File: requests/utils.py\n# Function: parse_dict_header\n# Lines: 190-190\n# Signature: def parse_dict_header(value):\ndef parse_dict_header(value):\n\n\n# File: requests/packages/charade/langgreekmodel.py\n# Function: __module__\n# Lines: 10-18\n#   Mark Pilgrim - port to Python\n#\n# This library is free software; you can redistribute it and/or\n# modify it under the terms of the GNU Lesser General Public\n# License as published by the Free Software Foundation; either\n# version 2.1 of the License, or (at your option) any later version.\n#\n# This library is distributed in the hope that it will be useful,\n# but WITHOUT ANY WARRANTY; without even the implied warranty of\n\n\n# File: requests/auth.py\n# Function: HTTPDigestAuth.handle_401\n# Lines: 151-158\n# Signature: def handle_401(self, r, **kwargs):\n    def handle_401(self, r, **kwargs):\n        \"\"\"Takes the given response and tries digest-auth, if needed.\"\"\"\n        if self.pos is not None:\n            # Rewind the file position indicator of the body to where\n            # it was to resend the request.\n            r.request.body.seek(self.pos)\n        num_401_calls = getattr(self, 'num_401_calls', 1)\n\n\n# File: requests/utils.py\n# Function: parse_dict_header\n# Lines: 191-210\n# Signature: def parse_dict_header(value):\n    \"\"\"Parse lists of key, value pairs as described by RFC 2068 Section 2 and\n    convert them into a python dict:\n\n    >>> d = parse_dict_header('foo=\"is a fish\", bar=\"as well\"')\n    >>> type(d) is dict\n    True\n    >>> sorted(d.items())\n    [('bar', 'as well'), ('foo', 'is a fish')]\n\n    If there is no value for a key it will be `None`:\n\n    >>> parse_dict_header('key_without_value')\n    {'key_without_value': None}\n\n    To create a header from the :class:`dict` again, use the\n    :func:`dump_header` function.\n\n    :param value: a string with a dict header.\n    :return: :class:`dict`\n    \"\"\"\n\n\n# File: docs/conf.py\n# Function: __module__\n# Lines: 1-14\n# -*- coding: utf-8 -*-\n#\n# Requests documentation build configuration file, created by\n# sphinx-quickstart on Sun Feb 13 23:54:25 2011.\n#\n# This file is execfile()d with the current directory set to its containing dir.\n#\n# Note that not all possible configuration values are present in this\n# autogenerated file.\n#\n# All configuration values have a default; values that are commented out\n# serve to show the default.\n\nimport sys, os\n\n\n# File: requests/packages/urllib3/util.py\n# Function: make_headers\n# Lines: 435-445\n# Signature: def make_headers(keep_alive=None, accept_encoding=None, user_agent=None, basic_auth=None, proxy_basic_auth=None):\n\n    :param accept_encoding:\n        Can be a boolean, list, or string.\n        ``True`` translates to 'gzip,deflate'.\n        List will get joined by comma.\n        String will be used as provided.\n\n    :param user_agent:\n        String representing the user-agent you want, such as\n        \"python-urllib3/0.6\"\n\n\n\n# File: requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py\n# Function: _dnsname_match\n# Lines: 14-27\n# Signature: def _dnsname_match(dn, hostname, max_wildcards=1):\ndef _dnsname_match(dn, hostname, max_wildcards=1):\n    \"\"\"Matching according to RFC 6125, section 6.4.3\n\n    http://tools.ietf.org/html/rfc6125#section-6.4.3\n    \"\"\"\n    pats = []\n    if not dn:\n        return False\n    parts = dn.split(r'.')\n    leftmost = parts[0]\n    remainder = parts[1:]\n\n\n# File: requests/api.py\n# Function: request\n# Lines: 28-32\n# Signature: def request(method, url, **kwargs):\n    :param auth: (optional) Auth tuple to enable Basic/Digest/Custom HTTP Auth.\n    :param timeout: (optional) Float describing the timeout of the request.\n    :param allow_redirects: (optional) Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.\n    :param proxies: (optional) Dictionary mapping protocol to the URL of the proxy.\n    :param verify: (optional) if ``True``, the SSL cert will be verified. A CA_BUNDLE path can also be provided.\n\n\n# File: requests/adapters.py\n# Function: HTTPAdapter.get_connection\n# Lines: 187-194\n# Signature: def get_connection(self, url, proxies=None):\n    def get_connection(self, url, proxies=None):\n        \"\"\"Returns a urllib3 connection for the given URL. This should not be\n        called from user code, and is only exposed for use when subclassing the\n        :class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.\n\n        :param url: The URL to connect to.\n        :param proxies: (optional) A Requests-style dictionary of proxies used on this request.\n        \"\"\"\n\n\n# File: requests/packages/urllib3/_collections.py\n# Function: RecentlyUsedContainer.clear\n# Lines: 90-99\n# Signature: def clear(self):\n    def clear(self):\n        with self.lock:\n            # Copy pointers to all values, then wipe the mapping\n            # under Python 2, this copies the list of values twice :-|\n            values = list(self._container.values())\n            self._container.clear()\n\n        if self.dispose_func:\n            for value in values:\n                self.dispose_func(value)\n\n\n# File: requests/packages/charade/langthaimodel.py\n# Function: __module__\n# Lines: 17-27\n# This library is distributed in the hope that it will be useful,\n# but WITHOUT ANY WARRANTY; without even the implied warranty of\n# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n# Lesser General Public License for more details.\n#\n# You should have received a copy of the GNU Lesser General Public\n# License along with this library; if not, write to the Free Software\n# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA\n# 02110-1301  USA\n######################### END LICENSE BLOCK #########################\n\n\n\n# File: requests/utils.py\n# Function: unquote_header_value\n# Lines: 229-244\n# Signature: def unquote_header_value(value, is_filename=False):\n    :param value: the header value to unquote.\n    \"\"\"\n    if value and value[0] == value[-1] == '\"':\n        # this is not the real unquoting, but fixing this so that the\n        # RFC is met will result in bugs with internet explorer and\n        # probably some other browsers as well.  IE for example is\n        # uploading files with \"C:\\foo\\bar.txt\" as filename\n        value = value[1:-1]\n\n        # if this is a filename and the starting characters look like\n        # a UNC path, then just return the value without quotes.  Using the\n        # replace sequence below on a UNC path has the effect of turning\n        # the leading double slash into a single slash and then\n        # _fix_ie_filename() doesn't work correctly.  See #458.\n        if not is_filename or value[:2] != '\\\\\\\\':\n            return value.replace('\\\\\\\\', '\\\\').replace('\\\\\"', '\"')\n\n\n# File: requests/packages/charade/chardistribution.py\n# Function: CharDistributionAnalysis.get_order\n# Lines: 103-108\n# Signature: def get_order(self, aBuf):\n    def get_order(self, aBuf):\n        # We do not handle characters based on the original encoding string,\n        # but convert this encoding string to a number, here called order.\n        # This allows multiple encodings of a language to share one frequency\n        # table.\n        return -1\n\n\n# File: requests/cookies.py\n# Function: RequestsCookieJar.__setitem__\n# Lines: 269-274\n# Signature: def __setitem__(self, name, value):\n    def __setitem__(self, name, value):\n        \"\"\"Dict-like __setitem__ for compatibility with client code. Throws exception\n        if there is already a cookie of that name in the jar. In that case, use the more\n        explicit set() method instead.\"\"\"\n\n        self.set(name, value)\n\n\n# File: requests/auth.py\n# Function: HTTPDigestAuth.handle_401\n# Lines: 179-183\n# Signature: def handle_401(self, r, **kwargs):\n\n            return _r\n        setattr(self, 'num_401_calls', 1)\n        return r\n\n\n# File: requests/packages/urllib3/request.py\n# Function: RequestMethods.request\n# Lines: 59-69\n# Signature: def request(self, method, url, fields=None, headers=None, **urlopen_kw):\n    def request(self, method, url, fields=None, headers=None, **urlopen_kw):\n        \"\"\"\n        Make a request using :meth:`urlopen` with the appropriate encoding of\n        ``fields`` based on the ``method`` used.\n\n",
+  "summary_ru": "Случаи A, D, F. File Recall=1.0, Function Recall=0.0, Changed Line Recall=0.0. Лучший чанк requests/auth.py::HTTPDigestAuth.build_digest_header: order=35, decision=after_budget_cutoff, score=0.2662797105601304, lexical=0.5455874553105483, graph=0.0, строки 122-133. Граф: unreached. Якоря вставок: no_insertion_hunk, recall=None. Это не Changed Line Recall."
+}

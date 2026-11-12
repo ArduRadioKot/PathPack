@@ -1,0 +1,98 @@
+[
+ {
+  "repo": "astropy/astropy",
+  "commit_time": 1518012441,
+  "cutoff": 1518015931,
+  "tasks": 22,
+  "instance_id": "astropy__astropy-7166",
+  "base_commit": "26d147868f8a891a6009a25cd6a8576d2e1bd747"
+ },
+ {
+  "repo": "django/django",
+  "commit_time": 1478693506,
+  "cutoff": 1478626039,
+  "tasks": 231,
+  "instance_id": "django__django-7530",
+  "base_commit": "f8fab6f90233c7114d642dfe01a4e6d4cb14ee7d"
+ },
+ {
+  "repo": "matplotlib/matplotlib",
+  "commit_time": 1555607273,
+  "cutoff": 1555638477,
+  "tasks": 34,
+  "instance_id": "matplotlib__matplotlib-13989",
+  "base_commit": "a3e2897bfaf9eaac1d6649da535c4e721c89fa69"
+ },
+ {
+  "repo": "mwaskom/seaborn",
+  "commit_time": 1665358298,
+  "cutoff": 1665358280,
+  "tasks": 2,
+  "instance_id": "mwaskom__seaborn-3069",
+  "base_commit": "54cab15bdacfaa05a88fbc5502a5b322d99f148e"
+ },
+ {
+  "repo": "pallets/flask",
+  "commit_time": 1678551788,
+  "cutoff": 1677954981,
+  "tasks": 1,
+  "instance_id": "pallets__flask-5014",
+  "base_commit": "7ee9ceb71e868944a46e1ff00b506772a53a4f1d"
+ },
+ {
+  "repo": "psf/requests",
+  "commit_time": 1359050424,
+  "cutoff": 1359091156,
+  "tasks": 8,
+  "instance_id": "psf__requests-1142",
+  "base_commit": "22623bd8c265b78b161542663ee980738441c307"
+ },
+ {
+  "repo": "pydata/xarray",
+  "commit_time": 1563558762,
+  "cutoff": 1555537957,
+  "tasks": 22,
+  "instance_id": "pydata__xarray-3151",
+  "base_commit": "118f4d996e7711c9aced916e6049af9f28d5ec66"
+ },
+ {
+  "repo": "pylint-dev/pylint",
+  "commit_time": 1624342746,
+  "cutoff": 1623078871,
+  "tasks": 10,
+  "instance_id": "pylint-dev__pylint-4551",
+  "base_commit": "99589b08de8c5a2c6cc61e13a37420a868c80599"
+ },
+ {
+  "repo": "pytest-dev/pytest",
+  "commit_time": 1557871029,
+  "cutoff": 1557870895,
+  "tasks": 19,
+  "instance_id": "pytest-dev__pytest-5262",
+  "base_commit": "58e6a09db49f34886ff13f3b7520dd0bcd7063cd"
+ },
+ {
+  "repo": "scikit-learn/scikit-learn",
+  "commit_time": 1518140042,
+  "cutoff": 1499338994,
+  "tasks": 32,
+  "instance_id": "scikit-learn__scikit-learn-10297",
+  "base_commit": "b90661d6a46aa3619d3eec94d5281f5888add501"
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "commit_time": 1586443482,
+  "cutoff": 1586353603,
+  "tasks": 44,
+  "instance_id": "sphinx-doc__sphinx-7440",
+  "base_commit": "9bb204dcabe6ba0fc422bf4a45ad0c79c680d90b"
+ },
+ {
+  "repo": "sympy/sympy",
+  "commit_time": 1473960083,
+  "cutoff": 1473969718,
+  "tasks": 75,
+  "instance_id": "sympy__sympy-11618",
+  "base_commit": "360290c4c401e386db60723ddb0109ed499c9f6e"
+ }
+]

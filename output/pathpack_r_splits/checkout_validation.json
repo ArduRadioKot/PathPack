@@ -1,0 +1,52 @@
+[
+  {
+    "instance_id": "sympy__sympy-12419",
+    "status": "checked_out",
+    "head": "479939f8c65c8c2908bbedc959549a257a7c0b0b"
+  },
+  {
+    "instance_id": "pytest-dev__pytest-6197",
+    "status": "present",
+    "head": "e856638ba086fcf5bebf1bebea32d5cf78de87b4"
+  },
+  {
+    "instance_id": "astropy__astropy-13977",
+    "status": "checked_out",
+    "head": "5250b2442501e6c671c6b380536f1edb352602d1"
+  },
+  {
+    "instance_id": "django__django-16333",
+    "status": "checked_out",
+    "head": "60a7bd89860e504c0c33b02c78edcac87f6d1b5a"
+  },
+  {
+    "instance_id": "django__django-13658",
+    "status": "checked_out",
+    "head": "0773837e15bb632afffb6848a58c59a791008fa1"
+  },
+  {
+    "instance_id": "sympy__sympy-13798",
+    "status": "checked_out",
+    "head": "7121bdf1facdd90d05b6994b4c2e5b2865a4638a"
+  },
+  {
+    "instance_id": "sympy__sympy-19495",
+    "status": "checked_out",
+    "head": "25fbcce5b1a4c7e3956e6062930f4a44ce95a632"
+  },
+  {
+    "instance_id": "django__django-15037",
+    "status": "checked_out",
+    "head": "dab48b7482295956973879d15bfd4d3bb0718772"
+  },
+  {
+    "instance_id": "django__django-12209",
+    "status": "checked_out",
+    "head": "5a68f024987e6d16c2626a31bf653a2edddea579"
+  },
+  {
+    "instance_id": "sympy__sympy-22714",
+    "status": "checked_out",
+    "head": "3ff4717b6aef6086e78f01cdfa06f64ae23aed7e"
+  }
+]

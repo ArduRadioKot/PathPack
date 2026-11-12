@@ -1,0 +1,25 @@
+candidate,baseline,budget,metric,n,difference,ci95,wins,ties,losses
+pathpack-v4,pathpack-v9,1024,file_recall,20,0.0,"[0.0, 0.0]",0,20,0
+pathpack-v4,pathpack-v9,1024,function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v4,pathpack-v9,1024,changed_line_recall,14,0.0,"[0.0, 0.0]",0,14,0
+pathpack-v4,pathpack-v9,2048,file_recall,20,0.0,"[0.0, 0.0]",0,20,0
+pathpack-v4,pathpack-v9,2048,function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v4,pathpack-v9,2048,changed_line_recall,14,-0.02381,"[-0.071429, 0.0]",0,13,1
+pathpack-v4,pathpack-v9,4096,file_recall,20,0.0,"[0.0, 0.0]",0,20,0
+pathpack-v4,pathpack-v9,4096,function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v4,pathpack-v9,4096,changed_line_recall,14,-0.02381,"[-0.071429, 0.0]",0,13,1
+pathpack-v9,pathpack-v4,1024,file_recall,20,0.0,"[0.0, 0.0]",0,20,0
+pathpack-v9,pathpack-v4,1024,function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v9,pathpack-v4,1024,complete_function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v9,pathpack-v4,1024,changed_line_recall,14,0.0,"[0.0, 0.0]",0,14,0
+pathpack-v9,pathpack-v4,1024,relevant_line_density,9,0.0,"[0.0, 0.0]",0,9,0
+pathpack-v9,pathpack-v4,2048,file_recall,20,0.0,"[0.0, 0.0]",0,20,0
+pathpack-v9,pathpack-v4,2048,function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v9,pathpack-v4,2048,complete_function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v9,pathpack-v4,2048,changed_line_recall,14,0.02381,"[0.0, 0.071429]",1,13,0
+pathpack-v9,pathpack-v4,2048,relevant_line_density,9,0.00565,"[0.0, 0.016949]",1,8,0
+pathpack-v9,pathpack-v4,4096,file_recall,20,0.0,"[0.0, 0.0]",0,20,0
+pathpack-v9,pathpack-v4,4096,function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v9,pathpack-v4,4096,complete_function_recall,18,0.0,"[0.0, 0.0]",0,18,0
+pathpack-v9,pathpack-v4,4096,changed_line_recall,14,0.02381,"[0.0, 0.071429]",1,13,0
+pathpack-v9,pathpack-v4,4096,relevant_line_density,10,0.006005,"[0.0, 0.014495]",2,8,0

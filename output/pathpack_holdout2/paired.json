@@ -1,0 +1,386 @@
+{
+ "pathpack-u vs pathpack-v4 file_recall": {
+  "n": 51,
+  "difference": 0.127451,
+  "ci95": [
+   0.029412,
+   0.235294
+  ],
+  "wins": 8,
+  "ties": 42,
+  "losses": 1,
+  "ci95_repo_cluster": [
+   -0.045454545454545456,
+   0.27380952380952384
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-v4 function_recall": {
+  "n": 42,
+  "difference": 0.255952,
+  "ci95": [
+   0.140873,
+   0.380952
+  ],
+  "wins": 14,
+  "ties": 28,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.05952380952380952,
+   0.3601190476190476
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-v4 complete_function_recall": {
+  "n": 42,
+  "difference": 0.271825,
+  "ci95": [
+   0.152778,
+   0.402778
+  ],
+  "wins": 14,
+  "ties": 28,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.03571428571428571,
+   0.3878787878787879
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-v4 changed_line_recall": {
+  "n": 38,
+  "difference": 0.184856,
+  "ci95": [
+   0.071457,
+   0.307514
+  ],
+  "wins": 11,
+  "ties": 25,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.015384615384615385,
+   0.30325039543789545
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-h/nomemory file_recall": {
+  "n": 51,
+  "difference": 0.088235,
+  "ci95": [
+   0.019608,
+   0.166667
+  ],
+  "wins": 5,
+  "ties": 46,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.2413793103448276
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-h/nomemory function_recall": {
+  "n": 42,
+  "difference": -0.011905,
+  "ci95": [
+   -0.119048,
+   0.095238
+  ],
+  "wins": 3,
+  "ties": 36,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   -0.15789473684210525,
+   0.03278688524590164
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-h/nomemory complete_function_recall": {
+  "n": 42,
+  "difference": 0.107143,
+  "ci95": [
+   0.02381,
+   0.214286
+  ],
+  "wins": 5,
+  "ties": 37,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.15853658536585366
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-h/nomemory changed_line_recall": {
+  "n": 38,
+  "difference": -0.055093,
+  "ci95": [
+   -0.150419,
+   0.042763
+  ],
+  "wins": 3,
+  "ties": 30,
+  "losses": 5,
+  "ci95_repo_cluster": [
+   -0.15996503496503497,
+   -0.016666666666666666
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs bm25 file_recall": {
+  "n": 51,
+  "difference": 0.27451,
+  "ci95": [
+   0.156863,
+   0.392157
+  ],
+  "wins": 15,
+  "ties": 36,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.2,
+   0.4782608695652174
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs bm25 function_recall": {
+  "n": 42,
+  "difference": 0.142857,
+  "ci95": [
+   -0.007937,
+   0.285714
+  ],
+  "wins": 10,
+  "ties": 29,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   -0.047619047619047616,
+   0.23684210526315788
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs bm25 complete_function_recall": {
+  "n": 42,
+  "difference": 0.051587,
+  "ci95": [
+   -0.095238,
+   0.18254
+  ],
+  "wins": 8,
+  "ties": 29,
+  "losses": 5,
+  "ci95_repo_cluster": [
+   -0.2,
+   0.15208333333333332
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs bm25 changed_line_recall": {
+  "n": 38,
+  "difference": 0.067584,
+  "ci95": [
+   -0.094298,
+   0.230263
+  ],
+  "wins": 8,
+  "ties": 25,
+  "losses": 5,
+  "ci95_repo_cluster": [
+   -0.17647058823529413,
+   0.18645640074211503
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-u/nobundle file_recall": {
+  "n": 51,
+  "difference": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "wins": 0,
+  "ties": 51,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.0
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-u/nobundle function_recall": {
+  "n": 42,
+  "difference": 0.0,
+  "ci95": [
+   -0.095238,
+   0.095238
+  ],
+  "wins": 2,
+  "ties": 38,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.2,
+   0.06666666666666667
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-u/nobundle complete_function_recall": {
+  "n": 42,
+  "difference": 0.083333,
+  "ci95": [
+   0.011905,
+   0.178571
+  ],
+  "wins": 4,
+  "ties": 38,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.12179487179487179
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-u/nobundle changed_line_recall": {
+  "n": 38,
+  "difference": 0.006266,
+  "ci95": [
+   -0.098997,
+   0.105263
+  ],
+  "wins": 3,
+  "ties": 33,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.18181818181818182,
+   0.08952380952380952
+  ],
+  "repos": 8
+ },
+ "pathpack-h/nomemory vs pathpack-v4 file_recall": {
+  "n": 51,
+  "difference": 0.039216,
+  "ci95": [
+   -0.058824,
+   0.137255
+  ],
+  "wins": 4,
+  "ties": 45,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.1111111111111111,
+   0.12195121951219512
+  ],
+  "repos": 8
+ },
+ "pathpack-h/nomemory vs pathpack-v4 function_recall": {
+  "n": 42,
+  "difference": 0.267857,
+  "ci95": [
+   0.146825,
+   0.392857
+  ],
+  "wins": 14,
+  "ties": 27,
+  "losses": 1,
+  "ci95_repo_cluster": [
+   0.0913978494623656,
+   0.44819819819819817
+  ],
+  "repos": 8
+ },
+ "pathpack-h/nomemory vs pathpack-v4 complete_function_recall": {
+  "n": 42,
+  "difference": 0.164683,
+  "ci95": [
+   0.061508,
+   0.277778
+  ],
+  "wins": 9,
+  "ties": 32,
+  "losses": 1,
+  "ci95_repo_cluster": [
+   0.016129032258064516,
+   0.2385964912280702
+  ],
+  "repos": 8
+ },
+ "pathpack-h/nomemory vs pathpack-v4 changed_line_recall": {
+  "n": 38,
+  "difference": 0.239949,
+  "ci95": [
+   0.111361,
+   0.369103
+  ],
+  "wins": 13,
+  "ties": 23,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   0.05964912280701754,
+   0.38283475783475784
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-r/fusion file_recall": {
+  "n": 51,
+  "difference": 0.088235,
+  "ci95": [
+   0.019608,
+   0.166667
+  ],
+  "wins": 5,
+  "ties": 46,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.11904761904761904
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-r/fusion function_recall": {
+  "n": 42,
+  "difference": -0.027778,
+  "ci95": [
+   -0.174603,
+   0.119048
+  ],
+  "wins": 5,
+  "ties": 30,
+  "losses": 7,
+  "ci95_repo_cluster": [
+   -0.2608695652173913,
+   0.05387205387205387
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-r/fusion complete_function_recall": {
+  "n": 42,
+  "difference": 0.019841,
+  "ci95": [
+   -0.126984,
+   0.166667
+  ],
+  "wins": 6,
+  "ties": 30,
+  "losses": 6,
+  "ci95_repo_cluster": [
+   -0.2631578947368421,
+   0.12585034013605442
+  ],
+  "repos": 8
+ },
+ "pathpack-u vs pathpack-r/fusion changed_line_recall": {
+  "n": 38,
+  "difference": -0.080412,
+  "ci95": [
+   -0.251863,
+   0.0914
+  ],
+  "wins": 6,
+  "ties": 24,
+  "losses": 8,
+  "ci95_repo_cluster": [
+   -0.3055555555555556,
+   -0.004649336171075301
+  ],
+  "repos": 8
+ }
+}

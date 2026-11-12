@@ -1,0 +1,58 @@
+# PathPack-R. Written before measurement. These values are the stated
+# procedure, not a fit to diagnostic, validation or holdout ids.
+#
+# Channels are united. A channel cap drops only that channel and is logged.
+# Exact symbol matches are not discarded by the lexical top-K.
+# Active localization runs at most two extra rounds from a shortlist of 6.
+# A graph neighbor is added only as a unique resolved callee of a shortlisted
+# hypothesis, or when that neighbor has its own symbol, lexical or semantic
+# signal. Adjacent functions are not added for proximity alone.
+# Packing stops on a relative quality floor, redundancy or the budget.
+# It does not stop because every named symbol is already covered.
+# Fusion weights are a fixed heuristic used only by the fusion arm.
+# The reranker arm uses the model score alone.
+lexical_limit: 80
+symbol_limit: 256
+semantic_limit: 40
+graph_limit: 64
+graph_hops: 1
+graph_seeds: 8
+max_chunks_per_function: 8
+# CodeT5+ 110M embedding (Salesforce/codet5p-110m-embedding,
+# d9f3a534af4252f04b10cd9f78e05037542d10f6) does not construct on
+# transformers 5.22: CodeT5pEmbeddingConfig has no is_decoder. That attempt
+# is not_run. No vectors were invented for it.
+# The semantic channel that can run locally is UniXcoder base, mean pooled.
+semantic_model: microsoft/unixcoder-base
+semantic_revision: 5604afdc964f6c53782a6813140ade5216b99006
+semantic_max_chars: 1200
+# Full-repository UniXcoder on CPU did not finish sympy (one task still in
+# matmul after two hours, no vectors written). The semantic channel therefore
+# embeds exact symbol matches plus the strongest lexical chunks, up to this
+# cap. Everything else is logged as dropped and receives no vector.
+semantic_index_cap: 4096
+reranker_model: cross-encoder/ms-marco-MiniLM-L-6-v2
+reranker_revision: 233902d25c440f23af6f7d6e94d2946bac0bee0a
+reranker_max_chars: 1200
+reranker_query_chars: 1500
+reranker_batch: 64
+active_rounds: 2
+shortlist: 6
+max_new_per_round: 12
+expand_lexical: 0.25
+expand_semantic: 0.35
+redirect_factor: 0.85
+relative_floor: 0.35
+min_relevance: 0.0
+max_overlap: 0.85
+min_marginal: 0.02
+necessity_bonus: 0.15
+reject_ratio: 0.50
+swap_passes: 2
+swap_candidates: 8
+fusion_lexical: 0.40
+fusion_symbol: 0.25
+fusion_semantic: 0.20
+fusion_graph: 0.15
+gemma_tokenizer: google/gemma-2-2b
+gemma_revision: ""

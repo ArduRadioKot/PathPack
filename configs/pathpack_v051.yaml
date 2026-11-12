@@ -1,0 +1,55 @@
+# PathPack v0.5.1, one dev cycle after the v0.5 audit.
+# v0.5 remains runnable and is not retuned. This file does not replace it.
+#
+# Soft hierarchy: FileScore is a ranking feature. Files are not removed by
+# max_files or the relative threshold (enable_file_filter: false).
+# Dual granularity: whole functions score the file; fine chunks fill the context.
+# The first-chunk bonus is 0. A high chunk score is no longer postponed just
+# because another file has not yet contributed a slice. local_resistance 1
+# makes that file penalty shrink to zero as ChunkScore approaches 1.
+# Coefficients alpha/beta/gamma/delta are the v0.5 values, not a new sweep.
+# Do not retune this file after the v0.5.1 dev measurement or before holdout.
+target_chunk_tokens: 128
+max_chunk_tokens: 256
+min_chunk_tokens: 32
+chunk_overlap_lines: 2
+alpha_file: 0.20
+beta_chunk: 0.50
+gamma_graph: 0.18
+delta_context: 0.12
+file_lexical_weight: 0.55
+file_symbol_weight: 0.20
+file_graph_weight: 0.25
+chunk_symbol_weight: 0.20
+local_chunk_blend: 0.72
+diversity_weight: 0.12
+local_resistance: 1.0
+redundancy_strength: 0.45
+file_relative_threshold: 0.12
+min_files: 8
+max_files: 24
+per_file_candidates: 16
+candidate_limit: 512
+cost_offset: 32.0
+cost_exponent: 0.40
+hops: 2
+seeds: 4
+distance_decay: 0.8
+edge_weights:
+  calls: 1.0
+  imports: 0.45
+  inherits: 0.65
+  defines: 0.22
+min_relevance: 0.0
+max_anchor_lines: 6
+enable_hierarchy: true
+enable_graph: true
+enable_diversity: true
+enable_chunking: true
+enable_file_score: true
+enable_symbol: true
+enable_cost: true
+include_signature_anchor: true
+enable_file_filter: false
+file_evidence: function
+first_file_bonus: 0

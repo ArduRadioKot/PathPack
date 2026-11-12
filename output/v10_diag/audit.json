@@ -1,0 +1,219 @@
+{
+  "ok": true,
+  "tasks": 20,
+  "predictions": 420,
+  "violations": [],
+  "legacy_non_prefix": [
+    {
+      "instance_id": "astropy__astropy-8707",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "astropy__astropy-8707",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "astropy__astropy-8707",
+      "method": "pathpack-v10/paths",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "astropy__astropy-8707",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "astropy__astropy-8707",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "django__django-14580",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "django__django-14580",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "django__django-14580",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "django__django-14580",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "method": "pathpack-v10/paths",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "pydata__xarray-6599",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "pydata__xarray-6599",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3187",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3187",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "sympy__sympy-24213",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "sympy__sympy-24213",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "sympy__sympy-24213",
+      "method": "pathpack-v10/paths",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "sympy__sympy-24213",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "sympy__sympy-24213",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "method": "pathpack-v10",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "method": "pathpack-v10",
+      "small": 2048,
+      "large": 4096
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "method": "pathpack-v10/no-semantic",
+      "small": 1024,
+      "large": 2048
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "method": "pathpack-v10/no-semantic",
+      "small": 2048,
+      "large": 4096
+    }
+  ],
+  "token_counter": "utf8_bytes_div4_ceil_serialized_context_v1"
+}

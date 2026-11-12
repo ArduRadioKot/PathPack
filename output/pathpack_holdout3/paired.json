@@ -1,0 +1,1826 @@
+{
+ "pathpack-u vs pathpack-v4 file_recall": {
+  "n": 125,
+  "difference": 0.116,
+  "ci95": [
+   0.056,
+   0.18
+  ],
+  "wins": 18,
+  "ties": 105,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   0.09962406015037593,
+   0.2222222222222222
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.095,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.111,
+    9
+   ],
+   "sympy__sympy": [
+    0.13,
+    23
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-v4 function_recall": {
+  "n": 106,
+  "difference": 0.232592,
+  "ci95": [
+   0.142969,
+   0.318958
+  ],
+  "wins": 35,
+  "ties": 67,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   0.16666666666666666,
+   0.30597014925373134
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.22,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.188,
+    8
+   ],
+   "sympy__sympy": [
+    0.343,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-v4 complete_function_recall": {
+  "n": 106,
+  "difference": 0.225629,
+  "ci95": [
+   0.15566,
+   0.301101
+  ],
+  "wins": 29,
+  "ties": 77,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.1346153846153846,
+   0.25109170305676853
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.257,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.125,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.188,
+    8
+   ],
+   "sympy__sympy": [
+    0.172,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-v4 changed_line_recall": {
+  "n": 99,
+  "difference": 0.195842,
+  "ci95": [
+   0.112488,
+   0.284779
+  ],
+  "wins": 31,
+  "ties": 61,
+  "losses": 7,
+  "ci95_repo_cluster": [
+   0.08666666666666666,
+   0.231102585961921
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.203,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.05,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.056,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.148,
+    9
+   ],
+   "sympy__sympy": [
+    0.26,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-h/nomemory file_recall": {
+  "n": 125,
+  "difference": 0.1296,
+  "ci95": [
+   0.0776,
+   0.1872
+  ],
+  "wins": 20,
+  "ties": 105,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.016129032258064516,
+   0.14731182795698924
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.151,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    9
+   ],
+   "sympy__sympy": [
+    0.13,
+    23
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-h/nomemory function_recall": {
+  "n": 106,
+  "difference": -0.029088,
+  "ci95": [
+   -0.109277,
+   0.049528
+  ],
+  "wins": 12,
+  "ties": 78,
+  "losses": 16,
+  "ci95_repo_cluster": [
+   -0.052742616033755275,
+   0.06851851851851852
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.051,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.125,
+    8
+   ],
+   "sympy__sympy": [
+    0.005,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-h/nomemory complete_function_recall": {
+  "n": 106,
+  "difference": 0.085018,
+  "ci95": [
+   0.02527,
+   0.14881
+  ],
+  "wins": 16,
+  "ties": 86,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   0.02927927927927928,
+   0.11363636363636363
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.089,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    -0.125,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.156,
+    8
+   ],
+   "sympy__sympy": [
+    0.078,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-h/nomemory changed_line_recall": {
+  "n": 99,
+  "difference": -0.032849,
+  "ci95": [
+   -0.113844,
+   0.046425
+  ],
+  "wins": 12,
+  "ties": 69,
+  "losses": 18,
+  "ci95_repo_cluster": [
+   -0.07072829131652661,
+   0.016617994715616747
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.035,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    -0.15,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    -0.056,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.058,
+    9
+   ],
+   "sympy__sympy": [
+    -0.036,
+    17
+   ]
+  }
+ },
+ "pathpack-h/nomemory vs pathpack-v4 file_recall": {
+  "n": 125,
+  "difference": -0.0136,
+  "ci95": [
+   -0.08,
+   0.048
+  ],
+  "wins": 8,
+  "ties": 105,
+  "losses": 12,
+  "ci95_repo_cluster": [
+   -0.04636015325670498,
+   0.18518518518518517
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.056,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.2,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.111,
+    9
+   ],
+   "sympy__sympy": [
+    0.0,
+    23
+   ]
+  }
+ },
+ "pathpack-h/nomemory vs pathpack-v4 function_recall": {
+  "n": 106,
+  "difference": 0.26168,
+  "ci95": [
+   0.176101,
+   0.348832
+  ],
+  "wins": 38,
+  "ties": 65,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   0.13333333333333333,
+   0.30851063829787234
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.271,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.2,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.062,
+    8
+   ],
+   "sympy__sympy": [
+    0.338,
+    17
+   ]
+  }
+ },
+ "pathpack-h/nomemory vs pathpack-v4 complete_function_recall": {
+  "n": 106,
+  "difference": 0.140611,
+  "ci95": [
+   0.072776,
+   0.209007
+  ],
+  "wins": 20,
+  "ties": 85,
+  "losses": 1,
+  "ci95_repo_cluster": [
+   0.046296296296296294,
+   0.1665150136487716
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.168,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.031,
+    8
+   ],
+   "sympy__sympy": [
+    0.093,
+    17
+   ]
+  }
+ },
+ "pathpack-h/nomemory vs pathpack-v4 changed_line_recall": {
+  "n": 99,
+  "difference": 0.228691,
+  "ci95": [
+   0.147793,
+   0.314708
+  ],
+  "wins": 31,
+  "ties": 65,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   0.1136653895274585,
+   0.2638715060492282
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.238,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.2,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.111,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.091,
+    9
+   ],
+   "sympy__sympy": [
+    0.296,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-r/fusion file_recall": {
+  "n": 125,
+  "difference": 0.1196,
+  "ci95": [
+   0.062,
+   0.184
+  ],
+  "wins": 22,
+  "ties": 101,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.06451612903225806,
+   0.15660714285714286
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.166,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    -0.111,
+    9
+   ],
+   "sympy__sympy": [
+    0.087,
+    23
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-r/fusion function_recall": {
+  "n": 106,
+  "difference": -0.014039,
+  "ci95": [
+   -0.083895,
+   0.054245
+  ],
+  "wins": 10,
+  "ties": 84,
+  "losses": 12,
+  "ci95_repo_cluster": [
+   -0.10416666666666667,
+   0.044715447154471545
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.011,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.125,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.062,
+    8
+   ],
+   "sympy__sympy": [
+    -0.01,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-r/fusion complete_function_recall": {
+  "n": 106,
+  "difference": 0.023023,
+  "ci95": [
+   -0.035714,
+   0.084906
+  ],
+  "wins": 9,
+  "ties": 90,
+  "losses": 7,
+  "ci95_repo_cluster": [
+   -0.09791666666666667,
+   0.047038327526132406
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.047,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.062,
+    8
+   ],
+   "sympy__sympy": [
+    0.005,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-r/fusion changed_line_recall": {
+  "n": 99,
+  "difference": -0.015894,
+  "ci95": [
+   -0.078689,
+   0.051446
+  ],
+  "wins": 10,
+  "ties": 76,
+  "losses": 13,
+  "ci95_repo_cluster": [
+   -0.12666666666666665,
+   0.03975044563279858
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.014,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    -0.35,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.037,
+    9
+   ],
+   "sympy__sympy": [
+    0.045,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs bm25 file_recall": {
+  "n": 125,
+  "difference": 0.2996,
+  "ci95": [
+   0.2208,
+   0.3776
+  ],
+  "wins": 41,
+  "ties": 84,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.2545454545454545,
+   0.3902439024390244
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.291,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.5,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.5,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.167,
+    9
+   ],
+   "sympy__sympy": [
+    0.304,
+    23
+   ]
+  }
+ },
+ "pathpack-u vs bm25 function_recall": {
+  "n": 106,
+  "difference": 0.060422,
+  "ci95": [
+   -0.03695,
+   0.155436
+  ],
+  "wins": 23,
+  "ties": 69,
+  "losses": 14,
+  "ci95_repo_cluster": [
+   0.039942753057507156,
+   0.1896551724137931
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.036,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.188,
+    8
+   ],
+   "sympy__sympy": [
+    0.049,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs bm25 complete_function_recall": {
+  "n": 106,
+  "difference": -0.018082,
+  "ci95": [
+   -0.11478,
+   0.076258
+  ],
+  "wins": 18,
+  "ties": 67,
+  "losses": 21,
+  "ci95_repo_cluster": [
+   -0.109375,
+   0.15517241379310345
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.02,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.125,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.188,
+    8
+   ],
+   "sympy__sympy": [
+    -0.176,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs bm25 changed_line_recall": {
+  "n": 99,
+  "difference": 0.023885,
+  "ci95": [
+   -0.066351,
+   0.112725
+  ],
+  "wins": 20,
+  "ties": 63,
+  "losses": 16,
+  "ci95_repo_cluster": [
+   -0.0051198257080609984,
+   0.11206896551724138
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.016,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.05,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.056,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.148,
+    9
+   ],
+   "sympy__sympy": [
+    -0.024,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/noisyor file_recall": {
+  "n": 125,
+  "difference": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "wins": 0,
+  "ties": 125,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.0
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.0,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    9
+   ],
+   "sympy__sympy": [
+    0.0,
+    23
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/noisyor function_recall": {
+  "n": 106,
+  "difference": -0.002358,
+  "ci95": [
+   -0.066824,
+   0.061321
+  ],
+  "wins": 10,
+  "ties": 88,
+  "losses": 8,
+  "ci95_repo_cluster": [
+   -0.032908704883227176,
+   0.11666666666666667
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.039,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.156,
+    8
+   ],
+   "sympy__sympy": [
+    0.049,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/noisyor complete_function_recall": {
+  "n": 106,
+  "difference": 0.021339,
+  "ci95": [
+   -0.02819,
+   0.072552
+  ],
+  "wins": 10,
+  "ties": 90,
+  "losses": 6,
+  "ci95_repo_cluster": [
+   0.004603174603174604,
+   0.11666666666666667
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.002,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.156,
+    8
+   ],
+   "sympy__sympy": [
+    0.02,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/noisyor changed_line_recall": {
+  "n": 99,
+  "difference": 0.009708,
+  "ci95": [
+   -0.042929,
+   0.061504
+  ],
+  "wins": 7,
+  "ties": 86,
+  "losses": 6,
+  "ci95_repo_cluster": [
+   -0.027777777777777776,
+   0.0878136200716846
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.005,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.05,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.123,
+    9
+   ],
+   "sympy__sympy": [
+    -0.044,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/nobundle file_recall": {
+  "n": 125,
+  "difference": 0.004,
+  "ci95": [
+   0.0,
+   0.012
+  ],
+  "wins": 1,
+  "ties": 124,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.0,
+   0.005639097744360902
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.006,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    9
+   ],
+   "sympy__sympy": [
+    0.0,
+    23
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/nobundle function_recall": {
+  "n": 106,
+  "difference": -0.006177,
+  "ci95": [
+   -0.043801,
+   0.028302
+  ],
+  "wins": 4,
+  "ties": 97,
+  "losses": 5,
+  "ci95_repo_cluster": [
+   -0.03125,
+   0.012195121951219513
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.006,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.031,
+    8
+   ],
+   "sympy__sympy": [
+    0.0,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/nobundle complete_function_recall": {
+  "n": 106,
+  "difference": 0.056716,
+  "ci95": [
+   0.017633,
+   0.103886
+  ],
+  "wins": 9,
+  "ties": 95,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.028846153846153848,
+   0.07207073700849635
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.075,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.031,
+    8
+   ],
+   "sympy__sympy": [
+    0.049,
+    17
+   ]
+  }
+ },
+ "pathpack-u vs pathpack-u/nobundle changed_line_recall": {
+  "n": 99,
+  "difference": 0.002974,
+  "ci95": [
+   -0.029798,
+   0.038328
+  ],
+  "wins": 5,
+  "ties": 90,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   -0.06888888888888889,
+   0.019191919191919194
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.009,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    -0.15,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    -0.056,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.012,
+    9
+   ],
+   "sympy__sympy": [
+    0.029,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-v4 file_recall": {
+  "n": 125,
+  "difference": 0.108,
+  "ci95": [
+   0.048,
+   0.168
+  ],
+  "wins": 17,
+  "ties": 106,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   0.09417040358744394,
+   0.2222222222222222
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.095,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.111,
+    9
+   ],
+   "sympy__sympy": [
+    0.087,
+    23
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-v4 function_recall": {
+  "n": 106,
+  "difference": 0.240229,
+  "ci95": [
+   0.150606,
+   0.330189
+  ],
+  "wins": 34,
+  "ties": 68,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   0.16666666666666666,
+   0.2727272727272727
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.243,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.188,
+    8
+   ],
+   "sympy__sympy": [
+    0.294,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-v4 complete_function_recall": {
+  "n": 106,
+  "difference": 0.219789,
+  "ci95": [
+   0.150606,
+   0.295597
+  ],
+  "wins": 29,
+  "ties": 77,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.11805555555555557,
+   0.25389893948845915
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.26,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.125,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.188,
+    8
+   ],
+   "sympy__sympy": [
+    0.123,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-v4 changed_line_recall": {
+  "n": 99,
+  "difference": 0.196179,
+  "ci95": [
+   0.114243,
+   0.286225
+  ],
+  "wins": 32,
+  "ties": 61,
+  "losses": 6,
+  "ci95_repo_cluster": [
+   0.08666666666666666,
+   0.21611456176673569
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.222,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.05,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.056,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.148,
+    9
+   ],
+   "sympy__sympy": [
+    0.192,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-v4 file_recall": {
+  "n": 125,
+  "difference": -0.0096,
+  "ci95": [
+   -0.0696,
+   0.0544
+  ],
+  "wins": 8,
+  "ties": 106,
+  "losses": 11,
+  "ci95_repo_cluster": [
+   -0.034057971014492754,
+   0.15625
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.032,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.111,
+    9
+   ],
+   "sympy__sympy": [
+    -0.043,
+    23
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-v4 function_recall": {
+  "n": 106,
+  "difference": 0.256963,
+  "ci95": [
+   0.182951,
+   0.343329
+  ],
+  "wins": 37,
+  "ties": 66,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   0.13333333333333333,
+   0.2978723404255319
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.267,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.2,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.062,
+    8
+   ],
+   "sympy__sympy": [
+    0.324,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-v4 complete_function_recall": {
+  "n": 106,
+  "difference": 0.144542,
+  "ci95": [
+   0.084569,
+   0.212264
+  ],
+  "wins": 18,
+  "ties": 88,
+  "losses": 0,
+  "ci95_repo_cluster": [
+   0.03488372093023256,
+   0.17925386715195632
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.182,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.031,
+    8
+   ],
+   "sympy__sympy": [
+    0.059,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-v4 changed_line_recall": {
+  "n": 99,
+  "difference": 0.212455,
+  "ci95": [
+   0.138384,
+   0.292253
+  ],
+  "wins": 29,
+  "ties": 69,
+  "losses": 1,
+  "ci95_repo_cluster": [
+   0.10855683269476372,
+   0.23132419208092445
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.228,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.2,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.111,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.082,
+    9
+   ],
+   "sympy__sympy": [
+    0.242,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-u file_recall": {
+  "n": 125,
+  "difference": -0.008,
+  "ci95": [
+   -0.04,
+   0.016
+  ],
+  "wins": 1,
+  "ties": 122,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.03614457831325301,
+   0.0
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.0,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    9
+   ],
+   "sympy__sympy": [
+    -0.043,
+    23
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-u function_recall": {
+  "n": 106,
+  "difference": 0.007637,
+  "ci95": [
+   -0.025382,
+   0.045148
+  ],
+  "wins": 4,
+  "ties": 99,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   -0.0390625,
+   0.021522145976294448
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.023,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    8
+   ],
+   "sympy__sympy": [
+    -0.049,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-u complete_function_recall": {
+  "n": 106,
+  "difference": -0.00584,
+  "ci95": [
+   -0.034591,
+   0.024034
+  ],
+  "wins": 2,
+  "ties": 101,
+  "losses": 3,
+  "ci95_repo_cluster": [
+   -0.0390625,
+   0.00280723643169058
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.003,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    8
+   ],
+   "sympy__sympy": [
+    -0.049,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-u changed_line_recall": {
+  "n": 99,
+  "difference": 0.000337,
+  "ci95": [
+   -0.035522,
+   0.040236
+  ],
+  "wins": 3,
+  "ties": 92,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   -0.054263565891472874,
+   0.01722488038277512
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.018,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    9
+   ],
+   "sympy__sympy": [
+    -0.069,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-h/nomemory file_recall": {
+  "n": 125,
+  "difference": 0.004,
+  "ci95": [
+   -0.04,
+   0.048
+  ],
+  "wins": 5,
+  "ties": 116,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   -0.0875,
+   0.026785714285714284
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.024,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.1,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    -0.25,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    9
+   ],
+   "sympy__sympy": [
+    -0.043,
+    23
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-h/nomemory function_recall": {
+  "n": 106,
+  "difference": -0.004717,
+  "ci95": [
+   -0.044811,
+   0.033019
+  ],
+  "wins": 3,
+  "ties": 99,
+  "losses": 4,
+  "ci95_repo_cluster": [
+   -0.01171875,
+   0.0
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.003,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    8
+   ],
+   "sympy__sympy": [
+    -0.015,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-h/nomemory complete_function_recall": {
+  "n": 106,
+  "difference": 0.003931,
+  "ci95": [
+   -0.046384,
+   0.054245
+  ],
+  "wins": 4,
+  "ties": 97,
+  "losses": 5,
+  "ci95_repo_cluster": [
+   -0.02734375,
+   0.013100436681222707
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.014,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.0,
+    8
+   ],
+   "sympy__sympy": [
+    -0.034,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-h/nomemory vs pathpack-h/nomemory changed_line_recall": {
+  "n": 99,
+  "difference": -0.016236,
+  "ci95": [
+   -0.051684,
+   0.021231
+  ],
+  "wins": 3,
+  "ties": 91,
+  "losses": 5,
+  "ci95_repo_cluster": [
+   -0.04344729344729344,
+   -0.002962962962962963
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    -0.009,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    -0.008,
+    9
+   ],
+   "sympy__sympy": [
+    -0.054,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-r/fusion file_recall": {
+  "n": 125,
+  "difference": 0.1116,
+  "ci95": [
+   0.0536,
+   0.174
+  ],
+  "wins": 21,
+  "ties": 102,
+  "losses": 2,
+  "ci95_repo_cluster": [
+   -0.06451612903225806,
+   0.15415094339622643
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.166,
+    84
+   ],
+   "matplotlib__matplotlib": [
+    0.0,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    -0.111,
+    9
+   ],
+   "sympy__sympy": [
+    0.043,
+    23
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-r/fusion function_recall": {
+  "n": 106,
+  "difference": -0.006402,
+  "ci95": [
+   -0.081199,
+   0.066712
+  ],
+  "wins": 13,
+  "ties": 81,
+  "losses": 12,
+  "ci95_repo_cluster": [
+   -0.125,
+   0.029389880952380956
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.011,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.125,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.062,
+    8
+   ],
+   "sympy__sympy": [
+    -0.059,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-r/fusion complete_function_recall": {
+  "n": 106,
+  "difference": 0.017183,
+  "ci95": [
+   -0.04717,
+   0.084906
+  ],
+  "wins": 10,
+  "ties": 89,
+  "losses": 7,
+  "ci95_repo_cluster": [
+   -0.11875,
+   0.049651567944250866
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.05,
+    72
+   ],
+   "matplotlib__matplotlib": [
+    -0.3,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    4
+   ],
+   "sphinx-doc__sphinx": [
+    0.062,
+    8
+   ],
+   "sympy__sympy": [
+    -0.044,
+    17
+   ]
+  }
+ },
+ "loro:pathpack-u vs pathpack-r/fusion changed_line_recall": {
+  "n": 99,
+  "difference": -0.015558,
+  "ci95": [
+   -0.08778,
+   0.054813
+  ],
+  "wins": 11,
+  "ties": 75,
+  "losses": 13,
+  "ci95_repo_cluster": [
+   -0.1298421807747489,
+   0.01261994159365874
+  ],
+  "repos": 5,
+  "per_repo": {
+   "django__django": [
+    0.004,
+    65
+   ],
+   "matplotlib__matplotlib": [
+    -0.35,
+    5
+   ],
+   "scikit-learn__scikit-learn": [
+    0.0,
+    3
+   ],
+   "sphinx-doc__sphinx": [
+    0.037,
+    9
+   ],
+   "sympy__sympy": [
+    -0.024,
+    17
+   ]
+  }
+ }
+}

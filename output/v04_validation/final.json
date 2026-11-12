@@ -1,0 +1,15 @@
+{
+  "package_version": "0.4.0",
+  "tests_passed": 37,
+  "test_log": "output/v04_validation/tests.log",
+  "notebook_executed_code_cells": 9,
+  "notebook_errors": 0,
+  "dev_tasks": 20,
+  "predictions": 600,
+  "audit_violations": 0,
+  "source_snapshots_verified": true,
+  "notebook_context_matches_frozen_run_for_all_budgets": true,
+  "holdout_count": 60,
+  "holdout_evaluated": false,
+  "historical_results_preserved": true
+}

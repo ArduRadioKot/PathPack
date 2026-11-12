@@ -1,0 +1,9 @@
+# Follow-up check, not the pre-registered v0.7 config.
+# A replacement may enter only when it costs no more than the v0.4 opening chunk.
+whole_max_tokens: 192
+enable_hierarchy: true
+enable_adaptive: true
+enable_graph: true
+enable_diversity: true
+enable_budget: true
+cap_to_opening: true

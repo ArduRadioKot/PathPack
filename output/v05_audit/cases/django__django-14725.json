@@ -1,0 +1,903 @@
+{
+  "instance_id": "django__django-14725",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "E",
+    "F"
+  ],
+  "graph_subtype": "unreached",
+  "illustrative": true,
+  "problem_statement": "Provide a way for model formsets to disallow new object creation\nDescription\n\t\nModel formsets don't provide a way to create an \"edit only\" view of objects. We see users trying to use extra=0 to accomplish this, but that's not reliable as extra is merely meant for the extra number of forms to display. You can add more forms with Javascript (or just send additional post data).\n",
+  "gold_files": [
+    "django/forms/models.py"
+  ],
+  "gold_functions": [
+    {
+      "id": "django/forms/models.py::BaseModelFormSet.save",
+      "qualname": "BaseModelFormSet.save",
+      "path": "django/forms/models.py",
+      "coverage": 0.0,
+      "best_candidate": {
+        "id": "django/forms/models.py::BaseModelFormSet.save::chunk_0",
+        "order": 471,
+        "decision": "after_budget_cutoff",
+        "score": 0.14780838475256033,
+        "utility": 0.011872255160711385,
+        "lexical_score": 0.3786455826914917,
+        "symbol_score": 0.03636363636363636,
+        "graph_score": 0.0,
+        "line_start": 667,
+        "line_end": 679,
+        "tokens_est": 123,
+        "reason": ""
+      }
+    },
+    {
+      "id": "django/forms/models.py::modelformset_factory",
+      "qualname": "modelformset_factory",
+      "path": "django/forms/models.py",
+      "coverage": 0.0,
+      "best_candidate": {
+        "id": "django/forms/models.py::modelformset_factory::chunk_0",
+        "order": null,
+        "decision": "candidate_limit",
+        "score": 0.12848093192415685,
+        "utility": 0.008381171874619573,
+        "lexical_score": 0.2774323739728738,
+        "symbol_score": 0.01818181818181818,
+        "graph_score": 0.0,
+        "line_start": 872,
+        "line_end": 878,
+        "tokens_est": 203,
+        "reason": "candidate_limit"
+      }
+    },
+    {
+      "id": "django/forms/models.py::inlineformset_factory",
+      "qualname": "inlineformset_factory",
+      "path": "django/forms/models.py",
+      "coverage": 0.0,
+      "best_candidate": {
+        "id": "django/forms/models.py::inlineformset_factory::chunk_0",
+        "order": null,
+        "decision": "candidate_limit",
+        "score": 0.12393495502820898,
+        "utility": 0.007822704996198344,
+        "lexical_score": 0.26733020309298966,
+        "symbol_score": 0.01818181818181818,
+        "graph_score": 0.0,
+        "line_start": 1072,
+        "line_end": 1079,
+        "tokens_est": 219,
+        "reason": "candidate_limit"
+      }
+    }
+  ],
+  "changed_lines": {
+    "django/forms/models.py": [
+      679,
+      878,
+      1079
+    ]
+  },
+  "insertion_anchors": {
+    "django/forms/models.py": [
+      898,
+      899,
+      1111,
+      1112
+    ]
+  },
+  "exclusions": [
+    {
+      "path": "django/forms/models.py",
+      "reason": "insertion_only_no_exact_old_changed_line"
+    },
+    {
+      "path": "django/forms/models.py",
+      "reason": "insertion_only_no_exact_old_changed_line"
+    }
+  ],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 2,
+    "changed_lines_outside_function_bodies": [
+      {
+        "path": "django/forms/models.py",
+        "line": 878
+      },
+      {
+        "path": "django/forms/models.py",
+        "line": 1079
+      }
+    ],
+    "removed_lines_out_of_range": [],
+    "class_methods": [
+      "django/forms/models.py::BaseModelFormSet.save"
+    ],
+    "nested_functions": [],
+    "module_level_exclusions": 0,
+    "new_definition_exclusions": 0
+  },
+  "metrics": {
+    "file_recall": 0.0,
+    "function_recall": 0.0,
+    "complete_function_recall": 0.0,
+    "changed_line_recall": 0.0,
+    "label_completeness": "partial"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": 0.0,
+    "insertion_anchor_reason": null,
+    "base_touch_recall": 0.0,
+    "base_touch_reason": null,
+    "relevant_line_density": null,
+    "relevant_line_density_reason": "empty_context",
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 3,
+    "evaluable_anchor_lines": 4,
+    "emitted_nonempty_lines": 0
+  },
+  "selected_files": [
+    "django/contrib/admin/options.py",
+    "django/contrib/admin/sites.py",
+    "django/contrib/admin/utils.py",
+    "django/contrib/auth/admin.py",
+    "django/contrib/sessions/backends/base.py",
+    "django/db/backends/base/creation.py",
+    "django/db/models/fields/reverse_related.py",
+    "django/db/models/query.py",
+    "django/forms/forms.py",
+    "django/forms/formsets.py",
+    "django/http/multipartparser.py",
+    "django/middleware/csrf.py",
+    "django/template/defaulttags.py",
+    "django/utils/tree.py",
+    "django/views/generic/edit.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "django/contrib/auth/admin.py::UserAdmin.add_view::chunk_0",
+      "path": "django/contrib/auth/admin.py",
+      "qualname": "UserAdmin.add_view",
+      "function_id": "django/contrib/auth/admin.py::UserAdmin.add_view",
+      "line_start": 95,
+      "line_end": 99,
+      "tokens_est": 105,
+      "source_spans": [
+        [
+          95,
+          0,
+          33
+        ],
+        [
+          96,
+          0,
+          20
+        ],
+        [
+          97,
+          0,
+          66
+        ],
+        [
+          98,
+          0,
+          72
+        ],
+        [
+          99,
+          0,
+          68
+        ]
+      ]
+    },
+    {
+      "id": "django/utils/tree.py::Node._new_instance::chunk_0",
+      "path": "django/utils/tree.py",
+      "qualname": "Node._new_instance",
+      "function_id": "django/utils/tree.py::Node._new_instance",
+      "line_start": 29,
+      "line_end": 41,
+      "tokens_est": 197,
+      "source_spans": [
+        [
+          29,
+          0,
+          17
+        ],
+        [
+          30,
+          0,
+          74
+        ],
+        [
+          31,
+          0,
+          12
+        ],
+        [
+          32,
+          0,
+          79
+        ],
+        [
+          33,
+          0,
+          77
+        ],
+        [
+          34,
+          0,
+          79
+        ],
+        [
+          35,
+          0,
+          77
+        ],
+        [
+          36,
+          0,
+          78
+        ],
+        [
+          37,
+          0,
+          27
+        ],
+        [
+          38,
+          0,
+          12
+        ],
+        [
+          39,
+          0,
+          49
+        ],
+        [
+          40,
+          0,
+          28
+        ],
+        [
+          41,
+          0,
+          19
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/auth/admin.py::UserAdmin._add_view::chunk_0",
+      "path": "django/contrib/auth/admin.py",
+      "qualname": "UserAdmin._add_view",
+      "function_id": "django/contrib/auth/admin.py::UserAdmin._add_view",
+      "line_start": 101,
+      "line_end": 107,
+      "tokens_est": 157,
+      "source_spans": [
+        [
+          101,
+          0,
+          67
+        ],
+        [
+          102,
+          0,
+          73
+        ],
+        [
+          103,
+          0,
+          76
+        ],
+        [
+          104,
+          0,
+          80
+        ],
+        [
+          105,
+          0,
+          76
+        ],
+        [
+          106,
+          0,
+          69
+        ],
+        [
+          107,
+          0,
+          22
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/admin/utils.py::get_deleted_objects.format_callback::chunk_3",
+      "path": "django/contrib/admin/utils.py",
+      "qualname": "get_deleted_objects.format_callback",
+      "function_id": "django/contrib/admin/utils.py::get_deleted_objects.format_callback",
+      "line_start": 149,
+      "line_end": 151,
+      "tokens_est": 71,
+      "source_spans": [
+        [
+          149,
+          0,
+          67
+        ],
+        [
+          150,
+          0,
+          41
+        ],
+        [
+          151,
+          0,
+          32
+        ]
+      ]
+    },
+    {
+      "id": "django/views/generic/edit.py::FormMixin.get_initial::chunk_0",
+      "path": "django/views/generic/edit.py",
+      "qualname": "FormMixin.get_initial",
+      "function_id": "django/views/generic/edit.py::FormMixin.get_initial",
+      "line_start": 19,
+      "line_end": 21,
+      "tokens_est": 64,
+      "source_spans": [
+        [
+          19,
+          0,
+          27
+        ],
+        [
+          20,
+          0,
+          69
+        ],
+        [
+          21,
+          0,
+          35
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/admin/sites.py::AdminSite.i18n_javascript::chunk_0",
+      "path": "django/contrib/admin/sites.py",
+      "qualname": "AdminSite.i18n_javascript",
+      "function_id": "django/contrib/admin/sites.py::AdminSite.i18n_javascript",
+      "line_start": 355,
+      "line_end": 362,
+      "tokens_est": 125,
+      "source_spans": [
+        [
+          355,
+          0,
+          60
+        ],
+        [
+          356,
+          0,
+          12
+        ],
+        [
+          357,
+          0,
+          68
+        ],
+        [
+          358,
+          0,
+          1
+        ],
+        [
+          359,
+          0,
+          77
+        ],
+        [
+          360,
+          0,
+          21
+        ],
+        [
+          361,
+          0,
+          12
+        ],
+        [
+          362,
+          0,
+          85
+        ]
+      ]
+    },
+    {
+      "id": "django/db/backends/base/creation.py::BaseDatabaseCreation.create_test_db::chunk_5",
+      "path": "django/db/backends/base/creation.py",
+      "qualname": "BaseDatabaseCreation.create_test_db",
+      "function_id": "django/db/backends/base/creation.py::BaseDatabaseCreation.create_test_db",
+      "line_start": 68,
+      "line_end": 72,
+      "tokens_est": 123,
+      "source_spans": [
+        [
+          68,
+          0,
+          54
+        ],
+        [
+          69,
+          0,
+          18
+        ],
+        [
+          70,
+          0,
+          70
+        ],
+        [
+          71,
+          0,
+          80
+        ],
+        [
+          72,
+          0,
+          61
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/sessions/backends/base.py::SessionBase.save::chunk_0",
+      "path": "django/contrib/sessions/backends/base.py",
+      "qualname": "SessionBase.save",
+      "function_id": "django/contrib/sessions/backends/base.py::SessionBase.save",
+      "line_start": 318,
+      "line_end": 324,
+      "tokens_est": 130,
+      "source_spans": [
+        [
+          318,
+          0,
+          39
+        ],
+        [
+          319,
+          0,
+          12
+        ],
+        [
+          320,
+          0,
+          78
+        ],
+        [
+          321,
+          0,
+          74
+        ],
+        [
+          322,
+          0,
+          67
+        ],
+        [
+          323,
+          0,
+          12
+        ],
+        [
+          324,
+          0,
+          92
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/forms.py::BaseForm._post_clean::chunk_0",
+      "path": "django/forms/forms.py",
+      "qualname": "BaseForm._post_clean",
+      "function_id": "django/forms/forms.py::BaseForm._post_clean",
+      "line_start": 433,
+      "line_end": 438,
+      "tokens_est": 81,
+      "source_spans": [
+        [
+          433,
+          0,
+          27
+        ],
+        [
+          434,
+          0,
+          12
+        ],
+        [
+          435,
+          0,
+          80
+        ],
+        [
+          436,
+          0,
+          63
+        ],
+        [
+          437,
+          0,
+          12
+        ],
+        [
+          438,
+          0,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/formsets.py::ManagementForm.clean::chunk_0",
+      "path": "django/forms/formsets.py",
+      "qualname": "ManagementForm.clean",
+      "function_id": "django/forms/formsets.py::ManagementForm.clean",
+      "line_start": 41,
+      "line_end": 47,
+      "tokens_est": 103,
+      "source_spans": [
+        [
+          41,
+          0,
+          21
+        ],
+        [
+          42,
+          0,
+          39
+        ],
+        [
+          43,
+          0,
+          76
+        ],
+        [
+          44,
+          0,
+          26
+        ],
+        [
+          45,
+          0,
+          53
+        ],
+        [
+          46,
+          0,
+          55
+        ],
+        [
+          47,
+          0,
+          28
+        ]
+      ]
+    },
+    {
+      "id": "django/db/models/query.py::prefetch_related_objects::chunk_16",
+      "path": "django/db/models/query.py",
+      "qualname": "prefetch_related_objects",
+      "function_id": "django/db/models/query.py::prefetch_related_objects",
+      "line_start": 1903,
+      "line_end": 1911,
+      "tokens_est": 177,
+      "source_spans": [
+        [
+          1903,
+          0,
+          53
+        ],
+        [
+          1904,
+          0,
+          18
+        ],
+        [
+          1905,
+          0,
+          79
+        ],
+        [
+          1906,
+          0,
+          78
+        ],
+        [
+          1907,
+          0,
+          78
+        ],
+        [
+          1908,
+          0,
+          1
+        ],
+        [
+          1909,
+          0,
+          78
+        ],
+        [
+          1910,
+          0,
+          79
+        ],
+        [
+          1911,
+          0,
+          75
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/admin/options.py::ModelAdmin._create_formsets::chunk_2",
+      "path": "django/contrib/admin/options.py",
+      "qualname": "ModelAdmin._create_formsets",
+      "function_id": "django/contrib/admin/options.py::ModelAdmin._create_formsets",
+      "line_start": 2002,
+      "line_end": 2015,
+      "tokens_est": 141,
+      "source_spans": [
+        [
+          2002,
+          0,
+          52
+        ],
+        [
+          2003,
+          0,
+          62
+        ],
+        [
+          2004,
+          0,
+          83
+        ],
+        [
+          2005,
+          0,
+          48
+        ],
+        [
+          2006,
+          0,
+          1
+        ],
+        [
+          2013,
+          0,
+          1
+        ],
+        [
+          2014,
+          0,
+          80
+        ],
+        [
+          2015,
+          0,
+          75
+        ]
+      ]
+    },
+    {
+      "id": "django/http/multipartparser.py::MultiPartParser.parse::chunk_9",
+      "path": "django/http/multipartparser.py",
+      "qualname": "MultiPartParser.parse",
+      "function_id": "django/http/multipartparser.py::MultiPartParser.parse",
+      "line_start": 183,
+      "line_end": 190,
+      "tokens_est": 134,
+      "source_spans": [
+        [
+          183,
+          0,
+          70
+        ],
+        [
+          184,
+          0,
+          26
+        ],
+        [
+          185,
+          0,
+          1
+        ],
+        [
+          186,
+          0,
+          75
+        ],
+        [
+          187,
+          0,
+          73
+        ],
+        [
+          188,
+          0,
+          90
+        ],
+        [
+          189,
+          0,
+          1
+        ],
+        [
+          190,
+          0,
+          75
+        ]
+      ]
+    },
+    {
+      "id": "django/template/defaulttags.py::regroup::chunk_0",
+      "path": "django/template/defaulttags.py",
+      "qualname": "regroup",
+      "function_id": "django/template/defaulttags.py::regroup",
+      "line_start": 1106,
+      "line_end": 1116,
+      "tokens_est": 120,
+      "source_spans": [
+        [
+          1106,
+          0,
+          14
+        ],
+        [
+          1107,
+          0,
+          28
+        ],
+        [
+          1108,
+          0,
+          8
+        ],
+        [
+          1109,
+          0,
+          59
+        ],
+        [
+          1110,
+          0,
+          1
+        ],
+        [
+          1111,
+          0,
+          72
+        ],
+        [
+          1112,
+          0,
+          75
+        ],
+        [
+          1113,
+          0,
+          69
+        ],
+        [
+          1114,
+          0,
+          16
+        ],
+        [
+          1115,
+          0,
+          1
+        ],
+        [
+          1116,
+          0,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "django/db/models/fields/reverse_related.py::ForeignObjectRel.get_accessor_name::chunk_0",
+      "path": "django/db/models/fields/reverse_related.py",
+      "qualname": "ForeignObjectRel.get_accessor_name",
+      "function_id": "django/db/models/fields/reverse_related.py::ForeignObjectRel.get_accessor_name",
+      "line_start": 192,
+      "line_end": 198,
+      "tokens_est": 166,
+      "source_spans": [
+        [
+          192,
+          0,
+          45
+        ],
+        [
+          193,
+          0,
+          79
+        ],
+        [
+          194,
+          0,
+          68
+        ],
+        [
+          195,
+          0,
+          77
+        ],
+        [
+          196,
+          0,
+          76
+        ],
+        [
+          197,
+          0,
+          75
+        ],
+        [
+          198,
+          0,
+          71
+        ]
+      ]
+    },
+    {
+      "id": "django/middleware/csrf.py::CsrfViewMiddleware.process_view::chunk_6",
+      "path": "django/middleware/csrf.py",
+      "qualname": "CsrfViewMiddleware.process_view",
+      "function_id": "django/middleware/csrf.py::CsrfViewMiddleware.process_view",
+      "line_start": 447,
+      "line_end": 451,
+      "tokens_est": 140,
+      "source_spans": [
+        [
+          447,
+          0,
+          80
+        ],
+        [
+          448,
+          0,
+          78
+        ],
+        [
+          449,
+          0,
+          72
+        ],
+        [
+          450,
+          0,
+          71
+        ],
+        [
+          451,
+          0,
+          77
+        ]
+      ]
+    }
+  ],
+  "context": "# File: django/contrib/auth/admin.py\n# Function: UserAdmin.add_view\n# Lines: 95-99\n# Signature: def add_view(self, request, form_url='', extra_context=None):\n    @sensitive_post_parameters_m\n    @csrf_protect_m\n    def add_view(self, request, form_url='', extra_context=None):\n        with transaction.atomic(using=router.db_for_write(self.model)):\n            return self._add_view(request, form_url, extra_context)\n\n\n# File: django/utils/tree.py\n# Function: Node._new_instance\n# Lines: 29-41\n# Signature: def _new_instance(cls, children=None, connector=None, negated=False):\n    @classmethod\n    def _new_instance(cls, children=None, connector=None, negated=False):\n        \"\"\"\n        Create a new instance of this class when new Nodes (or subclasses) are\n        needed in the internal code in this class. Normally, it just shadows\n        __init__(). However, subclasses with an __init__ signature that aren't\n        an extension of Node.__init__ might need to implement this method to\n        allow a Node to create a new instance of them (if they have any extra\n        setting up to do).\n        \"\"\"\n        obj = Node(children, connector, negated)\n        obj.__class__ = cls\n        return obj\n\n\n# File: django/contrib/auth/admin.py\n# Function: UserAdmin._add_view\n# Lines: 101-107\n# Signature: def _add_view(self, request, form_url='', extra_context=None):\n    def _add_view(self, request, form_url='', extra_context=None):\n        # It's an error for a user to have add permission but NOT change\n        # permission for users. If we allowed such users to add users, they\n        # could create superusers, which would mean they would essentially have\n        # the permission to change users. To avoid the problem entirely, we\n        # disallow users from adding users if they don't have change\n        # permission.\n\n\n# File: django/contrib/admin/utils.py\n# Function: get_deleted_objects.format_callback\n# Lines: 149-151\n# Signature: def format_callback(obj):\n            # Don't display link to edit, because it either has no\n            # admin or is edited inline.\n            return no_edit_link\n\n\n# File: django/views/generic/edit.py\n# Function: FormMixin.get_initial\n# Lines: 19-21\n# Signature: def get_initial(self):\n    def get_initial(self):\n        \"\"\"Return the initial data to use for forms on this view.\"\"\"\n        return self.initial.copy()\n\n\n# File: django/contrib/admin/sites.py\n# Function: AdminSite.i18n_javascript\n# Lines: 355-362\n# Signature: def i18n_javascript(self, request, extra_context=None):\n    def i18n_javascript(self, request, extra_context=None):\n        \"\"\"\n        Display the i18n JavaScript that the Django admin requires.\n\n        `extra_context` is unused but present for consistency with the other\n        admin views.\n        \"\"\"\n        return JavaScriptCatalog.as_view(packages=['django.contrib.admin'])(request)\n\n\n# File: django/db/backends/base/creation.py\n# Function: BaseDatabaseCreation.create_test_db\n# Lines: 68-72\n# Signature: def create_test_db(self, verbosity=1, autoclobber=False, serialize=True, keepdb=False):\n                    for app in apps.get_app_configs()\n                }\n            # We report migrate messages at one level lower than that\n            # requested. This ensures we don't get flooded with messages during\n            # testing (unless you really ask to be flooded).\n\n\n# File: django/contrib/sessions/backends/base.py\n# Function: SessionBase.save\n# Lines: 318-324\n# Signature: def save(self, must_create=False):\n    def save(self, must_create=False):\n        \"\"\"\n        Save the session data. If 'must_create' is True, create a new session\n        object (or raise CreateError). Otherwise, only update an existing\n        object and don't create one (raise UpdateError if needed).\n        \"\"\"\n        raise NotImplementedError('subclasses of SessionBase must provide a save() method')\n\n\n# File: django/forms/forms.py\n# Function: BaseForm._post_clean\n# Lines: 433-438\n# Signature: def _post_clean(self):\n    def _post_clean(self):\n        \"\"\"\n        An internal hook for performing additional cleaning after form cleaning\n        is complete. Used for model validation in model forms.\n        \"\"\"\n        pass\n\n\n# File: django/forms/formsets.py\n# Function: ManagementForm.clean\n# Lines: 41-47\n# Signature: def clean(self):\n    def clean(self):\n        cleaned_data = super().clean()\n        # When the management form is invalid, we don't know how many forms\n        # were submitted.\n        cleaned_data.setdefault(TOTAL_FORM_COUNT, 0)\n        cleaned_data.setdefault(INITIAL_FORM_COUNT, 0)\n        return cleaned_data\n\n\n# File: django/db/models/query.py\n# Function: prefetch_related_objects\n# Lines: 1903-1911\n# Signature: def prefetch_related_objects(model_instances, *related_lookups):\n                followed_descriptors.add(descriptor)\n            else:\n                # Either a singly related object that has already been fetched\n                # (e.g. via select_related), or hopefully some other property\n                # that doesn't support prefetching but needs to be traversed.\n\n                # We replace the current list of parent objects with the list\n                # of related objects, filtering out empty or missing values so\n                # that we can continue with nullable or reverse relations.\n\n\n# File: django/contrib/admin/options.py\n# Function: ModelAdmin._create_formsets\n# Lines: 2002-2015\n# Signature: def _create_formsets(self, request, obj, change):\n            if prefixes[prefix] != 1 or not prefix:\n                prefix = \"%s-%s\" % (prefix, prefixes[prefix])\n            formset_params = self.get_formset_kwargs(request, obj, inline, prefix)\n            formset = FormSet(**formset_params)\n\n\n            # Bypass validation of each view-only inline form (since the form's\n            # data won't be in request.POST), unless the form was deleted.\n\n\n# File: django/http/multipartparser.py\n# Function: MultiPartParser.parse\n# Lines: 183-190\n# Signature: def parse(self):\n                            'settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.'\n                        )\n\n                    # Avoid reading more than DATA_UPLOAD_MAX_MEMORY_SIZE.\n                    if settings.DATA_UPLOAD_MAX_MEMORY_SIZE is not None:\n                        read_size = settings.DATA_UPLOAD_MAX_MEMORY_SIZE - num_bytes_read\n\n                    # This is a post field, we can just set it in the post\n\n\n# File: django/template/defaulttags.py\n# Function: regroup\n# Lines: 1106-1116\n# Signature: def regroup(parser, token):\n@register.tag\ndef regroup(parser, token):\n    \"\"\"\n    Regroup a list of alike objects by a common attribute.\n\n    This complex tag is best illustrated by use of an example: say that\n    ``musicians`` is a list of ``Musician`` objects that have ``name`` and\n    ``instrument`` attributes, and you'd like to display a list that\n    looks like:\n\n        * Guitar:\n\n\n# File: django/db/models/fields/reverse_related.py\n# Function: ForeignObjectRel.get_accessor_name\n# Lines: 192-198\n# Signature: def get_accessor_name(self, model=None):\n    def get_accessor_name(self, model=None):\n        # This method encapsulates the logic that decides what name to give an\n        # accessor descriptor that retrieves related many-to-one or\n        # many-to-many objects. It uses the lowercased object_name + \"_set\",\n        # but this can be overridden with the \"related_name\" option. Due to\n        # backwards compatibility ModelForms need to be able to provide an\n        # alternate model. See BaseInlineFormSet.get_default_prefix().\n\n\n# File: django/middleware/csrf.py\n# Function: CsrfViewMiddleware.process_view\n# Lines: 447-452\n# Signature: def process_view(self, request, callback, callback_args, callback_kwargs):\n            # we're using. So the MITM can circumvent the CSRF protection. This\n            # is true for any HTTP connection, but anyone using HTTPS expects\n            # better! For this reason, for https://example.com/ we need\n            # additional protection that treats http://example.com/ as\n            # completely untrusted. Under HTTPS, Barth et al. found that the\n",
+  "summary_ru": "Случаи E, F. File Recall=0.0, Function Recall=0.0, Changed Line Recall=0.0. Лучший чанк django/forms/models.py::BaseModelFormSet.save: order=471, decision=after_budget_cutoff, score=0.14780838475256033, lexical=0.3786455826914917, graph=0.0, строки 667-679. Лучший чанк django/forms/models.py::modelformset_factory: order=None, decision=candidate_limit, score=0.12848093192415685, lexical=0.2774323739728738, graph=0.0, строки 872-878. Лучший чанк django/forms/models.py::inlineformset_factory: order=None, decision=candidate_limit, score=0.12393495502820898, lexical=0.26733020309298966, graph=0.0, строки 1072-1079. Граф: unreached."
+}

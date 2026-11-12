@@ -1,0 +1,6 @@
+method,queries,candidate_sec,graph_sec,file_rank_sec,chunk_score_sec,diversity_sec,anchor_sec,pack_stream_sec,prefix_sec,query_sec
+pathpack-v8,20,0.9487175520451274,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9487175520451274
+pathpack-v8/no-adaptive,20,0.9445892520365305,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9445892520365305
+pathpack-v8/no-deepen,20,0.5827295063645579,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5827295063645579
+pathpack-v8/no-diversity,20,0.4873126436257735,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4873126436257735
+pathpack-v8/no-graph,20,1.0008449459564872,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0008449459564872

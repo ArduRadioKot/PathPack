@@ -1,0 +1,13 @@
+{
+ "written_before_any_llm_answer_was_scored": true,
+ "model": "gemma4:e2b-mlx via local Ollama, temperature 0, seed 0, num_ctx 8192, JSON output",
+ "task": "Given the issue and the packed 2048-token context of a method, name the one function to edit.",
+ "metrics": "llm_file_acc: named file is a gold file. llm_function_acc: named function is a gold function in that file (tasks with at least one gold function).",
+ "sets": {
+  "holdout2": "51 tasks, methods bm25, pathpack-v4, pathpack-r/fusion, pathpack-h/nomemory, pathpack-u",
+  "holdout1": "100 tasks, methods bm25, pathpack-v4, pathpack-r/fusion, pathpack-h/nomemory (PathPack-U was never run there)",
+  "holdout3": "125 tasks, methods bm25, pathpack-v4, pathpack-r/fusion, pathpack-h/nomemory, pathpack-u; added 2026-11-12 before any holdout3 answer was generated; same prompt, model and comparisons"
+ },
+ "primary_comparisons": "each method minus pathpack-v4, paired bootstrap over tasks, 2000 iterations, seed 42",
+ "limits": "This is localization by the LLM, not repair. No patch is generated and no test is run. Retrieval contexts were already scored on these sets; the LLM answers were not."
+}

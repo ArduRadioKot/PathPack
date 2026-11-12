@@ -1,0 +1,20 @@
+# PathPack v0.9 splice. Written before this measurement.
+# Adding name_prior to every score (configs/pathpack_v09_name.yaml) raised
+# File Recall at 2048 from 0.725 to 0.950, but Changed Line Recall fell from
+# 0.148 to 0.095 because short mild name matches filled the whole budget.
+# This config does not add that term to the score. The v0.4 order is kept.
+# After the chunks that fill the first 1024 tokens, at most two functions
+# are inserted: those whose longest identifier of at least 8 characters
+# occurs in the query and belongs to at most 5 functions. One chunk each,
+# the one with the highest lexical score. Graph depth, pool and coverage
+# bonus stay at the v0.4 defaults.
+per_file_pool: 0
+coverage_bonus: 0
+name_prior: 0
+name_df_max: 0.01
+name_min_len: 8
+name_df_limit: 5
+name_inserts: 2
+anchor_tokens: 1024
+enable_graph: true
+enable_diversity: true

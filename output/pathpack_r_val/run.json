@@ -1,0 +1,732 @@
+{
+  "schema": "pathpack-r",
+  "code_sha256": "e82d4ee9f694217ea18d27d72a16011b6b1d5fd3e54b6cd9e28f2b5006a9379c",
+  "split": "validation",
+  "seed": 42,
+  "budgets": [
+    1024,
+    2048,
+    4096
+  ],
+  "methods": [
+    "bm25",
+    "pathpack-v4",
+    "pathpack-v10e",
+    "pathpack-r",
+    "pathpack-r/fusion",
+    "pathpack-r/reranker-graph"
+  ],
+  "token_counter": "utf8_bytes_div4_ceil_serialized_context_v1",
+  "config": {
+    "lexical_limit": 80,
+    "symbol_limit": 256,
+    "semantic_limit": 40,
+    "graph_limit": 64,
+    "graph_hops": 1,
+    "graph_seeds": 8,
+    "max_chunks_per_function": 8,
+    "semantic_model": "microsoft/unixcoder-base",
+    "semantic_revision": "5604afdc964f6c53782a6813140ade5216b99006",
+    "semantic_max_chars": 1200,
+    "semantic_index_cap": 4096,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "reranker_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "reranker_max_chars": 1200,
+    "reranker_query_chars": 1500,
+    "reranker_batch": 64,
+    "active_rounds": 2,
+    "shortlist": 6,
+    "max_new_per_round": 12,
+    "expand_lexical": 0.25,
+    "expand_semantic": 0.35,
+    "redirect_factor": 0.85,
+    "relative_floor": 0.35,
+    "min_relevance": 0.0,
+    "max_overlap": 0.85,
+    "min_marginal": 0.02,
+    "necessity_bonus": 0.15,
+    "reject_ratio": 0.5,
+    "swap_passes": 2,
+    "swap_candidates": 8,
+    "fusion_lexical": 0.4,
+    "fusion_symbol": 0.25,
+    "fusion_semantic": 0.2,
+    "fusion_graph": 0.15,
+    "gemma_tokenizer": "google/gemma-2-2b",
+    "gemma_revision": ""
+  },
+  "v4_config": {
+    "target_chunk_tokens": 128,
+    "max_chunk_tokens": 256,
+    "min_chunk_tokens": 32,
+    "chunk_overlap_lines": 2,
+    "lexical_weight": 0.45,
+    "symbol_weight": 0.2,
+    "graph_weight": 0.25,
+    "diversity_weight": 0.1,
+    "redundancy_strength": 0.5,
+    "file_diversity_exponent": 1.0,
+    "cost_offset": 32.0,
+    "cost_exponent": 0.5,
+    "hops": 2,
+    "seeds": 3,
+    "distance_decay": 0.8,
+    "edge_weights": {
+      "calls": 1.0,
+      "imports": 0.45,
+      "inherits": 0.65,
+      "defines": 0.22
+    },
+    "candidate_limit": 512,
+    "min_relevance": 0.0,
+    "enable_graph": true,
+    "enable_diversity": true,
+    "enable_chunking": true,
+    "enable_symbol": true,
+    "enable_cost": true,
+    "graph_direction": "both"
+  },
+  "v10e_config": {
+    "mode": "joint",
+    "nested": false,
+    "enable_structural": true,
+    "enable_semantic": true,
+    "bm25_limit": 64,
+    "symbol_limit": 64,
+    "path_limit": 32,
+    "graph_limit": 48,
+    "test_limit": 8,
+    "graph_hops": 1,
+    "alpha": 1.0,
+    "beta": 0.0,
+    "gamma": 0.15,
+    "delta": 0.5,
+    "repeat_weight": 0.35,
+    "min_neighbor_lexical": 0.15,
+    "beam_width": 1,
+    "beam_expand": 8,
+    "timeout_sec": 8.0,
+    "lexical_weight": 0.5,
+    "symbol_weight": 0.4,
+    "graph_weight": 0.3,
+    "repo_weight": 0.25,
+    "min_utility": 0.12
+  },
+  "issues": [
+    {
+      "instance_id": "astropy__astropy-13977",
+      "repo": "astropy/astropy",
+      "base_commit": "5250b2442501e6c671c6b380536f1edb352602d1",
+      "split": "validation"
+    },
+    {
+      "instance_id": "astropy__astropy-14598",
+      "repo": "astropy/astropy",
+      "base_commit": "80c3854a5f4f4a6ab86c03d9db7854767fcd83c1",
+      "split": "validation"
+    },
+    {
+      "instance_id": "astropy__astropy-14995",
+      "repo": "astropy/astropy",
+      "base_commit": "b16c7d12ccbc7b2d20364b89fb44285bcbfede54",
+      "split": "validation"
+    },
+    {
+      "instance_id": "astropy__astropy-8872",
+      "repo": "astropy/astropy",
+      "base_commit": "b750a0e6ee76fb6b8a099a4d16ec51977be46bf6",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-10914",
+      "repo": "django/django",
+      "base_commit": "e7fd69d051eaa67cb17f172a39b57253e9cb831a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-10973",
+      "repo": "django/django",
+      "base_commit": "ddb293685235fd09e932805771ae97f72e817181",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11119",
+      "repo": "django/django",
+      "base_commit": "d4df5e1b0b1c643fe0fc521add0236764ec8e92a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11133",
+      "repo": "django/django",
+      "base_commit": "879cc3da6249e920b8d54518a0ae06de835d7373",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11138",
+      "repo": "django/django",
+      "base_commit": "c84b91b7603e488f7171fdff8f08368ef3d6b856",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11276",
+      "repo": "django/django",
+      "base_commit": "28d5262fa3315690395f04e3619ed554dbaf725b",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11299",
+      "repo": "django/django",
+      "base_commit": "6866c91b638de5368c18713fa851bfe56253ea55",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11400",
+      "repo": "django/django",
+      "base_commit": "1f8382d34d54061eddc41df6994e20ee38c60907",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11603",
+      "repo": "django/django",
+      "base_commit": "f618e033acd37d59b536d6e6126e6c5be18037f6",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11728",
+      "repo": "django/django",
+      "base_commit": "05457817647368be4b019314fcc655445a5b4c0c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11749",
+      "repo": "django/django",
+      "base_commit": "350123f38c2b6217c38d70bfbd924a9ba3df1289",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-11880",
+      "repo": "django/django",
+      "base_commit": "06909fe084f87a65459a83bd69d7cdbe4fce9a7c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12209",
+      "repo": "django/django",
+      "base_commit": "5a68f024987e6d16c2626a31bf653a2edddea579",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12325",
+      "repo": "django/django",
+      "base_commit": "29c126bb349526b5f1cd78facbe9f25906f18563",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12406",
+      "repo": "django/django",
+      "base_commit": "335c9c94acf263901fb023404408880245b0c4b4",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12663",
+      "repo": "django/django",
+      "base_commit": "fa5e7e46d875d4143510944f19d79df7b1739bab",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12713",
+      "repo": "django/django",
+      "base_commit": "5b884d45ac5b76234eca614d90c83b347294c332",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12741",
+      "repo": "django/django",
+      "base_commit": "537d422942b53bc0a2b6a51968f379c0de07793c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-12774",
+      "repo": "django/django",
+      "base_commit": "67f9d076cfc1858b94f9ed6d1a5ce2327dcc8d0d",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13023",
+      "repo": "django/django",
+      "base_commit": "f83b44075dafa429d59e8755aa47e15577cc49f9",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13033",
+      "repo": "django/django",
+      "base_commit": "a59de6e89e8dc1f3e71c9a5a5bbceb373ea5247e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13109",
+      "repo": "django/django",
+      "base_commit": "fbe82f82555bc25dccb476c749ca062f0b522be3",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13297",
+      "repo": "django/django",
+      "base_commit": "8954f255bbf5f4ee997fd6de62cb50fc9b5dd697",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13363",
+      "repo": "django/django",
+      "base_commit": "76e0151ea0e0f56dca66cee846a78b89346d2c4c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13516",
+      "repo": "django/django",
+      "base_commit": "b7da588e883e12b8ac3bb8a486e654e30fc1c6c8",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-13658",
+      "repo": "django/django",
+      "base_commit": "0773837e15bb632afffb6848a58c59a791008fa1",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14007",
+      "repo": "django/django",
+      "base_commit": "619f26d2895d121854b1bed1b535d42b722e2eba",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14011",
+      "repo": "django/django",
+      "base_commit": "e4430f22c8e3d29ce5d9d0263fba57121938d06d",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14238",
+      "repo": "django/django",
+      "base_commit": "30e123ed351317b7527f632b3b7dc4e81e850449",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14376",
+      "repo": "django/django",
+      "base_commit": "d06c5b358149c02a62da8a5469264d05f29ac659",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14434",
+      "repo": "django/django",
+      "base_commit": "5e04e84d67da8163f365e9f5fcd169e2630e2873",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14534",
+      "repo": "django/django",
+      "base_commit": "910ecd1b8df7678f45c3d507dde6bcb1faafa243",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14672",
+      "repo": "django/django",
+      "base_commit": "00ea883ef56fb5e092cbe4a6f7ff2e7470886ac4",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-14915",
+      "repo": "django/django",
+      "base_commit": "903aaa35e5ceaa33bfc9b19b7f6da65ce5a91dd4",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15037",
+      "repo": "django/django",
+      "base_commit": "dab48b7482295956973879d15bfd4d3bb0718772",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15128",
+      "repo": "django/django",
+      "base_commit": "cb383753c0e0eb52306e1024d32a782549c27e61",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15554",
+      "repo": "django/django",
+      "base_commit": "59ab3fd0e9e606d7f0f7ca26609c06ee679ece97",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15561",
+      "repo": "django/django",
+      "base_commit": "6991880109e35c879b71b7d9d9c154baeec12b89",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15572",
+      "repo": "django/django",
+      "base_commit": "0b31e024873681e187b574fe1c4afe5e48aeeecf",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15814",
+      "repo": "django/django",
+      "base_commit": "5eb6a2b33d70b9889e1cafa12594ad6f80773d3a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15851",
+      "repo": "django/django",
+      "base_commit": "b4817d20b9e55df30be0b1b2ca8c8bb6d61aab07",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15973",
+      "repo": "django/django",
+      "base_commit": "2480554dc4ada4ecf3f6a08e318735a2e50783f3",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-15987",
+      "repo": "django/django",
+      "base_commit": "7e6b537f5b92be152779fc492bb908d27fe7c52a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16082",
+      "repo": "django/django",
+      "base_commit": "bf47c719719d0e190a99fa2e7f959d5bbb7caf8a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16136",
+      "repo": "django/django",
+      "base_commit": "19e6efa50b603af325e7f62058364f278596758f",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16315",
+      "repo": "django/django",
+      "base_commit": "7d5329852f19c6ae78c6f6f3d3e41835377bf295",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16333",
+      "repo": "django/django",
+      "base_commit": "60a7bd89860e504c0c33b02c78edcac87f6d1b5a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16429",
+      "repo": "django/django",
+      "base_commit": "6c86495bcee22eac19d7fb040b2988b830707cbd",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16454",
+      "repo": "django/django",
+      "base_commit": "1250483ebf73f7a82ff820b94092c63ce4238264",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16485",
+      "repo": "django/django",
+      "base_commit": "39f83765e12b0e5d260b7939fc3fe281d879b279",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16612",
+      "repo": "django/django",
+      "base_commit": "55bcbd8d172b689811fae17cde2f09218dd74e9c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "django__django-16819",
+      "repo": "django/django",
+      "base_commit": "0b0998dc151feb77068e2387c34cc50ef6b356ae",
+      "split": "validation"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "c6c7ec1978c22ae2c704555a873d0ec6e1e2eaa8",
+      "split": "validation"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23412",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "f06c2c3abdaf4b90285ce5ca7fedbb8ace715911",
+      "split": "validation"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "af39f1edffcd828f05cfdd04f2e59506bb4a27bc",
+      "split": "validation"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "8f0003ae902952372824c9917975fb372c026a42",
+      "split": "validation"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "6091437be9776139d3672cde28a19cbe6c09dcd5",
+      "split": "validation"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25332",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "66ba515e671638971bd11a34cff12c107a437e0b",
+      "split": "validation"
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "repo": "pydata/xarray",
+      "base_commit": "851dadeb0338403e5021c3fbe80cbc9127ee672d",
+      "split": "validation"
+    },
+    {
+      "instance_id": "pydata__xarray-6992",
+      "repo": "pydata/xarray",
+      "base_commit": "45c0a114e2b7b27b83c9618bc05b36afac82183c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "repo": "pydata/xarray",
+      "base_commit": "41fef6f1352be994cd90056d47440fe9aa4c068f",
+      "split": "validation"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-6197",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "e856638ba086fcf5bebf1bebea32d5cf78de87b4",
+      "split": "validation"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7490",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "7f7a36478abe7dd1fa993b115d22606aa0e35e88",
+      "split": "validation"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "422685d0bdc110547535036c1ff398b5e1c44145",
+      "split": "validation"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "97523985b39ecde369d83352d7c3baf403b60a22",
+      "split": "validation"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10908",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "67d06b18c68ee4452768f8a1e868565dd4354abf",
+      "split": "validation"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "b34751b7ed02b2cfcc36037fb729d4360480a299",
+      "split": "validation"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14629",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-15100",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "af8a6e592a1a15d92d77011856d5aa0ec4db4c6c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7462",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "b3e26a6c851133b82b50f4b68b53692076574d13",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8035",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "5e6da19f0e44a0ae83944fb6ce18f18f781e1a6e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8056",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "e188d56ed1248dead58f3f8018c0e9a3f99193f7",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8269",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "1e2ccd8f0eca0870cf6f8fce6934e2da8eba9b72",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8459",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "68aa4fb29e7dfe521749e1e14f750d7afabb3481",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8475",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "3ea1ec84cc610f7a9f4f6b354e264565254923ff",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9461",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "939c7bb7ff7c53a4d27df067cea637540f0e1dad",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9591",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "9ed054279aeffd5b1d0642e2d24a8800389de29f",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-11618",
+      "repo": "sympy/sympy",
+      "base_commit": "360290c4c401e386db60723ddb0109ed499c9f6e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-12096",
+      "repo": "sympy/sympy",
+      "base_commit": "d7c3045115693e887bcd03599b7ca4650ac5f2cb",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-12419",
+      "repo": "sympy/sympy",
+      "base_commit": "479939f8c65c8c2908bbedc959549a257a7c0b0b",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-13091",
+      "repo": "sympy/sympy",
+      "base_commit": "d1320814eda6549996190618a21eaf212cfd4d1e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-13798",
+      "repo": "sympy/sympy",
+      "base_commit": "7121bdf1facdd90d05b6994b4c2e5b2865a4638a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-13974",
+      "repo": "sympy/sympy",
+      "base_commit": "84c125972ad535b2dfb245f8d311d347b45e5b8a",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-14531",
+      "repo": "sympy/sympy",
+      "base_commit": "205da797006360fc629110937e39a19c9561313e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-15875",
+      "repo": "sympy/sympy",
+      "base_commit": "b506169ad727ee39cb3d60c8b3ff5e315d443d8e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-16766",
+      "repo": "sympy/sympy",
+      "base_commit": "b8fe457a02cc24b3470ff678d0099c350b7fef43",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-17630",
+      "repo": "sympy/sympy",
+      "base_commit": "58e78209c8577b9890e957b624466e5beed7eb08",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "repo": "sympy/sympy",
+      "base_commit": "ba80d1e493f21431b4bf729b3e0452cd47eb9566",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-19495",
+      "repo": "sympy/sympy",
+      "base_commit": "25fbcce5b1a4c7e3956e6062930f4a44ce95a632",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-19637",
+      "repo": "sympy/sympy",
+      "base_commit": "63f8f465d48559fecb4e4bf3c48b75bf15a3e0ef",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-20801",
+      "repo": "sympy/sympy",
+      "base_commit": "e11d3fed782146eebbffdc9ced0364b223b84b6c",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-21930",
+      "repo": "sympy/sympy",
+      "base_commit": "de446c6d85f633271dfec1452f6f28ea783e293f",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-22456",
+      "repo": "sympy/sympy",
+      "base_commit": "a3475b3f9ac662cd425157dd3bdb93ad7111c090",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "repo": "sympy/sympy",
+      "base_commit": "3ff4717b6aef6086e78f01cdfa06f64ae23aed7e",
+      "split": "validation"
+    },
+    {
+      "instance_id": "sympy__sympy-24539",
+      "repo": "sympy/sympy",
+      "base_commit": "193e3825645d93c73e31cdceb6d742cc6919624d",
+      "split": "validation"
+    }
+  ],
+  "snapshots": "/Users/aleksandrvorobev/Downloads/CodeGraph-RAG-v0.2/data/swebench/snapshots",
+  "status": "retrieving",
+  "reranker": {
+    "status": "available",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "code_specialized": false,
+    "training_data": "MS MARCO passages, not source code",
+    "note": "Zero-shot natural-language cross-encoder used on an issue/code pair. Not a code-specialized reranker.",
+    "code_probe": {
+      "matching_name": 0.006101314319710102,
+      "unrelated": 1.2978221163612918e-05,
+      "matching_name_ranks_higher": true,
+      "limitation": "The probe only checks that the model accepts code text and prefers a named function on one synthetic pair."
+    }
+  },
+  "hardware": {
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "python": "3.12.2 (v3.12.2:6abddd9f6a, Feb  6 2024, 17:02:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "note": "v1.0e changes only the stop rule. PathPack-R does not read the gold patch."
+}

@@ -1,0 +1,10 @@
+{
+  "parent_version": "0.3.0",
+  "artifacts_sha256": {
+    "output/benchmark/issues.jsonl": "286842c74fdd1fb3616fe2ba9de17d84603c127f7271e5d21cb67a9fd86254a5",
+    "output/benchmark/main_results.csv": "c0cdb71673ea90a4f4570f5825ba64e7db73a7ba48d5c2544083f14795920a29",
+    "output/benchmark/v03/main_results.csv": "ad7c00cef6a601631e4c404b92529d86117ddb5b42a218845501c827a1a1c346",
+    "output/benchmark/v03/predictions_dev.jsonl": "c3b534e03e0c9c81114ac83b835196ced930774a7d1a3a3e5e6300f42267258a"
+  },
+  "note": "Existing v0.2/v0.3 artifacts preserved. New counter/coverage protocol requires rerunning all baselines; historical metric values are not mixed."
+}

@@ -1,0 +1,319 @@
+{
+  "groups": {
+    "bm25@110": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "bm25@160": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.25,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "bm25@45": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "bm25@70": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "graph-expand@110": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 1.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "graph-expand@160": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 1.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "graph-expand@45": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "graph-expand@70": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.25,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack-v3@110": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.75,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack-v3@160": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 1.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack-v3@45": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack-v3@70": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack@110": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 1.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack@160": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 1.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack@45": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    },
+    "pathpack@70": {
+      "tasks": 4,
+      "file_evaluable": 4,
+      "file_recall": 0.0,
+      "function_evaluable": 0,
+      "function_recall": null,
+      "file_hit_function_miss": 0
+    }
+  },
+  "budget_violations": [],
+  "duplicate_selection": [],
+  "nested_violations": [
+    {
+      "instance_id": "demo-login",
+      "method": "graph-expand",
+      "small": "graph-expand@70",
+      "large": "graph-expand@110",
+      "lost": [
+        "misc.py::login_event_log"
+      ]
+    },
+    {
+      "instance_id": "demo-login",
+      "method": "pathpack",
+      "small": "pathpack@70",
+      "large": "pathpack@110",
+      "lost": [
+        "misc.py::login_event_log"
+      ]
+    }
+  ],
+  "comparisons": {
+    "file_recall:45:pathpack_vs_bm25": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "file_recall:45:pathpack_vs_graph-expand": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "file_recall:45:pathpack_vs_pathpack": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "file_recall:70:pathpack_vs_bm25": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "file_recall:70:pathpack_vs_graph-expand": {
+      "n": 4,
+      "difference": -0.25,
+      "ci95": [
+        -0.75,
+        0.0
+      ]
+    },
+    "file_recall:70:pathpack_vs_pathpack": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "file_recall:110:pathpack_vs_bm25": {
+      "n": 4,
+      "difference": 0.75,
+      "ci95": [
+        0.25,
+        1.0
+      ]
+    },
+    "file_recall:110:pathpack_vs_graph-expand": {
+      "n": 4,
+      "difference": -0.25,
+      "ci95": [
+        -0.75,
+        0.0
+      ]
+    },
+    "file_recall:110:pathpack_vs_pathpack": {
+      "n": 4,
+      "difference": -0.25,
+      "ci95": [
+        -0.75,
+        0.0
+      ]
+    },
+    "file_recall:160:pathpack_vs_bm25": {
+      "n": 4,
+      "difference": 0.75,
+      "ci95": [
+        0.25,
+        1.0
+      ]
+    },
+    "file_recall:160:pathpack_vs_graph-expand": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "file_recall:160:pathpack_vs_pathpack": {
+      "n": 4,
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "function_recall:45:pathpack_vs_bm25": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:45:pathpack_vs_graph-expand": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:45:pathpack_vs_pathpack": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:70:pathpack_vs_bm25": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:70:pathpack_vs_graph-expand": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:70:pathpack_vs_pathpack": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:110:pathpack_vs_bm25": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:110:pathpack_vs_graph-expand": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:110:pathpack_vs_pathpack": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:160:pathpack_vs_bm25": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:160:pathpack_vs_graph-expand": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    },
+    "function_recall:160:pathpack_vs_pathpack": {
+      "n": 0,
+      "difference": null,
+      "ci95": null
+    }
+  },
+  "diagnostic_cases": [],
+  "notes": [
+    "Gold functions optional: if absent, function metrics are not calculated.",
+    "Nestedness is a desirable protocol property, not required of all algorithms.",
+    "Paired bootstrap confidence intervals describe sampling uncertainty, not proof of novelty.",
+    "Run on dev for development. Hold test out until methodology is frozen."
+  ]
+}

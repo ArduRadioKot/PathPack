@@ -1,0 +1,32 @@
+{
+ "written": "2026-11-11T21:56:00.305460",
+ "written_before_any_holdout3_measurement": true,
+ "source_tree_sha256": "bef75f416e44f19895f0eb38cb73fffc859327d7225e5e406272800eceb9c2f8",
+ "models": {
+  "model_history": "ae4136b30af0aafa2a9fb94cce1aea978f4146ca88e183ccab0b991fa8e08fee",
+  "model_hier": "3c081f2ddc15d396ee9afa68a6f5314b24b5b8674feb183302480c7764578ead"
+ },
+ "loro_models": "output/pathpack_e/loro/<repo>/ ; trained by scripts/fit_loro.py on history replay of the other 11 repositories; hashes are appended to this file by the chain before the first prediction",
+ "holdout3_manifest": "output/pathpack_r_splits_v2/final_holdout3_manifest.json",
+ "methods_in_repo": [
+  "bm25",
+  "pathpack-v4",
+  "pathpack-r/fusion",
+  "pathpack-h/nomemory",
+  "pathpack-u",
+  "pathpack-u/nobundle",
+  "pathpack-u/noisyor"
+ ],
+ "methods_loro": [
+  "pathpack-h/nomemory",
+  "pathpack-u"
+ ],
+ "hypotheses": {
+  "H1": "pathpack-u > pathpack-v4 on File, Function, Complete, ChangedLine (budget 2048)",
+  "H2": "pathpack-u > pathpack-h/nomemory on File and on Complete",
+  "H3": "leave-one-repo-out pathpack-u and pathpack-h/nomemory > pathpack-v4 on Function, Complete, ChangedLine; the difference LORO minus in-repo is reported, expected small",
+  "ablation": "pathpack-u vs pathpack-u/noisyor (learned function/file probabilities vs noisy-OR) and vs pathpack-u/nobundle are reported without a claimed direction"
+ },
+ "statistics": "paired bootstrap over tasks (2000, seed 42) and over repositories (4000, seed 42); 5 repositories only, 84 of 125 tasks are django",
+ "note": "Run once. No configuration or code change after this file."
+}

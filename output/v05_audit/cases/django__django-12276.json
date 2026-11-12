@@ -1,0 +1,884 @@
+{
+  "instance_id": "django__django-12276",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "D",
+    "E",
+    "F"
+  ],
+  "graph_subtype": "unreached",
+  "illustrative": true,
+  "problem_statement": "FileInput shouldn't display required attribute when initial data exists.\nDescription\n\t \n\t\t(last modified by thenewguy)\n\t \nI think that ClearableFileInput.use_required_attribute() (​https://github.com/django/django/blob/e703b93a656b78b9b444bb3a9980e305ed002a70/django/forms/widgets.py#L454) should be moved to FileInput.use_required_attribute() so that required is not output on the html input element that represents FileInput when a file is already set (e.g. already saved on a model instance that is being edited).\nMaybe I am overlooking a use case where this is not desirable? I can not think of one.\n",
+  "gold_files": [
+    "django/forms/widgets.py"
+  ],
+  "gold_functions": [
+    {
+      "id": "django/forms/widgets.py::ClearableFileInput.use_required_attribute",
+      "qualname": "ClearableFileInput.use_required_attribute",
+      "path": "django/forms/widgets.py",
+      "coverage": 1.0,
+      "best_candidate": {
+        "id": "django/forms/widgets.py::ClearableFileInput.use_required_attribute::chunk_0",
+        "order": 0,
+        "decision": "selected",
+        "score": 0.58125,
+        "utility": 0.057552325935519205,
+        "lexical_score": 1.0,
+        "symbol_score": 0.15625,
+        "graph_score": 0.0,
+        "line_start": 454,
+        "line_end": 455,
+        "tokens_est": 70,
+        "reason": ""
+      }
+    }
+  ],
+  "changed_lines": {
+    "django/forms/widgets.py": [
+      454,
+      455,
+      456
+    ]
+  },
+  "insertion_anchors": {
+    "django/forms/widgets.py": [
+      388,
+      391
+    ]
+  },
+  "exclusions": [
+    {
+      "path": "django/forms/widgets.py",
+      "line": 456,
+      "reason": "module_level_change"
+    },
+    {
+      "path": "django/forms/widgets.py",
+      "reason": "new_definition_no_base_function"
+    }
+  ],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 1,
+    "changed_lines_outside_function_bodies": [
+      {
+        "path": "django/forms/widgets.py",
+        "line": 454
+      }
+    ],
+    "removed_lines_out_of_range": [],
+    "class_methods": [
+      "django/forms/widgets.py::ClearableFileInput.use_required_attribute"
+    ],
+    "nested_functions": [],
+    "module_level_exclusions": 1,
+    "new_definition_exclusions": 1
+  },
+  "metrics": {
+    "file_recall": 1.0,
+    "function_recall": 1.0,
+    "complete_function_recall": 1.0,
+    "changed_line_recall": 1.0,
+    "label_completeness": "partial"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": 0.0,
+    "insertion_anchor_reason": null,
+    "base_touch_recall": 0.5,
+    "base_touch_reason": null,
+    "relevant_line_density": 0.09090909090909091,
+    "relevant_line_density_reason": null,
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 2,
+    "evaluable_anchor_lines": 2,
+    "emitted_nonempty_lines": 22
+  },
+  "selected_files": [
+    "django/contrib/admin/options.py",
+    "django/contrib/postgres/forms/array.py",
+    "django/core/exceptions.py",
+    "django/db/models/fields/__init__.py",
+    "django/db/models/query.py",
+    "django/forms/fields.py",
+    "django/forms/forms.py",
+    "django/forms/formsets.py",
+    "django/forms/models.py",
+    "django/forms/utils.py",
+    "django/forms/widgets.py",
+    "django/utils/ipv6.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "django/forms/widgets.py::ClearableFileInput.use_required_attribute::chunk_0",
+      "path": "django/forms/widgets.py",
+      "qualname": "ClearableFileInput.use_required_attribute",
+      "function_id": "django/forms/widgets.py::ClearableFileInput.use_required_attribute",
+      "line_start": 454,
+      "line_end": 455,
+      "tokens_est": 70,
+      "source_spans": [
+        [
+          454,
+          0,
+          47
+        ],
+        [
+          455,
+          0,
+          71
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/models.py::BaseModelFormSet.validate_unique::chunk_8",
+      "path": "django/forms/models.py",
+      "qualname": "BaseModelFormSet.validate_unique",
+      "function_id": "django/forms/models.py::BaseModelFormSet.validate_unique",
+      "line_start": 735,
+      "line_end": 738,
+      "tokens_est": 99,
+      "source_spans": [
+        [
+          735,
+          0,
+          26
+        ],
+        [
+          736,
+          0,
+          86
+        ],
+        [
+          737,
+          0,
+          67
+        ],
+        [
+          738,
+          0,
+          81
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/formsets.py::BaseFormSet.full_clean::chunk_2",
+      "path": "django/forms/formsets.py",
+      "qualname": "BaseFormSet.full_clean",
+      "function_id": "django/forms/formsets.py::BaseFormSet.full_clean",
+      "line_start": 338,
+      "line_end": 340,
+      "tokens_est": 51,
+      "source_spans": [
+        [
+          338,
+          0,
+          25
+        ],
+        [
+          339,
+          0,
+          45
+        ],
+        [
+          340,
+          0,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "django/db/models/fields/__init__.py::TimeField.to_python::chunk_1",
+      "path": "django/db/models/fields/__init__.py",
+      "qualname": "TimeField.to_python",
+      "function_id": "django/db/models/fields/__init__.py::TimeField.to_python",
+      "line_start": 2141,
+      "line_end": 2147,
+      "tokens_est": 129,
+      "source_spans": [
+        [
+          2141,
+          0,
+          45
+        ],
+        [
+          2142,
+          0,
+          25
+        ],
+        [
+          2143,
+          0,
+          49
+        ],
+        [
+          2144,
+          0,
+          75
+        ],
+        [
+          2145,
+          0,
+          80
+        ],
+        [
+          2146,
+          0,
+          73
+        ],
+        [
+          2147,
+          0,
+          32
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/widgets.py::CheckboxSelectMultiple.use_required_attribute::chunk_0",
+      "path": "django/forms/widgets.py",
+      "qualname": "CheckboxSelectMultiple.use_required_attribute",
+      "function_id": "django/forms/widgets.py::CheckboxSelectMultiple.use_required_attribute",
+      "line_start": 769,
+      "line_end": 772,
+      "tokens_est": 96,
+      "source_spans": [
+        [
+          769,
+          0,
+          47
+        ],
+        [
+          770,
+          0,
+          78
+        ],
+        [
+          771,
+          0,
+          72
+        ],
+        [
+          772,
+          0,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/utils.py::ErrorList.as_data::chunk_0",
+      "path": "django/forms/utils.py",
+      "qualname": "ErrorList.as_data",
+      "function_id": "django/forms/utils.py::ErrorList.as_data",
+      "line_start": 92,
+      "line_end": 93,
+      "tokens_est": 46,
+      "source_spans": [
+        [
+          92,
+          0,
+          23
+        ],
+        [
+          93,
+          0,
+          53
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/forms.py::BaseForm._html_output::chunk_8",
+      "path": "django/forms/forms.py",
+      "qualname": "BaseForm._html_output",
+      "function_id": "django/forms/forms.py::BaseForm._html_output",
+      "line_start": 243,
+      "line_end": 246,
+      "tokens_est": 94,
+      "source_spans": [
+        [
+          243,
+          0,
+          23
+        ],
+        [
+          244,
+          0,
+          38
+        ],
+        [
+          245,
+          0,
+          74
+        ],
+        [
+          246,
+          0,
+          44
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/fields.py::FileField.clean::chunk_1",
+      "path": "django/forms/fields.py",
+      "qualname": "FileField.clean",
+      "function_id": "django/forms/fields.py::FileField.clean",
+      "line_start": 581,
+      "line_end": 593,
+      "tokens_est": 181,
+      "source_spans": [
+        [
+          581,
+          0,
+          45
+        ],
+        [
+          582,
+          0,
+          94
+        ],
+        [
+          585,
+          0,
+          26
+        ],
+        [
+          586,
+          0,
+          34
+        ],
+        [
+          587,
+          0,
+          29
+        ],
+        [
+          588,
+          0,
+          77
+        ],
+        [
+          589,
+          0,
+          77
+        ],
+        [
+          590,
+          0,
+          70
+        ],
+        [
+          591,
+          0,
+          77
+        ],
+        [
+          592,
+          0,
+          45
+        ],
+        [
+          593,
+          0,
+          24
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/widgets.py::ClearableFileInput.is_initial::chunk_0",
+      "path": "django/forms/widgets.py",
+      "qualname": "ClearableFileInput.is_initial",
+      "function_id": "django/forms/widgets.py::ClearableFileInput.is_initial",
+      "line_start": 413,
+      "line_end": 417,
+      "tokens_est": 79,
+      "source_spans": [
+        [
+          413,
+          0,
+          33
+        ],
+        [
+          414,
+          0,
+          12
+        ],
+        [
+          415,
+          0,
+          64
+        ],
+        [
+          416,
+          0,
+          12
+        ],
+        [
+          417,
+          0,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "django/core/exceptions.py::ValidationError.__init__::chunk_1",
+      "path": "django/core/exceptions.py",
+      "qualname": "ValidationError.__init__",
+      "function_id": "django/core/exceptions.py::ValidationError.__init__",
+      "line_start": 101,
+      "line_end": 109,
+      "tokens_est": 174,
+      "source_spans": [
+        [
+          101,
+          0,
+          57
+        ],
+        [
+          102,
+          0,
+          12
+        ],
+        [
+          103,
+          0,
+          77
+        ],
+        [
+          104,
+          0,
+          79
+        ],
+        [
+          105,
+          0,
+          67
+        ],
+        [
+          106,
+          0,
+          78
+        ],
+        [
+          107,
+          0,
+          76
+        ],
+        [
+          108,
+          0,
+          80
+        ],
+        [
+          109,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "django/utils/ipv6.py::clean_ipv6_address::chunk_0",
+      "path": "django/utils/ipv6.py",
+      "qualname": "clean_ipv6_address",
+      "function_id": "django/utils/ipv6.py::clean_ipv6_address",
+      "line_start": 7,
+      "line_end": 8,
+      "tokens_est": 80,
+      "source_spans": [
+        [
+          7,
+          0,
+          50
+        ],
+        [
+          8,
+          0,
+          78
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/postgres/forms/array.py::SplitArrayField.clean::chunk_0",
+      "path": "django/contrib/postgres/forms/array.py",
+      "qualname": "SplitArrayField.clean",
+      "function_id": "django/contrib/postgres/forms/array.py::SplitArrayField.clean",
+      "line_start": 197,
+      "line_end": 202,
+      "tokens_est": 92,
+      "source_spans": [
+        [
+          197,
+          0,
+          28
+        ],
+        [
+          198,
+          0,
+          26
+        ],
+        [
+          199,
+          0,
+          20
+        ],
+        [
+          200,
+          0,
+          45
+        ],
+        [
+          201,
+          0,
+          67
+        ],
+        [
+          202,
+          0,
+          46
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/widgets.py::ClearableFileInput.format_value::chunk_0",
+      "path": "django/forms/widgets.py",
+      "qualname": "ClearableFileInput.format_value",
+      "function_id": "django/forms/widgets.py::ClearableFileInput.format_value",
+      "line_start": 419,
+      "line_end": 424,
+      "tokens_est": 81,
+      "source_spans": [
+        [
+          419,
+          0,
+          35
+        ],
+        [
+          420,
+          0,
+          12
+        ],
+        [
+          421,
+          0,
+          66
+        ],
+        [
+          422,
+          0,
+          12
+        ],
+        [
+          423,
+          0,
+          35
+        ],
+        [
+          424,
+          0,
+          25
+        ]
+      ]
+    },
+    {
+      "id": "django/db/models/query.py::QuerySet._next_is_sticky::chunk_0",
+      "path": "django/db/models/query.py",
+      "qualname": "QuerySet._next_is_sticky",
+      "function_id": "django/db/models/query.py::QuerySet._next_is_sticky",
+      "line_start": 1288,
+      "line_end": 1300,
+      "tokens_est": 190,
+      "source_spans": [
+        [
+          1288,
+          0,
+          31
+        ],
+        [
+          1289,
+          0,
+          12
+        ],
+        [
+          1290,
+          0,
+          77
+        ],
+        [
+          1291,
+          0,
+          79
+        ],
+        [
+          1292,
+          0,
+          79
+        ],
+        [
+          1293,
+          0,
+          73
+        ],
+        [
+          1294,
+          0,
+          1
+        ],
+        [
+          1295,
+          0,
+          72
+        ],
+        [
+          1296,
+          0,
+          78
+        ],
+        [
+          1297,
+          0,
+          57
+        ],
+        [
+          1298,
+          0,
+          12
+        ],
+        [
+          1299,
+          0,
+          35
+        ],
+        [
+          1300,
+          0,
+          20
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/fields.py::ImageField.to_python::chunk_3",
+      "path": "django/forms/fields.py",
+      "qualname": "ImageField.to_python",
+      "function_id": "django/forms/fields.py::ImageField.to_python",
+      "line_start": 653,
+      "line_end": 657,
+      "tokens_est": 68,
+      "source_spans": [
+        [
+          653,
+          0,
+          38
+        ],
+        [
+          654,
+          0,
+          23
+        ],
+        [
+          655,
+          0,
+          52
+        ],
+        [
+          656,
+          0,
+          22
+        ],
+        [
+          657,
+          0,
+          17
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/formsets.py::BaseFormSet.full_clean::chunk_1",
+      "path": "django/forms/formsets.py",
+      "qualname": "BaseFormSet.full_clean",
+      "function_id": "django/forms/formsets.py::BaseFormSet.full_clean",
+      "line_start": 327,
+      "line_end": 337,
+      "tokens_est": 176,
+      "source_spans": [
+        [
+          327,
+          0,
+          58
+        ],
+        [
+          328,
+          0,
+          19
+        ],
+        [
+          329,
+          0,
+          52
+        ],
+        [
+          330,
+          0,
+          33
+        ],
+        [
+          331,
+          0,
+          78
+        ],
+        [
+          332,
+          0,
+          74
+        ],
+        [
+          333,
+          0,
+          39
+        ],
+        [
+          334,
+          0,
+          64
+        ],
+        [
+          335,
+          0,
+          59
+        ],
+        [
+          336,
+          0,
+          38
+        ],
+        [
+          337,
+          0,
+          67
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/forms.py::BaseForm.add_error::chunk_2",
+      "path": "django/forms/forms.py",
+      "qualname": "BaseForm.add_error",
+      "function_id": "django/forms/forms.py::BaseForm.add_error",
+      "line_start": 323,
+      "line_end": 328,
+      "tokens_est": 96,
+      "source_spans": [
+        [
+          323,
+          0,
+          20
+        ],
+        [
+          324,
+          0,
+          12
+        ],
+        [
+          325,
+          0,
+          51
+        ],
+        [
+          326,
+          0,
+          67
+        ],
+        [
+          327,
+          0,
+          61
+        ],
+        [
+          328,
+          0,
+          43
+        ]
+      ]
+    },
+    {
+      "id": "django/contrib/admin/options.py::InlineModelAdmin.get_formset.DeleteProtectedModelForm.hand_clean_DELETE::chunk_0",
+      "path": "django/contrib/admin/options.py",
+      "qualname": "InlineModelAdmin.get_formset.DeleteProtectedModelForm.hand_clean_DELETE",
+      "function_id": "django/contrib/admin/options.py::InlineModelAdmin.get_formset.DeleteProtectedModelForm.hand_clean_DELETE",
+      "line_start": 2069,
+      "line_end": 2074,
+      "tokens_est": 123,
+      "source_spans": [
+        [
+          2069,
+          0,
+          41
+        ],
+        [
+          2070,
+          0,
+          20
+        ],
+        [
+          2071,
+          0,
+          71
+        ],
+        [
+          2072,
+          0,
+          77
+        ],
+        [
+          2073,
+          0,
+          79
+        ],
+        [
+          2074,
+          0,
+          20
+        ]
+      ]
+    },
+    {
+      "id": "django/forms/widgets.py::ClearableFileInput.clear_checkbox_id::chunk_0",
+      "path": "django/forms/widgets.py",
+      "qualname": "ClearableFileInput.clear_checkbox_id",
+      "function_id": "django/forms/widgets.py::ClearableFileInput.clear_checkbox_id",
+      "line_start": 407,
+      "line_end": 411,
+      "tokens_est": 80,
+      "source_spans": [
+        [
+          407,
+          0,
+          39
+        ],
+        [
+          408,
+          0,
+          12
+        ],
+        [
+          409,
+          0,
+          79
+        ],
+        [
+          410,
+          0,
+          12
+        ],
+        [
+          411,
+          0,
+          28
+        ]
+      ]
+    }
+  ],
+  "context": "# File: django/forms/widgets.py\n# Function: ClearableFileInput.use_required_attribute\n# Lines: 454-455\n# Signature: def use_required_attribute(self, initial):\n    def use_required_attribute(self, initial):\n        return super().use_required_attribute(initial) and not initial\n\n\n# File: django/forms/models.py\n# Function: BaseModelFormSet.validate_unique\n# Lines: 735-738\n# Signature: def validate_unique(self):\n                    else:\n                        date_data = (getattr(form.cleaned_data[unique_for], lookup),)\n                    data = (form.cleaned_data[field],) + date_data\n                    # if we've already seen it then we have a uniqueness failure\n\n\n# File: django/forms/formsets.py\n# Function: BaseFormSet.full_clean\n# Lines: 338-340\n# Signature: def full_clean(self):\n                continue\n            self._errors.append(form_errors)\n        try:\n\n\n# File: django/db/models/fields/__init__.py\n# Function: TimeField.to_python\n# Lines: 2141-2147\n# Signature: def to_python(self, value):\n        if isinstance(value, datetime.time):\n            return value\n        if isinstance(value, datetime.datetime):\n            # Not usually a good idea to pass in a datetime here (it loses\n            # information), but this can be a side-effect of interacting with a\n            # database backend (e.g. Oracle), so we'll be accommodating.\n            return value.time()\n\n\n# File: django/forms/widgets.py\n# Function: CheckboxSelectMultiple.use_required_attribute\n# Lines: 769-772\n# Signature: def use_required_attribute(self, initial):\n    def use_required_attribute(self, initial):\n        # Don't use the 'required' attribute because browser validation would\n        # require all checkboxes to be checked instead of at least one.\n        return False\n\n\n# File: django/forms/utils.py\n# Function: ErrorList.as_data\n# Lines: 92-93\n# Signature: def as_data(self):\n    def as_data(self):\n        return ValidationError(self.data).error_list\n\n\n# File: django/forms/forms.py\n# Function: BaseForm._html_output\n# Lines: 243-246\n# Signature: def _html_output(self, normal_row, error_row, row_ender, help_text_html, errors_on_separate_row):\n            if output:\n                last_row = output[-1]\n                # Chop off the trailing row_ender (e.g. '</td></tr>') and\n                # insert the hidden fields.\n\n\n# File: django/forms/fields.py\n# Function: FileField.clean\n# Lines: 581-593\n# Signature: def clean(self, data, initial=None):\n        if data is FILE_INPUT_CONTRADICTION:\n            raise ValidationError(self.error_messages['contradiction'], code='contradiction')\n        if data is False:\n            if not self.required:\n                return False\n            # If the field is required, clearing is not possible (the widget\n            # shouldn't return False data in that case anyway). False is not\n            # in self.empty_value; if a False value makes it this far\n            # it should be validated from here on out as None (so it will be\n            # caught by the required check).\n            data = None\n\n\n# File: django/forms/widgets.py\n# Function: ClearableFileInput.is_initial\n# Lines: 413-417\n# Signature: def is_initial(self, value):\n    def is_initial(self, value):\n        \"\"\"\n        Return whether value is considered to be initial value.\n        \"\"\"\n        return bool(value and getattr(value, 'url', False))\n\n\n# File: django/core/exceptions.py\n# Function: ValidationError.__init__\n# Lines: 101-109\n# Signature: def __init__(self, message, code=None, params=None):\n    def __init__(self, message, code=None, params=None):\n        \"\"\"\n        The `message` argument can be a single error, a list of errors, or a\n        dictionary that maps field names to lists of errors. What we define as\n        an \"error\" can be either a simple string or an instance of\n        ValidationError with its message attribute set, and what we define as\n        list or dictionary can be an actual `list` or `dict` or an instance\n        of ValidationError with its `error_list` or `error_dict` attribute set.\n        \"\"\"\n\n\n# File: django/utils/ipv6.py\n# Function: clean_ipv6_address\n# Lines: 7-8\n# Signature: def clean_ipv6_address(ip_str, unpack_ipv4=False, error_message=_('This is not a valid IPv6 address.')):\ndef clean_ipv6_address(ip_str, unpack_ipv4=False,\n                       error_message=_(\"This is not a valid IPv6 address.\")):\n\n\n# File: django/contrib/postgres/forms/array.py\n# Function: SplitArrayField.clean\n# Lines: 197-202\n# Signature: def clean(self, value):\n    def clean(self, value):\n        cleaned_data = []\n        errors = []\n        if not any(value) and self.required:\n            raise ValidationError(self.error_messages['required'])\n        max_size = max(self.size, len(value))\n\n\n# File: django/forms/widgets.py\n# Function: ClearableFileInput.format_value\n# Lines: 419-424\n# Signature: def format_value(self, value):\n    def format_value(self, value):\n        \"\"\"\n        Return the file object if it has a defined url attribute.\n        \"\"\"\n        if self.is_initial(value):\n            return value\n\n\n# File: django/db/models/query.py\n# Function: QuerySet._next_is_sticky\n# Lines: 1288-1300\n# Signature: def _next_is_sticky(self):\n    def _next_is_sticky(self):\n        \"\"\"\n        Indicate that the next filter call and the one following that should\n        be treated as a single filter. This is only important when it comes to\n        determining when to reuse tables for many-to-many filters. Required so\n        that we can filter naturally on the results of related managers.\n\n        This doesn't return a clone of the current QuerySet (it returns\n        \"self\"). The method is only used internally and should be immediately\n        followed by a filter() that does create a clone.\n        \"\"\"\n        self._sticky_filter = True\n        return self\n\n\n# File: django/forms/fields.py\n# Function: ImageField.to_python\n# Lines: 653-657\n# Signature: def to_python(self, data):\n                code='invalid_image',\n            ) from exc\n        if hasattr(f, 'seek') and callable(f.seek):\n            f.seek(0)\n        return f\n\n\n# File: django/forms/formsets.py\n# Function: BaseFormSet.full_clean\n# Lines: 327-337\n# Signature: def full_clean(self):\n        if not self.is_bound:  # Stop further processing.\n            return\n        for i in range(0, self.total_form_count()):\n            form = self.forms[i]\n            # Empty forms are unchanged forms beyond those with initial data.\n            if not form.has_changed() and i >= self.initial_form_count():\n                empty_forms_count += 1\n            # Accessing errors calls full_clean() if necessary.\n            # _should_delete_form() requires cleaned_data.\n            form_errors = form.errors\n            if self.can_delete and self._should_delete_form(form):\n\n\n# File: django/forms/forms.py\n# Function: BaseForm.add_error\n# Lines: 323-328\n# Signature: def add_error(self, field, error):\n        dictionary.\n        \"\"\"\n        if not isinstance(error, ValidationError):\n            # Normalize to ValidationError and let its constructor\n            # do the hard work of making sense of the input.\n            error = ValidationError(error)\n\n\n# File: django/contrib/admin/options.py\n# Function: InlineModelAdmin.get_formset.DeleteProtectedModelForm.hand_clean_DELETE\n# Lines: 2069-2074\n# Signature: def hand_clean_DELETE(self):\n            def hand_clean_DELETE(self):\n                \"\"\"\n                We don't validate the 'DELETE' field itself because on\n                templates it's not rendered using the field information, but\n                just using a generic \"deletion_field\" of the InlineModelAdmin.\n                \"\"\"\n\n\n# File: django/forms/widgets.py\n# Function: ClearableFileInput.clear_checkbox_id\n# Lines: 407-411\n# Signature: def clear_checkbox_id(self, name):\n    def clear_checkbox_id(self, name):\n        \"\"\"\n        Given the name of the clear checkbox input, return the HTML id for it.\n        \"\"\"\n        return name + '_id'\n\n\n",
+  "summary_ru": "Случаи D, E, F. File Recall=1.0, Function Recall=1.0, Changed Line Recall=1.0. Лучший чанк django/forms/widgets.py::ClearableFileInput.use_required_attribute: order=0, decision=selected, score=0.58125, lexical=1.0, graph=0.0, строки 454-455. Граф: unreached."
+}

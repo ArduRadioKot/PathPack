@@ -1,0 +1,8 @@
+# PathPack v0.9. Written before the dev measurement.
+# At most 8 chunks of one file may enter the ranked pool of 512.
+# A chunk that adds unseen lines of its function, or crosses 20% or 100%
+# of that function's span, receives coverage_bonus. Graph depth stays at v0.4.
+per_file_pool: 8
+coverage_bonus: 0.25
+enable_graph: true
+enable_diversity: true

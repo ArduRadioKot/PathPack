@@ -1,0 +1,25 @@
+# Environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+
+# Raw benchmark data (checked out locally; not redistributed here)
+data/
+
+# Run outputs: only summaries (CSV, JSON, Markdown) are versioned
+output/**/*.pkl
+output/**/*.gz
+output/**/*.npz
+output/**/*.jsonl
+output/**/*.log
+output/pathpack_e/history/
+output/pathpack_r_cache/
+
+# Explicit exceptions: scores of the held-out runs and the Gemma probe answers (no contexts)
+!output/pathpack_holdout/scores.jsonl
+!output/pathpack_holdout2/scores.jsonl
+!output/pathpack_holdout3/scores.jsonl
+!output/pathpack_holdout3_loro/scores.jsonl
+!output/llm_probe/*.jsonl

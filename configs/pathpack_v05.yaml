@@ -1,0 +1,47 @@
+# PathPack v0.5 dev configuration.
+# Chosen from the v0.4 error audit before the v0.5 dev measurement:
+# file recall depended on a wide first-chunk spread, while changed lines were
+# lost to global top-512 and to stopping after one chunk of the right file.
+# Coefficients were not fit by sweeping this configuration on the full dev table.
+# Do not retune after looking at a frozen holdout.
+target_chunk_tokens: 128
+max_chunk_tokens: 256
+min_chunk_tokens: 32
+chunk_overlap_lines: 2
+alpha_file: 0.20
+beta_chunk: 0.50
+gamma_graph: 0.18
+delta_context: 0.12
+file_lexical_weight: 0.55
+file_symbol_weight: 0.20
+file_graph_weight: 0.25
+chunk_symbol_weight: 0.20
+local_chunk_blend: 0.72
+diversity_weight: 0.12
+local_resistance: 0.80
+redundancy_strength: 0.45
+file_relative_threshold: 0.12
+min_files: 8
+max_files: 24
+per_file_candidates: 16
+candidate_limit: 384
+cost_offset: 32.0
+cost_exponent: 0.40
+hops: 2
+seeds: 4
+distance_decay: 0.8
+edge_weights:
+  calls: 1.0
+  imports: 0.45
+  inherits: 0.65
+  defines: 0.22
+min_relevance: 0.0
+max_anchor_lines: 6
+enable_hierarchy: true
+enable_graph: true
+enable_diversity: true
+enable_chunking: true
+enable_file_score: true
+enable_symbol: true
+enable_cost: true
+include_signature_anchor: true

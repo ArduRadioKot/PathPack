@@ -1,0 +1,56 @@
+# PathPack v1.0e. Same candidate pool as v1.0. Only the selection objective changes.
+# Written before the controlled measurement. Weights are the stated objective,
+# not a fit to task ids. v1.0 itself is unchanged.
+#
+# utility =
+#   alpha * evidence_gain
+#   + lexical_weight * lexical
+#   + symbol_weight * symbol
+#   + graph_weight * graph
+#   + repo_weight * repository
+#   + gamma * new_file
+#   - delta * redundancy
+#
+# evidence_gain is the evidence confidence on the first hit and
+# repeat_weight * confidence / (1 + times already covered) after that.
+# A repeated name shrinks. It does not become a hard zero, and it is not a
+# stop condition.
+#
+# lexical, symbol, graph and repository stay separate signals.
+# graph is 1 when a resolved call links the candidate to the set already
+# chosen, otherwise 0.35 when the graph channel admitted it. A link does not
+# require a still-uncovered name.
+# new_file is added only when the candidate already clears min_utility on its
+# own signals, or it carries a new name. The bonus cannot pull a weak chunk
+# over the line by itself.
+#
+# Selection stops when no remaining candidate both fits the budget and has
+# utility >= min_utility, or when the pool is empty. Covered evidence does
+# not stop selection. min_utility 0.12 means a candidate needs a real signal:
+# normalized BM25 >= 0.24 at lexical_weight 0.50, an exact symbol (0.40),
+# a resolved graph link (0.30), a path match (0.25), or a combination.
+# The weak tail is left out. The budget is not filled for utilization.
+mode: joint
+nested: false
+enable_structural: true
+enable_semantic: true
+bm25_limit: 64
+symbol_limit: 64
+path_limit: 32
+graph_limit: 48
+test_limit: 8
+graph_hops: 1
+alpha: 1.0
+beta: 0.0
+gamma: 0.15
+delta: 0.5
+repeat_weight: 0.35
+min_neighbor_lexical: 0.15
+beam_width: 1
+beam_expand: 8
+timeout_sec: 8.0
+lexical_weight: 0.50
+symbol_weight: 0.40
+graph_weight: 0.30
+repo_weight: 0.25
+min_utility: 0.12

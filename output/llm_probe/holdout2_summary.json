@@ -1,0 +1,135 @@
+{
+ "model": "gemma4:e2b-mlx",
+ "summary": {
+  "bm25": {
+   "n": 51,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.5686274509803921,
+   "llm_function_acc": 0.2857142857142857,
+   "n_function": 42,
+   "mean_sec": 2.4790196078431372
+  },
+  "pathpack-h/nomemory": {
+   "n": 51,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.7058823529411765,
+   "llm_function_acc": 0.5,
+   "n_function": 42,
+   "mean_sec": 2.5370588235294123
+  },
+  "pathpack-r/fusion": {
+   "n": 51,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.7058823529411765,
+   "llm_function_acc": 0.42857142857142855,
+   "n_function": 42,
+   "mean_sec": 2.332156862745098
+  },
+  "pathpack-u": {
+   "n": 51,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.803921568627451,
+   "llm_function_acc": 0.5238095238095238,
+   "n_function": 42,
+   "mean_sec": 2.317843137254902
+  },
+  "pathpack-v4": {
+   "n": 51,
+   "valid_json": 1.0,
+   "llm_file_acc": 0.6470588235294118,
+   "llm_function_acc": 0.5,
+   "n_function": 42,
+   "mean_sec": 2.273921568627451
+  }
+ },
+ "paired": {
+  "bm25 vs pathpack-v4 llm_file_hit": {
+   "n": 51,
+   "difference": -0.078431,
+   "ci95": [
+    -0.196078,
+    0.039216
+   ],
+   "wins": 3,
+   "ties": 41,
+   "losses": 7
+  },
+  "bm25 vs pathpack-v4 llm_function_hit": {
+   "n": 42,
+   "difference": -0.214286,
+   "ci95": [
+    -0.380952,
+    -0.02381
+   ],
+   "wins": 4,
+   "ties": 25,
+   "losses": 13
+  },
+  "pathpack-h/nomemory vs pathpack-v4 llm_file_hit": {
+   "n": 51,
+   "difference": 0.058824,
+   "ci95": [
+    -0.058824,
+    0.196078
+   ],
+   "wins": 7,
+   "ties": 40,
+   "losses": 4
+  },
+  "pathpack-h/nomemory vs pathpack-v4 llm_function_hit": {
+   "n": 42,
+   "difference": 0.0,
+   "ci95": [
+    -0.166667,
+    0.190476
+   ],
+   "wins": 7,
+   "ties": 28,
+   "losses": 7
+  },
+  "pathpack-r/fusion vs pathpack-v4 llm_file_hit": {
+   "n": 51,
+   "difference": 0.058824,
+   "ci95": [
+    -0.078431,
+    0.196078
+   ],
+   "wins": 8,
+   "ties": 38,
+   "losses": 5
+  },
+  "pathpack-r/fusion vs pathpack-v4 llm_function_hit": {
+   "n": 42,
+   "difference": -0.071429,
+   "ci95": [
+    -0.261905,
+    0.119048
+   ],
+   "wins": 7,
+   "ties": 25,
+   "losses": 10
+  },
+  "pathpack-u vs pathpack-v4 llm_file_hit": {
+   "n": 51,
+   "difference": 0.156863,
+   "ci95": [
+    0.058824,
+    0.254902
+   ],
+   "wins": 8,
+   "ties": 43,
+   "losses": 0
+  },
+  "pathpack-u vs pathpack-v4 llm_function_hit": {
+   "n": 42,
+   "difference": 0.02381,
+   "ci95": [
+    -0.142857,
+    0.190476
+   ],
+   "wins": 7,
+   "ties": 29,
+   "losses": 6
+  }
+ }
+}

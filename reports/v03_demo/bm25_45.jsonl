@@ -1,0 +1,4 @@
+{"instance_id": "demo-login", "method": "bm25", "budget_est": 45, "selected": [{"id": "auth.py::login_with_cookie", "path": "auth.py", "qualname": "login_with_cookie", "kind": "function", "tokens_est": 38}], "tokens_est": 38}
+{"instance_id": "demo-invoice", "method": "bm25", "budget_est": 45, "selected": [{"id": "invoice.py::checkout_invoice", "path": "invoice.py", "qualname": "checkout_invoice", "kind": "function", "tokens_est": 45}], "tokens_est": 45}
+{"instance_id": "demo-upload", "method": "bm25", "budget_est": 45, "selected": [{"id": "uploads.py::upload_image", "path": "uploads.py", "qualname": "upload_image", "kind": "function", "tokens_est": 33}], "tokens_est": 33}
+{"instance_id": "demo-notify", "method": "bm25", "budget_est": 45, "selected": [{"id": "notifications.py::send_notification", "path": "notifications.py", "qualname": "send_notification", "kind": "function", "tokens_est": 37}], "tokens_est": 37}

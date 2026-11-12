@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.1",
+  "nodes": [
+    {
+      "id": "sample_repo/__init__.py::__module__",
+      "path": "sample_repo/__init__.py",
+      "module": "sample_repo",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 1
+    },
+    {
+      "id": "sample_repo/service.py::__module__",
+      "path": "sample_repo/service.py",
+      "module": "sample_repo.service",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 6
+    },
+    {
+      "id": "sample_repo/service.py::login",
+      "path": "sample_repo/service.py",
+      "module": "sample_repo.service",
+      "qualname": "login",
+      "kind": "function",
+      "line_start": 4,
+      "line_end": 6
+    },
+    {
+      "id": "sample_repo/storage.py::__module__",
+      "path": "sample_repo/storage.py",
+      "module": "sample_repo.storage",
+      "qualname": "__module__",
+      "kind": "module",
+      "line_start": 1,
+      "line_end": 5
+    },
+    {
+      "id": "sample_repo/storage.py::get_user",
+      "path": "sample_repo/storage.py",
+      "module": "sample_repo.storage",
+      "qualname": "get_user",
+      "kind": "function",
+      "line_start": 4,
+      "line_end": 5
+    }
+  ],
+  "edges": [
+    {
+      "source": "sample_repo/__init__.py::__module__",
+      "target": "sample_repo/service.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "sample_repo/__init__.py::__module__",
+      "target": "sample_repo/service.py::login",
+      "kind": "imports"
+    },
+    {
+      "source": "sample_repo/service.py::__module__",
+      "target": "sample_repo/service.py::login",
+      "kind": "defines"
+    },
+    {
+      "source": "sample_repo/service.py::__module__",
+      "target": "sample_repo/storage.py::__module__",
+      "kind": "imports"
+    },
+    {
+      "source": "sample_repo/service.py::__module__",
+      "target": "sample_repo/storage.py::get_user",
+      "kind": "imports"
+    },
+    {
+      "source": "sample_repo/service.py::login",
+      "target": "sample_repo/storage.py::get_user",
+      "kind": "calls"
+    },
+    {
+      "source": "sample_repo/storage.py::__module__",
+      "target": "sample_repo/storage.py::get_user",
+      "kind": "defines"
+    }
+  ],
+  "stats": {
+    "nodes": 5,
+    "edges": 7,
+    "symbols": {
+      "function": 2,
+      "module": 3
+    },
+    "relations": {
+      "calls": 1,
+      "defines": 2,
+      "imports": 4
+    },
+    "parse_errors": {}
+  }
+}

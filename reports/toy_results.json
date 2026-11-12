@@ -1,0 +1,567 @@
+[
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "bm25",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 38,
+    "selected": [
+      "auth.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "graph-expand",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 38,
+    "selected": [
+      "auth.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "pathpack",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 38,
+    "selected": [
+      "auth.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "bm25",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 45,
+    "selected": [
+      "invoice.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "graph-expand",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 45,
+    "selected": [
+      "invoice.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "pathpack",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 45,
+    "selected": [
+      "invoice.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "bm25",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 33,
+    "selected": [
+      "uploads.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "graph-expand",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 33,
+    "selected": [
+      "uploads.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "pathpack",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 33,
+    "selected": [
+      "uploads.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "bm25",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "graph-expand",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "pathpack",
+    "budget_est": 45,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "bm25",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 70,
+    "selected": [
+      "auth.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "graph-expand",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 70,
+    "selected": [
+      "auth.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "pathpack",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 70,
+    "selected": [
+      "auth.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "bm25",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 45,
+    "selected": [
+      "invoice.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "graph-expand",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 45,
+    "selected": [
+      "invoice.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "pathpack",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 45,
+    "selected": [
+      "invoice.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "bm25",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 67,
+    "selected": [
+      "uploads.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "graph-expand",
+    "budget_est": 70,
+    "hit": 1,
+    "tokens_est": 70,
+    "selected": [
+      "uploads.py",
+      "filesys.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "pathpack",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 67,
+    "selected": [
+      "uploads.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "bm25",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "graph-expand",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "pathpack",
+    "budget_est": 70,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "bm25",
+    "budget_est": 110,
+    "hit": 0,
+    "tokens_est": 70,
+    "selected": [
+      "auth.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "graph-expand",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 82,
+    "selected": [
+      "auth.py",
+      "store.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "pathpack",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 82,
+    "selected": [
+      "auth.py",
+      "store.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "bm25",
+    "budget_est": 110,
+    "hit": 0,
+    "tokens_est": 80,
+    "selected": [
+      "invoice.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "graph-expand",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 81,
+    "selected": [
+      "invoice.py",
+      "taxes.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "pathpack",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 81,
+    "selected": [
+      "invoice.py",
+      "taxes.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "bm25",
+    "budget_est": 110,
+    "hit": 0,
+    "tokens_est": 67,
+    "selected": [
+      "uploads.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "graph-expand",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 104,
+    "selected": [
+      "uploads.py",
+      "filesys.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "pathpack",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 104,
+    "selected": [
+      "uploads.py",
+      "misc.py",
+      "filesys.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "bm25",
+    "budget_est": 110,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "graph-expand",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 75,
+    "selected": [
+      "notifications.py",
+      "packets.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "pathpack",
+    "budget_est": 110,
+    "hit": 1,
+    "tokens_est": 75,
+    "selected": [
+      "notifications.py",
+      "packets.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "bm25",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 114,
+    "selected": [
+      "auth.py",
+      "misc.py",
+      "store.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "graph-expand",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 114,
+    "selected": [
+      "auth.py",
+      "store.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Login cookie causes failure",
+    "gold_file": "store.py",
+    "method": "pathpack",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 114,
+    "selected": [
+      "auth.py",
+      "store.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "bm25",
+    "budget_est": 160,
+    "hit": 0,
+    "tokens_est": 80,
+    "selected": [
+      "invoice.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "graph-expand",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 116,
+    "selected": [
+      "invoice.py",
+      "taxes.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Checkout invoice amount is incorrect",
+    "gold_file": "taxes.py",
+    "method": "pathpack",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 116,
+    "selected": [
+      "invoice.py",
+      "taxes.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "bm25",
+    "budget_est": 160,
+    "hit": 0,
+    "tokens_est": 67,
+    "selected": [
+      "uploads.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "graph-expand",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 104,
+    "selected": [
+      "uploads.py",
+      "filesys.py",
+      "misc.py"
+    ]
+  },
+  {
+    "query": "Upload image causes crash",
+    "gold_file": "filesys.py",
+    "method": "pathpack",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 104,
+    "selected": [
+      "uploads.py",
+      "misc.py",
+      "filesys.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "bm25",
+    "budget_est": 160,
+    "hit": 0,
+    "tokens_est": 37,
+    "selected": [
+      "notifications.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "graph-expand",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 75,
+    "selected": [
+      "notifications.py",
+      "packets.py"
+    ]
+  },
+  {
+    "query": "Send notification fails",
+    "gold_file": "packets.py",
+    "method": "pathpack",
+    "budget_est": 160,
+    "hit": 1,
+    "tokens_est": 75,
+    "selected": [
+      "notifications.py",
+      "packets.py"
+    ]
+  }
+]

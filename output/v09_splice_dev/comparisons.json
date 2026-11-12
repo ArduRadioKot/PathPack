@@ -1,0 +1,362 @@
+[
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.02381,
+    "ci95": [
+      -0.071429,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v4",
+    "baseline": "pathpack-v9",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": -0.02381,
+    "ci95": [
+      -0.071429,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 13,
+    "losses": 1
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 1024,
+    "metric": "relevant_line_density",
+    "n": 9,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 9,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.02381,
+    "ci95": [
+      0.0,
+      0.071429
+    ],
+    "wins": 1,
+    "ties": 13,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 2048,
+    "metric": "relevant_line_density",
+    "n": 9,
+    "difference": 0.00565,
+    "ci95": [
+      0.0,
+      0.016949
+    ],
+    "wins": 1,
+    "ties": 8,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.02381,
+    "ci95": [
+      0.0,
+      0.071429
+    ],
+    "wins": 1,
+    "ties": 13,
+    "losses": 0
+  },
+  {
+    "candidate": "pathpack-v9",
+    "baseline": "pathpack-v4",
+    "budget": 4096,
+    "metric": "relevant_line_density",
+    "n": 10,
+    "difference": 0.006005,
+    "ci95": [
+      0.0,
+      0.014495
+    ],
+    "wins": 2,
+    "ties": 8,
+    "losses": 0
+  }
+]

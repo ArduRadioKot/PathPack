@@ -1,0 +1,51 @@
+{
+  "seed": 46,
+  "written_before_diagnostic_measurement": true,
+  "excluded_known_ids": 80,
+  "fresh_available": 420,
+  "validation": [
+    "sympy__sympy-12419",
+    "pytest-dev__pytest-6197",
+    "astropy__astropy-13977",
+    "django__django-16333",
+    "django__django-13658",
+    "sympy__sympy-13798",
+    "sympy__sympy-19495",
+    "django__django-15037",
+    "django__django-12209",
+    "sympy__sympy-22714"
+  ],
+  "final_holdout": [
+    "django__django-16595",
+    "django__django-14771",
+    "django__django-14315",
+    "scikit-learn__scikit-learn-13142",
+    "sphinx-doc__sphinx-9229",
+    "django__django-12308",
+    "django__django-11149",
+    "scikit-learn__scikit-learn-12682",
+    "django__django-11885",
+    "django__django-12965"
+  ],
+  "validation_repos": [
+    "astropy/astropy",
+    "django/django",
+    "pytest-dev/pytest",
+    "sympy/sympy"
+  ],
+  "holdout_repos": [
+    "django/django",
+    "scikit-learn/scikit-learn",
+    "sphinx-doc/sphinx"
+  ],
+  "repository_disjoint_possible_inside_verified": false,
+  "reason": "SWE-bench Verified uses the same repositories as the diagnostic set. The split is instance-disjoint. It is not repository-disjoint.",
+  "snapshots": "not_checked_out",
+  "config": "configs/pathpack_r.yaml",
+  "semantic_model": "microsoft/unixcoder-base",
+  "semantic_revision": "5604afdc964f6c53782a6813140ade5216b99006",
+  "codet5p_status": "not_run",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "reranker_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "reranker_code_specialized": false
+}

@@ -1,0 +1,15 @@
+instance_id,budget,baseline,metric,v4,baseline_value,diagnostics
+django__django-14580,1024,pathpack,file_recall,0.0,1.0,[]
+django__django-14580,1024,pathpack-v3,file_recall,0.0,1.0,[]
+django__django-14580,2048,pathpack,file_recall,0.0,1.0,[]
+pydata__xarray-6599,2048,pathpack,file_recall,0.0,1.0,[]
+django__django-14580,2048,pathpack-v3,file_recall,0.0,1.0,[]
+sphinx-doc__sphinx-7985,4096,bm25,function_recall,0.0,1.0,"['correct_file_missed_function', 'ranked_target_did_not_fit']"
+scikit-learn__scikit-learn-9288,4096,bm25,file_recall,0.0,1.0,[]
+django__django-14580,4096,pathpack,file_recall,0.0,1.0,[]
+pydata__xarray-6599,4096,pathpack,file_recall,0.0,1.0,[]
+psf__requests-1921,4096,pathpack,function_recall,0.0,1.0,"['correct_file_missed_function', 'ranked_target_did_not_fit']"
+django__django-14580,4096,pathpack-v3,file_recall,0.0,1.0,[]
+scikit-learn__scikit-learn-9288,4096,pathpack-v3,file_recall,0.0,1.0,[]
+pydata__xarray-6599,4096,pathpack-v3,file_recall,0.0,1.0,[]
+psf__requests-1921,4096,pathpack-v3,function_recall,0.0,1.0,"['correct_file_missed_function', 'ranked_target_did_not_fit']"

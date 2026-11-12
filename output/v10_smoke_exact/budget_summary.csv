@@ -1,0 +1,8 @@
+instance_id,method,budget_est,tokens_est,latency_sec,remaining_tokens,utilization,selected_files,selected_functions,selected_chunks
+django__django-12276,pathpack-v4,2048,2005,0.4712539170868695,43,0.97900390625,12,18,19
+django__django-12276,pathpack-v10,2048,127,0.15465604211203754,1921,0.06201171875,1,2,2
+django__django-12276,pathpack-v10/coverage,2048,127,0.16378437401726842,1921,0.06201171875,1,2,2
+django__django-12276,pathpack-v10/paths,2048,1202,0.15263287408743054,846,0.5869140625,1,11,11
+django__django-12276,pathpack-v10/no-structural,2048,127,0.15755724906921387,1921,0.06201171875,1,2,2
+django__django-12276,pathpack-v10/nested,2048,127,0.15333441703114659,1921,0.06201171875,1,2,2
+django__django-12276,pathpack-v10/no-semantic,2048,127,0.15272670809645206,1921,0.06201171875,1,2,2

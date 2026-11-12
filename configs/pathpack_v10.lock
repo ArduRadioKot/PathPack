@@ -1,0 +1,9 @@
+# Runtime lock for PathPack v1.0. No new package was added.
+# pyproject.toml dependencies = []
+# Optional embedding checkpoint, not installed in this environment:
+#   model: sentence-transformers/all-MiniLM-L6-v2
+#   revision: c9745ed1d9f207416be6d2e6f8de32d1f16199bf
+#   status: not_run
+# A text embedding is not treated as a code embedding, and missing weights
+# are not replaced by random vectors or by another model.
+# Frozen objective: configs/pathpack_v10.yaml

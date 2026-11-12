@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "django__django-12276",
+    "v4_file": 1.0,
+    "v9_file": 1.0,
+    "v4_fn": 1.0,
+    "v9_fn": 1.0,
+    "v4_complete": 1.0,
+    "v9_complete": 1.0,
+    "v4_line": 1.0,
+    "v9_line": 1.0,
+    "nocov4096_fn": 1.0,
+    "v4_4096_fn": 1.0,
+    "nocov4096_line": 1.0,
+    "v4_4096_line": 1.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "django/forms/widgets.py::ClearableFileInput.use_required_attribute",
+        "cov": 1.0,
+        "body": 1,
+        "changed_in_body": 1,
+        "changed_hit": 1,
+        "best_unselected_new_body_lines": null,
+        "unselected_chunks_with_new_body": 0
+      }
+    ],
+    "selected_chunks": 19,
+    "selected_files": 12,
+    "redundant_tokens": 0,
+    "tail_tokens": 695,
+    "n_files_with_tail": 4
+  },
+  {
+    "id": "sphinx-doc__sphinx-7985",
+    "v4_file": 1.0,
+    "v9_file": 1.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.check_thread.check",
+        "cov": 0.0,
+        "body": 24,
+        "changed_in_body": 2,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          10,
+          196,
+          "after_budget_cutoff",
+          197,
+          0.632
+        ],
+        "unselected_chunks_with_new_body": 3
+      }
+    ],
+    "selected_chunks": 17,
+    "selected_files": 9,
+    "redundant_tokens": 0,
+    "tail_tokens": 983,
+    "n_files_with_tail": 2
+  },
+  {
+    "id": "astropy__astropy-8707",
+    "v4_file": 1.0,
+    "v9_file": 0.5,
+    "v4_fn": 0.5,
+    "v9_fn": 0.5,
+    "v4_complete": 0.5,
+    "v9_complete": 0.5,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.5,
+    "v4_4096_fn": 0.5,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 2,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "astropy/io/fits/card.py::Card.fromstring",
+        "cov": 1.0,
+        "body": 4,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": null,
+        "unselected_chunks_with_new_body": 0
+      },
+      {
+        "id": "astropy/io/fits/header.py::Header.fromstring",
+        "cov": 0.0,
+        "body": 31,
+        "changed_in_body": 5,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          24,
+          null,
+          "candidate_limit",
+          254,
+          0.296
+        ],
+        "unselected_chunks_with_new_body": 3
+      }
+    ],
+    "selected_chunks": 18,
+    "selected_files": 9,
+    "redundant_tokens": 0,
+    "tail_tokens": 1145,
+    "n_files_with_tail": 4
+  },
+  {
+    "id": "scikit-learn__scikit-learn-13439",
+    "v4_file": 1.0,
+    "v9_file": 1.0,
+    "v4_fn": null,
+    "v9_fn": null,
+    "v4_complete": null,
+    "v9_complete": null,
+    "v4_line": null,
+    "v9_line": null,
+    "nocov4096_fn": null,
+    "v4_4096_fn": null,
+    "nocov4096_line": null,
+    "v4_4096_line": null,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [],
+    "selected_chunks": 18,
+    "selected_files": 16,
+    "redundant_tokens": 0,
+    "tail_tokens": 324,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "django__django-14580",
+    "v4_file": 0.0,
+    "v9_file": 1.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 0.0,
+    "v4_4096_file": 0.0,
+    "gold_files": 1,
+    "missed_files": [
+      {
+        "path": "django/db/migrations/serializer.py",
+        "chunks": 39,
+        "in_pool": 4,
+        "best_lex": 0.45,
+        "best_graph": 0,
+        "earliest_order": 72,
+        "tokens_before_earliest": 2091,
+        "reason": "ranked_after_budget"
+      }
+    ],
+    "functions": [
+      {
+        "id": "django/db/migrations/serializer.py::TypeSerializer.serialize",
+        "cov": 0.0,
+        "body": 13,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          13,
+          null,
+          "candidate_limit",
+          178,
+          0.426
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 23,
+    "selected_files": 23,
+    "redundant_tokens": 0,
+    "tail_tokens": 0,
+    "n_files_with_tail": 0
+  },
+  {
+    "id": "sympy__sympy-21379",
+    "v4_file": 0.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 0.0,
+    "v4_4096_file": 0.0,
+    "gold_files": 1,
+    "missed_files": [
+      {
+        "path": "sympy/core/mod.py",
+        "chunks": 20,
+        "in_pool": 0,
+        "best_lex": 0.35,
+        "best_graph": 0,
+        "earliest_order": null,
+        "tokens_before_earliest": null,
+        "reason": "not_in_pool"
+      }
+    ],
+    "functions": [
+      {
+        "id": "sympy/core/mod.py::Mod.eval",
+        "cov": 0.0,
+        "body": 94,
+        "changed_in_body": 4,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          23,
+          null,
+          "candidate_limit",
+          243,
+          0.35
+        ],
+        "unselected_chunks_with_new_body": 11
+      }
+    ],
+    "selected_chunks": 17,
+    "selected_files": 14,
+    "redundant_tokens": 0,
+    "tail_tokens": 373,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "scikit-learn__scikit-learn-9288",
+    "v4_file": 0.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 0.0,
+    "v4_4096_file": 0.0,
+    "gold_files": 1,
+    "missed_files": [
+      {
+        "path": "sklearn/cluster/k_means_.py",
+        "chunks": 198,
+        "in_pool": 2,
+        "best_lex": 0.511,
+        "best_graph": 0,
+        "earliest_order": 64,
+        "tokens_before_earliest": 2083,
+        "reason": "ranked_after_budget"
+      }
+    ],
+    "functions": [
+      {
+        "id": "sklearn/cluster/k_means_.py::k_means",
+        "cov": 0.0,
+        "body": 92,
+        "changed_in_body": 3,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          11,
+          null,
+          "candidate_limit",
+          231,
+          0.452
+        ],
+        "unselected_chunks_with_new_body": 18
+      }
+    ],
+    "selected_chunks": 18,
+    "selected_files": 13,
+    "redundant_tokens": 0,
+    "tail_tokens": 642,
+    "n_files_with_tail": 3
+  },
+  {
+    "id": "pydata__xarray-6599",
+    "v4_file": 0.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 0.0,
+    "v4_4096_file": 0.0,
+    "gold_files": 1,
+    "missed_files": [
+      {
+        "path": "xarray/core/computation.py",
+        "chunks": 246,
+        "in_pool": 12,
+        "best_lex": 0.482,
+        "best_graph": 0,
+        "earliest_order": 103,
+        "tokens_before_earliest": 2132,
+        "reason": "ranked_after_budget"
+      }
+    ],
+    "functions": [
+      {
+        "id": "xarray/core/computation.py::_ensure_numeric.to_floatable",
+        "cov": 0.0,
+        "body": 9,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          9,
+          null,
+          "candidate_limit",
+          120,
+          0.259
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 16,
+    "selected_files": 5,
+    "redundant_tokens": 0,
+    "tail_tokens": 1539,
+    "n_files_with_tail": 2
+  },
+  {
+    "id": "mwaskom__seaborn-3187",
+    "v4_file": 0.5,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": null,
+    "v9_line": null,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": null,
+    "v4_4096_line": null,
+    "nocov4096_file": 0.5,
+    "v4_4096_file": 1.0,
+    "gold_files": 2,
+    "missed_files": [
+      {
+        "path": "seaborn/_core/scales.py",
+        "chunks": 107,
+        "in_pool": 37,
+        "best_lex": 0.513,
+        "best_graph": 0,
+        "earliest_order": 27,
+        "tokens_before_earliest": 2146,
+        "reason": "ranked_after_budget"
+      }
+    ],
+    "functions": [
+      {
+        "id": "seaborn/_core/scales.py::ContinuousBase._setup",
+        "cov": 0.0,
+        "body": 37,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          11,
+          null,
+          "candidate_limit",
+          150,
+          0.09
+        ],
+        "unselected_chunks_with_new_body": 6
+      },
+      {
+        "id": "seaborn/utils.py::locator_to_legend_entries",
+        "cov": 0.0,
+        "body": 10,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          10,
+          87,
+          "after_budget_cutoff",
+          248,
+          0.628
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 19,
+    "selected_files": 19,
+    "redundant_tokens": 0,
+    "tail_tokens": 0,
+    "n_files_with_tail": 0
+  },
+  {
+    "id": "sympy__sympy-13878",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.14285714285714285,
+    "v9_fn": 0.0,
+    "v4_complete": 0.14285714285714285,
+    "v9_complete": 0.0,
+    "v4_line": 0.07142857142857142,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.14285714285714285,
+    "v4_4096_fn": 0.14285714285714285,
+    "nocov4096_line": 0.07142857142857142,
+    "v4_4096_line": 0.07142857142857142,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "sympy/stats/crv_types.py::Arcsin",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          45,
+          "after_budget_cutoff",
+          58,
+          0.456
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::ChiSquaredDistribution._cdf",
+        "cov": 0.0,
+        "body": 5,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          5,
+          352,
+          "after_budget_cutoff",
+          73,
+          0.448
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Dagum",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          188,
+          "after_budget_cutoff",
+          116,
+          0.502
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Erlang",
+        "cov": 1.0,
+        "body": 1,
+        "changed_in_body": 1,
+        "changed_hit": 1,
+        "best_unselected_new_body_lines": null,
+        "unselected_chunks_with_new_body": 0
+      },
+      {
+        "id": "sympy/stats/crv_types.py::ExponentialDistribution._cdf",
+        "cov": 0.0,
+        "body": 4,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          4,
+          483,
+          "after_budget_cutoff",
+          66,
+          0.37
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Frechet",
+        "cov": 1.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": null,
+        "unselected_chunks_with_new_body": 0
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Kumaraswamy",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          144,
+          "after_budget_cutoff",
+          107,
+          0.527
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Laplace",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          369,
+          "after_budget_cutoff",
+          254,
+          0.796
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Logistic",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          36,
+          "after_budget_cutoff",
+          60,
+          0.427
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::LogNormalDistribution._cdf",
+        "cov": 0.0,
+        "body": 5,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          5,
+          203,
+          "after_budget_cutoff",
+          82,
+          0.469
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::Nakagami",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          87,
+          "after_budget_cutoff",
+          65,
+          0.454
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::StudentT",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          46,
+          "after_budget_cutoff",
+          76,
+          0.546
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::UniformSum",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          97,
+          "after_budget_cutoff",
+          77,
+          0.546
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "sympy/stats/crv_types.py::GammaInverse",
+        "cov": 0.0,
+        "body": 1,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          1,
+          398,
+          "after_budget_cutoff",
+          130,
+          0.482
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 17,
+    "selected_files": 13,
+    "redundant_tokens": 0,
+    "tail_tokens": 344,
+    "n_files_with_tail": 2
+  },
+  {
+    "id": "pylint-dev__pylint-7277",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 1.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 1.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 1.0,
+    "v4_4096_fn": 1.0,
+    "nocov4096_line": 1.0,
+    "v4_4096_line": 1.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "pylint/__init__.py::modify_sys_path",
+        "cov": 0.429,
+        "body": 7,
+        "changed_in_body": 2,
+        "changed_hit": 2,
+        "best_unselected_new_body_lines": [
+          4,
+          161,
+          "after_budget_cutoff",
+          102,
+          0.419
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 23,
+    "selected_files": 23,
+    "redundant_tokens": 0,
+    "tail_tokens": 0,
+    "n_files_with_tail": 0
+  },
+  {
+    "id": "pytest-dev__pytest-7982",
+    "v4_file": 1.0,
+    "v9_file": 1.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "src/_pytest/pathlib.py::visit",
+        "cov": 0.0,
+        "body": 5,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          5,
+          77,
+          "after_budget_cutoff",
+          161,
+          0.655
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 17,
+    "selected_files": 16,
+    "redundant_tokens": 0,
+    "tail_tokens": 141,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "sympy__sympy-24213",
+    "v4_file": 1.0,
+    "v9_file": 1.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 1.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 1.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension",
+        "cov": 0.159,
+        "body": 44,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          15,
+          403,
+          "after_budget_cutoff",
+          247,
+          0.491
+        ],
+        "unselected_chunks_with_new_body": 5
+      }
+    ],
+    "selected_chunks": 18,
+    "selected_files": 12,
+    "redundant_tokens": 0,
+    "tail_tokens": 896,
+    "n_files_with_tail": 3
+  },
+  {
+    "id": "psf__requests-1766",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "requests/auth.py::HTTPDigestAuth.build_digest_header",
+        "cov": 0.0,
+        "body": 56,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          12,
+          324,
+          "after_budget_cutoff",
+          139,
+          0.225
+        ],
+        "unselected_chunks_with_new_body": 7
+      }
+    ],
+    "selected_chunks": 16,
+    "selected_files": 13,
+    "redundant_tokens": 0,
+    "tail_tokens": 491,
+    "n_files_with_tail": 2
+  },
+  {
+    "id": "psf__requests-6028",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": null,
+    "v9_line": null,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": null,
+    "v4_4096_line": null,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "requests/utils.py::prepend_scheme_if_needed",
+        "cov": 0.0,
+        "body": 10,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          10,
+          308,
+          "after_budget_cutoff",
+          250,
+          0.121
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 16,
+    "selected_files": 12,
+    "redundant_tokens": 0,
+    "tail_tokens": 581,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "django__django-14725",
+    "v4_file": 0.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": 0.0,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [
+      {
+        "path": "django/forms/models.py",
+        "chunks": 182,
+        "in_pool": 29,
+        "best_lex": 0.683,
+        "best_graph": 0,
+        "earliest_order": 21,
+        "tokens_before_earliest": 2060,
+        "reason": "ranked_after_budget"
+      }
+    ],
+    "functions": [
+      {
+        "id": "django/forms/models.py::BaseModelFormSet.save",
+        "cov": 0.0,
+        "body": 4,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          4,
+          471,
+          "after_budget_cutoff",
+          123,
+          0.379
+        ],
+        "unselected_chunks_with_new_body": 1
+      },
+      {
+        "id": "django/forms/models.py::modelformset_factory",
+        "cov": 0.0,
+        "body": 19,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          7,
+          null,
+          "candidate_limit",
+          201,
+          0.299
+        ],
+        "unselected_chunks_with_new_body": 5
+      },
+      {
+        "id": "django/forms/models.py::inlineformset_factory",
+        "cov": 0.0,
+        "body": 29,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          23,
+          null,
+          "candidate_limit",
+          247,
+          0.287
+        ],
+        "unselected_chunks_with_new_body": 4
+      }
+    ],
+    "selected_chunks": 16,
+    "selected_files": 15,
+    "redundant_tokens": 0,
+    "tail_tokens": 157,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "scikit-learn__scikit-learn-13124",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 1.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": 0.0,
+    "v9_line": 0.0,
+    "nocov4096_fn": 1.0,
+    "v4_4096_fn": 1.0,
+    "nocov4096_line": 0.3333333333333333,
+    "v4_4096_line": 0.0,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "sklearn/model_selection/_split.py::StratifiedKFold._make_test_folds",
+        "cov": 0.286,
+        "body": 35,
+        "changed_in_body": 1,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          9,
+          170,
+          "after_budget_cutoff",
+          152,
+          0.451
+        ],
+        "unselected_chunks_with_new_body": 5
+      }
+    ],
+    "selected_chunks": 18,
+    "selected_files": 10,
+    "redundant_tokens": 0,
+    "tail_tokens": 1134,
+    "n_files_with_tail": 3
+  },
+  {
+    "id": "sphinx-doc__sphinx-11510",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": null,
+    "v9_fn": null,
+    "v4_complete": null,
+    "v9_complete": null,
+    "v4_line": null,
+    "v9_line": null,
+    "nocov4096_fn": null,
+    "v4_4096_fn": null,
+    "nocov4096_line": null,
+    "v4_4096_line": null,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [],
+    "selected_chunks": 18,
+    "selected_files": 12,
+    "redundant_tokens": 0,
+    "tail_tokens": 791,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "matplotlib__matplotlib-23476",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": null,
+    "v9_line": null,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": null,
+    "v4_4096_line": null,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "lib/matplotlib/figure.py::Figure.__getstate__",
+        "cov": 0.0,
+        "body": 8,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          8,
+          null,
+          "candidate_limit",
+          216,
+          0.536
+        ],
+        "unselected_chunks_with_new_body": 1
+      }
+    ],
+    "selected_chunks": 18,
+    "selected_files": 17,
+    "redundant_tokens": 0,
+    "tail_tokens": 145,
+    "n_files_with_tail": 1
+  },
+  {
+    "id": "psf__requests-1921",
+    "v4_file": 1.0,
+    "v9_file": 0.0,
+    "v4_fn": 0.0,
+    "v9_fn": 0.0,
+    "v4_complete": 0.0,
+    "v9_complete": 0.0,
+    "v4_line": null,
+    "v9_line": null,
+    "nocov4096_fn": 0.0,
+    "v4_4096_fn": 0.0,
+    "nocov4096_line": null,
+    "v4_4096_line": null,
+    "nocov4096_file": 1.0,
+    "v4_4096_file": 1.0,
+    "gold_files": 1,
+    "missed_files": [],
+    "functions": [
+      {
+        "id": "requests/sessions.py::merge_setting",
+        "cov": 0.0,
+        "body": 15,
+        "changed_in_body": 0,
+        "changed_hit": 0,
+        "best_unselected_new_body_lines": [
+          10,
+          167,
+          "after_budget_cutoff",
+          148,
+          0.575
+        ],
+        "unselected_chunks_with_new_body": 2
+      }
+    ],
+    "selected_chunks": 18,
+    "selected_files": 14,
+    "redundant_tokens": 0,
+    "tail_tokens": 450,
+    "n_files_with_tail": 2
+  }
+]

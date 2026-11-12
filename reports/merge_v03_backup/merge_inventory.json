@@ -1,0 +1,52 @@
+{
+  "source": "/Users/aleksandrvorobev/Downloads/CodeGraph-RAG-v0.2/CodeGraph-RAG-v0.3",
+  "destination": "/Users/aleksandrvorobev/Downloads/CodeGraph-RAG-v0.2",
+  "backed_up": [
+    "README.md",
+    "pyproject.toml",
+    "src/codegraph_rag/cli.py",
+    "src/codegraph_rag/evaluate.py",
+    "src/codegraph_rag/retrieval.py",
+    "notebooks/03_swebench_pathpack.ipynb"
+  ],
+  "added": [
+    "src/codegraph_rag/audit.py",
+    "src/codegraph_rag/function_gold.py",
+    "tests/test_v03.py",
+    "tests/test_function_gold.py",
+    "docs/STATUS_V03_RU.md",
+    "reports/user_aggregate_2026-11-01.csv",
+    "reports/v03_demo/pathpack_70.jsonl",
+    "reports/v03_demo/pathpack_110.jsonl",
+    "reports/v03_demo/bm25_45.jsonl",
+    "reports/v03_demo/bm25_160.jsonl",
+    "reports/v03_demo/graph-expand_45.jsonl",
+    "reports/v03_demo/audit_cli_check.json",
+    "reports/v03_demo/graph-expand_160.jsonl",
+    "reports/v03_demo/pathpack-v3_70.jsonl",
+    "reports/v03_demo/pathpack-v3_160.jsonl",
+    "reports/v03_demo/graph-expand_110.jsonl",
+    "reports/v03_demo/pathpack-v3_45.jsonl",
+    "reports/v03_demo/pathpack-v3_110.jsonl",
+    "reports/v03_demo/audit_demo.json",
+    "reports/v03_demo/pathpack_45.jsonl",
+    "reports/v03_demo/gold_demo.jsonl",
+    "reports/v03_demo/pathpack_160.jsonl",
+    "reports/v03_demo/bm25_70.jsonl",
+    "reports/v03_demo/bm25_110.jsonl",
+    "reports/v03_demo/graph-expand_70.jsonl",
+    "scripts/run_dev.sh",
+    "visualizations/user_function_recall.png",
+    "visualizations/user_file_recall.png",
+    "visualizations/v03_selected_call_graph.png"
+  ],
+  "original_v03_backup": "reports/merge_v03_backup/original_v03",
+  "preserved_results_sha256": {
+    "output/benchmark/issues.jsonl": "286842c74fdd1fb3616fe2ba9de17d84603c127f7271e5d21cb67a9fd86254a5",
+    "output/benchmark/predictions.jsonl": "0e5be5603f823f14516032569a18cbe3b7807795d4e725653f2383cd4cddd4f9",
+    "output/benchmark/graph_inventory.csv": "fe6c9b0d9bdd02d48915aada764b697dd9e14e727b317631b26f3aca2013d4ae",
+    "output/benchmark/manifest_metadata.json": "7c21df54f1b2e5f086b8810caf6066021b23ce90139466eb7f8d2a64625f25b7",
+    "output/benchmark/main_results.csv": "c0cdb71673ea90a4f4570f5825ba64e7db73a7ba48d5c2544083f14795920a29",
+    "output/benchmark/gold_labels.jsonl": "6da0715e1b5d22b0705fe85b58afb4c9c00f8d2d3a7be0c8a2a63dd97917abe1"
+  }
+}

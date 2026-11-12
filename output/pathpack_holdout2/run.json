@@ -1,0 +1,703 @@
+{
+  "schema": "pathpack-r",
+  "code_sha256": "e82d4ee9f694217ea18d27d72a16011b6b1d5fd3e54b6cd9e28f2b5006a9379c",
+  "split": "final_holdout2",
+  "seed": 42,
+  "budgets": [
+    1024,
+    2048,
+    4096
+  ],
+  "methods": [
+    "bm25",
+    "pathpack-v4",
+    "pathpack-r/fusion",
+    "pathpack-h/nomemory",
+    "pathpack-u",
+    "pathpack-u/nobundle"
+  ],
+  "token_counter": "utf8_bytes_div4_ceil_serialized_context_v1",
+  "config": {
+    "lexical_limit": 80,
+    "symbol_limit": 256,
+    "semantic_limit": 40,
+    "graph_limit": 64,
+    "graph_hops": 1,
+    "graph_seeds": 8,
+    "max_chunks_per_function": 8,
+    "semantic_model": "microsoft/unixcoder-base",
+    "semantic_revision": "5604afdc964f6c53782a6813140ade5216b99006",
+    "semantic_max_chars": 1200,
+    "semantic_index_cap": 4096,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "reranker_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "reranker_max_chars": 1200,
+    "reranker_query_chars": 1500,
+    "reranker_batch": 64,
+    "active_rounds": 2,
+    "shortlist": 6,
+    "max_new_per_round": 12,
+    "expand_lexical": 0.25,
+    "expand_semantic": 0.35,
+    "redirect_factor": 0.85,
+    "relative_floor": 0.35,
+    "min_relevance": 0.0,
+    "max_overlap": 0.85,
+    "min_marginal": 0.02,
+    "necessity_bonus": 0.15,
+    "reject_ratio": 0.5,
+    "swap_passes": 2,
+    "swap_candidates": 8,
+    "fusion_lexical": 0.4,
+    "fusion_symbol": 0.25,
+    "fusion_semantic": 0.2,
+    "fusion_graph": 0.15,
+    "gemma_tokenizer": "google/gemma-2-2b",
+    "gemma_revision": "",
+    "edit_model": "output/pathpack_e/model.pkl",
+    "history_model": "output/pathpack_e/model_history.pkl",
+    "both_model": "output/pathpack_e/model_both.pkl",
+    "hier_model": "output/pathpack_e/model_hier.pkl",
+    "edit_file_bonus": 0.25,
+    "edit_min_gain": 0.004,
+    "edit_cost_exponent": 1.0,
+    "edit_skeleton_weight": 0.15
+  },
+  "v4_config": {
+    "target_chunk_tokens": 128,
+    "max_chunk_tokens": 256,
+    "min_chunk_tokens": 32,
+    "chunk_overlap_lines": 2,
+    "lexical_weight": 0.45,
+    "symbol_weight": 0.2,
+    "graph_weight": 0.25,
+    "diversity_weight": 0.1,
+    "redundancy_strength": 0.5,
+    "file_diversity_exponent": 1.0,
+    "cost_offset": 32.0,
+    "cost_exponent": 0.5,
+    "hops": 2,
+    "seeds": 3,
+    "distance_decay": 0.8,
+    "edge_weights": {
+      "calls": 1.0,
+      "imports": 0.45,
+      "inherits": 0.65,
+      "defines": 0.22
+    },
+    "candidate_limit": 512,
+    "min_relevance": 0.0,
+    "enable_graph": true,
+    "enable_diversity": true,
+    "enable_chunking": true,
+    "enable_symbol": true,
+    "enable_cost": true,
+    "graph_direction": "both"
+  },
+  "v10e_config": {
+    "mode": "joint",
+    "nested": false,
+    "enable_structural": true,
+    "enable_semantic": true,
+    "bm25_limit": 64,
+    "symbol_limit": 64,
+    "path_limit": 32,
+    "graph_limit": 48,
+    "test_limit": 8,
+    "graph_hops": 1,
+    "alpha": 1.0,
+    "beta": 0.0,
+    "gamma": 0.15,
+    "delta": 0.5,
+    "repeat_weight": 0.35,
+    "min_neighbor_lexical": 0.15,
+    "beam_width": 1,
+    "beam_expand": 8,
+    "timeout_sec": 8.0,
+    "lexical_weight": 0.5,
+    "symbol_weight": 0.4,
+    "graph_weight": 0.3,
+    "repo_weight": 0.25,
+    "min_utility": 0.12
+  },
+  "issues": [
+    {
+      "instance_id": "astropy__astropy-13579",
+      "repo": "astropy/astropy",
+      "base_commit": "0df94ff7097961e92fd7812036a24b145bc13ca8",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "repo": "astropy/astropy",
+      "base_commit": "3cedd79e6c121910220f8e6df77c54a0b344ea94",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-11099",
+      "repo": "django/django",
+      "base_commit": "d26b2424437dabeeca94d7900b37d2df4410da0c",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-11149",
+      "repo": "django/django",
+      "base_commit": "e245046bb6e8b32360aa48b8a41fb7050f0fc730",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-11179",
+      "repo": "django/django",
+      "base_commit": "19fc6376ce67d01ca37a91ef2f55ef769f50513a",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-11451",
+      "repo": "django/django",
+      "base_commit": "e065b293878b1e3ea56655aa9d33e87576cd77ff",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-11551",
+      "repo": "django/django",
+      "base_commit": "7991111af12056ec9a856f35935d273526338c1f",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-11790",
+      "repo": "django/django",
+      "base_commit": "b1d6b35e146aea83b171c1b921178bbaae2795ed",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-12273",
+      "repo": "django/django",
+      "base_commit": "927c903f3cd25c817c21738328b53991c035b415",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-12419",
+      "repo": "django/django",
+      "base_commit": "7fa1a93c6c8109010a6ff3f604fda83b604e0e97",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-13401",
+      "repo": "django/django",
+      "base_commit": "453967477e3ddae704cd739eac2449c0e13d464c",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-13406",
+      "repo": "django/django",
+      "base_commit": "84609b3205905097d7d3038d32e6101f012c0619",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-13786",
+      "repo": "django/django",
+      "base_commit": "bb64b99b78a579cb2f6178011a4cf9366e634438",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14017",
+      "repo": "django/django",
+      "base_commit": "466920f6d726eee90d5566e0a9948e92b33a122e",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14170",
+      "repo": "django/django",
+      "base_commit": "6efc35b4fe3009666e56a60af0675d7d532bf4ff",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14349",
+      "repo": "django/django",
+      "base_commit": "a708f39ce67af174df90c5b5e50ad1976cec7cb8",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14500",
+      "repo": "django/django",
+      "base_commit": "8c3bd0b708b488a1f6e8bd8cc6b96569904605be",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14559",
+      "repo": "django/django",
+      "base_commit": "d79be3ed39b76d3e34431873eec16f6dd354ab17",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14631",
+      "repo": "django/django",
+      "base_commit": "84400d2e9db7c51fee4e9bb04c028f665b8e7624",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-14787",
+      "repo": "django/django",
+      "base_commit": "004b4620f6f4ad87261e149898940f2dcd5757ef",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-15104",
+      "repo": "django/django",
+      "base_commit": "a7e7043c8746933dafce652507d3b821801cdc7d",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-15503",
+      "repo": "django/django",
+      "base_commit": "859a87d873ce7152af73ab851653b4e1c3ffea4c",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-15569",
+      "repo": "django/django",
+      "base_commit": "884b4c27f506b3c29d58509fc83a35c30ea10d94",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-16256",
+      "repo": "django/django",
+      "base_commit": "76e37513e22f4d9a01c7f15eee36fe44388e6670",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-16493",
+      "repo": "django/django",
+      "base_commit": "e3a4cee081cf60650b8824f0646383b79cb110e7",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-16502",
+      "repo": "django/django",
+      "base_commit": "246eb4836a6fb967880f838aa0d22ecfdca8b6f1",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-16877",
+      "repo": "django/django",
+      "base_commit": "98f6ada0e2058d67d91fb6c16482411ec2ca0967",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-16899",
+      "repo": "django/django",
+      "base_commit": "d3d173425fc0a1107836da5b4567f1c88253191b",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "django__django-16901",
+      "repo": "django/django",
+      "base_commit": "ee36e101e8f8c0acde4bb148b738ab7034e902a0",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22871",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "a7b7260bf06c20d408215d95ce20a1a01c12e5b1",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23299",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "3eadeacc06c9f2ddcdac6ae39819faa9fbee9e39",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24627",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "9d22ab09d52d279b125d8770967569de070913b2",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "pydata__xarray-3151",
+      "repo": "pydata/xarray",
+      "base_commit": "118f4d996e7711c9aced916e6049af9f28d5ec66",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "pydata__xarray-4075",
+      "repo": "pydata/xarray",
+      "base_commit": "19b088636eb7d3f65ab7a1046ac672e0689371d8",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-8399",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "6e7dc8bac831cd8cf7a53b08efa366bd84f0c0fe",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14053",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "6ab8c86c383dd847a1be7103ad115f174fe23ffd",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "d49a6f13af2f22228d430ac64ac2b518937800d0",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25232",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "f7eea978097085a6781a0e92fc14ba7712a52d75",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8551",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "57ed10c68057c96491acbd3e62254ccfaf9e3861",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8638",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "4b452338f914d4f6b54704222d70ae8a746e3db5",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9602",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "6c38f68dae221e8cfc70c137974b8b88bd3baaab",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9673",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "5fb51fb1467dc5eea7505402c3c5d9b378d3b441",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9711",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "81a4fd973d4cfcb25d01a7b0be62cdb28f82406d",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-13551",
+      "repo": "sympy/sympy",
+      "base_commit": "9476425b9e34363c2d9ac38e9f04aa75ae54a775",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-13757",
+      "repo": "sympy/sympy",
+      "base_commit": "a5e6a101869e027e7930e694f8b1cfb082603453",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-16886",
+      "repo": "sympy/sympy",
+      "base_commit": "c50643a49811e9fe2f4851adff4313ad46f7325e",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-17655",
+      "repo": "sympy/sympy",
+      "base_commit": "f5e965947af2410ded92cfad987aaf45262ea434",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-18211",
+      "repo": "sympy/sympy",
+      "base_commit": "b4f1aa3540fe68d078d76e78ba59d022dd6df39f",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-21596",
+      "repo": "sympy/sympy",
+      "base_commit": "110997fe18b9f7d5ba7d22f624d156a29bf40759",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "repo": "sympy/sympy",
+      "base_commit": "10de1a18a0efac0b19b611e40c928250dda688bf",
+      "split": "final_holdout2"
+    },
+    {
+      "instance_id": "sympy__sympy-24562",
+      "repo": "sympy/sympy",
+      "base_commit": "b1cb676cf92dd1a48365b731979833375b188bf2",
+      "split": "final_holdout2"
+    }
+  ],
+  "snapshots": "/Users/aleksandrvorobev/Downloads/CodeGraph-RAG-v0.2/data/swebench/snapshots",
+  "status": "scored",
+  "reranker": {
+    "status": "available",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "code_specialized": false,
+    "training_data": "MS MARCO passages, not source code",
+    "note": "Zero-shot natural-language cross-encoder used on an issue/code pair. Not a code-specialized reranker.",
+    "code_probe": {
+      "matching_name": 0.006101314319710102,
+      "unrelated": 1.2978221163612918e-05,
+      "matching_name_ranks_higher": true,
+      "limitation": "The probe only checks that the model accepts code text and prefers a named function on one synthetic pair."
+    }
+  },
+  "hardware": {
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "python": "3.12.2 (v3.12.2:6abddd9f6a, Feb  6 2024, 17:02:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "hier_model": {
+    "weights": {
+      "chunk": 0.10503690485846377,
+      "fn": 0.38438705847432475,
+      "file": 0.8154911838790931
+    },
+    "tasks": 1295,
+    "folds": 5,
+    "use_memory": false,
+    "agg": [
+      "p_max",
+      "p_mean",
+      "p_sum",
+      "p_second",
+      "p_noisy_or",
+      "count",
+      "log_count",
+      "lexical_max",
+      "semantic_max",
+      "symbol_max",
+      "graph_max",
+      "channels_max",
+      "log_tokens_max",
+      "file_lexical_pct",
+      "file_semantic_pct"
+    ],
+    "mean_edited_units_per_task": {
+      "chunk": 9.520463320463321,
+      "fn": 2.6015444015444014,
+      "file": 1.2262548262548263
+    },
+    "fn_rows": 127871,
+    "file_rows": 47203,
+    "train_dir": "output/pathpack_e/train_history",
+    "supervision": "history_replay"
+  },
+  "edit_models": {
+    "label": {
+      "tasks": 34,
+      "rows": 14869,
+      "positives": 57,
+      "folds": 5,
+      "params": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "min_samples_leaf": 40,
+        "l2_regularization": 1.0,
+        "random_state": 0
+      },
+      "stage1_features": [
+        "lexical",
+        "semantic",
+        "symbol",
+        "graph",
+        "repo",
+        "n_channels",
+        "rank_lexical",
+        "rank_lexical_name",
+        "rank_symbol",
+        "rank_semantic",
+        "rank_structural",
+        "log_chunk_tokens",
+        "log_function_tokens",
+        "chunk_position",
+        "is_first_chunk",
+        "in_symbol_file",
+        "file_max_lexical",
+        "file_max_semantic",
+        "log_file_regions",
+        "file_lexical_pct",
+        "file_semantic_pct",
+        "lexical_rel_file",
+        "semantic_rel_file",
+        "lexical_pool_pct",
+        "semantic_pool_pct",
+        "function_max_lexical",
+        "function_regions",
+        "log_file_churn",
+        "log_file_fixes",
+        "cochange_top_files",
+        "cochange_symbol_files",
+        "memory_file",
+        "memory_file_pct"
+      ],
+      "stage2_features": [
+        "p0",
+        "callers_max_p0",
+        "callees_max_p0",
+        "log_neighbors",
+        "file_max_p0",
+        "function_max_p0"
+      ],
+      "excluded_manifests": [
+        "output/pathpack_r_splits_v2/validation_issues.jsonl",
+        "output/pathpack_r_splits_v2/final_holdout_issues.jsonl",
+        "output/benchmark/issues.jsonl"
+      ],
+      "train_dirs": [
+        "output/pathpack_e/train"
+      ],
+      "supervision": [
+        "benchmark_patch"
+      ]
+    },
+    "history": {
+      "tasks": 1295,
+      "rows": 234457,
+      "positives": 12329,
+      "folds": 5,
+      "params": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "min_samples_leaf": 40,
+        "l2_regularization": 1.0,
+        "random_state": 0
+      },
+      "stage1_features": [
+        "lexical",
+        "semantic",
+        "symbol",
+        "graph",
+        "repo",
+        "n_channels",
+        "rank_lexical",
+        "rank_lexical_name",
+        "rank_symbol",
+        "rank_semantic",
+        "rank_structural",
+        "log_chunk_tokens",
+        "log_function_tokens",
+        "chunk_position",
+        "is_first_chunk",
+        "in_symbol_file",
+        "file_max_lexical",
+        "file_max_semantic",
+        "log_file_regions",
+        "file_lexical_pct",
+        "file_semantic_pct",
+        "lexical_rel_file",
+        "semantic_rel_file",
+        "lexical_pool_pct",
+        "semantic_pool_pct",
+        "function_max_lexical",
+        "function_regions",
+        "log_file_churn",
+        "log_file_fixes",
+        "cochange_top_files",
+        "cochange_symbol_files",
+        "memory_file",
+        "memory_file_pct"
+      ],
+      "stage2_features": [
+        "p0",
+        "callers_max_p0",
+        "callees_max_p0",
+        "log_neighbors",
+        "file_max_p0",
+        "function_max_p0"
+      ],
+      "excluded_manifests": [
+        "output/pathpack_r_splits_v2/validation_issues.jsonl",
+        "output/pathpack_r_splits_v2/final_holdout_issues.jsonl",
+        "output/benchmark/issues.jsonl"
+      ],
+      "train_dirs": [
+        "output/pathpack_e/train_history"
+      ],
+      "supervision": [
+        "history_replay"
+      ]
+    },
+    "both": {
+      "tasks": 1329,
+      "rows": 249326,
+      "positives": 12386,
+      "folds": 5,
+      "params": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "min_samples_leaf": 40,
+        "l2_regularization": 1.0,
+        "random_state": 0
+      },
+      "stage1_features": [
+        "lexical",
+        "semantic",
+        "symbol",
+        "graph",
+        "repo",
+        "n_channels",
+        "rank_lexical",
+        "rank_lexical_name",
+        "rank_symbol",
+        "rank_semantic",
+        "rank_structural",
+        "log_chunk_tokens",
+        "log_function_tokens",
+        "chunk_position",
+        "is_first_chunk",
+        "in_symbol_file",
+        "file_max_lexical",
+        "file_max_semantic",
+        "log_file_regions",
+        "file_lexical_pct",
+        "file_semantic_pct",
+        "lexical_rel_file",
+        "semantic_rel_file",
+        "lexical_pool_pct",
+        "semantic_pool_pct",
+        "function_max_lexical",
+        "function_regions",
+        "log_file_churn",
+        "log_file_fixes",
+        "cochange_top_files",
+        "cochange_symbol_files",
+        "memory_file",
+        "memory_file_pct"
+      ],
+      "stage2_features": [
+        "p0",
+        "callers_max_p0",
+        "callees_max_p0",
+        "log_neighbors",
+        "file_max_p0",
+        "function_max_p0"
+      ],
+      "excluded_manifests": [
+        "output/pathpack_r_splits_v2/validation_issues.jsonl",
+        "output/pathpack_r_splits_v2/final_holdout_issues.jsonl",
+        "output/benchmark/issues.jsonl"
+      ],
+      "train_dirs": [
+        "output/pathpack_e/train",
+        "output/pathpack_e/train_history"
+      ],
+      "supervision": [
+        "benchmark_patch",
+        "history_replay"
+      ]
+    }
+  },
+  "note": "v1.0e changes only the stop rule. PathPack-R does not read the gold patch.",
+  "prediction_count": 918,
+  "not_run": 0,
+  "semantic": {
+    "recorded_in": "diagnostics",
+    "policy": "not_run when the pinned code model cannot be loaded; no substitute vectors"
+  },
+  "gemma_tokenizer": "not_run"
+}

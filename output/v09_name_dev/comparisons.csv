@@ -1,0 +1,25 @@
+candidate,baseline,budget,metric,n,difference,ci95,wins,ties,losses
+pathpack-v4,pathpack-v9,1024,file_recall,20,-0.25,"[-0.5, 0.0]",2,11,7
+pathpack-v4,pathpack-v9,1024,function_recall,18,0.02381,"[-0.146825, 0.190476]",2,14,2
+pathpack-v4,pathpack-v9,1024,changed_line_recall,14,0.052721,"[-0.061224, 0.219388]",2,11,1
+pathpack-v4,pathpack-v9,2048,file_recall,20,-0.225,"[-0.4, -0.075]",0,15,5
+pathpack-v4,pathpack-v9,2048,function_recall,18,0.0,"[-0.166667, 0.166667]",1,16,1
+pathpack-v4,pathpack-v9,2048,changed_line_recall,14,0.052721,"[-0.061224, 0.219388]",2,11,1
+pathpack-v4,pathpack-v9,4096,file_recall,20,-0.15,"[-0.35, 0.0]",0,17,3
+pathpack-v4,pathpack-v9,4096,function_recall,18,-0.035714,"[-0.202381, 0.111111]",1,14,3
+pathpack-v4,pathpack-v9,4096,changed_line_recall,14,0.044785,"[-0.069161, 0.211451]",2,10,2
+pathpack-v9,pathpack-v4,1024,file_recall,20,0.25,"[0.0, 0.5]",7,11,2
+pathpack-v9,pathpack-v4,1024,function_recall,18,-0.02381,"[-0.190476, 0.146825]",2,14,2
+pathpack-v9,pathpack-v4,1024,complete_function_recall,18,-0.02381,"[-0.083333, 0.011905]",1,16,1
+pathpack-v9,pathpack-v4,1024,changed_line_recall,14,-0.052721,"[-0.219388, 0.061224]",1,11,2
+pathpack-v9,pathpack-v4,1024,relevant_line_density,8,-0.031329,"[-0.098958, 0.03125]",1,4,3
+pathpack-v9,pathpack-v4,2048,file_recall,20,0.225,"[0.075, 0.4]",5,15,0
+pathpack-v9,pathpack-v4,2048,function_recall,18,0.0,"[-0.166667, 0.166667]",1,16,1
+pathpack-v9,pathpack-v4,2048,complete_function_recall,18,0.055556,"[0.0, 0.166667]",1,17,0
+pathpack-v9,pathpack-v4,2048,changed_line_recall,14,-0.052721,"[-0.219388, 0.061224]",1,11,2
+pathpack-v9,pathpack-v4,2048,relevant_line_density,9,-0.024394,"[-0.077182, 0.013559]",1,5,3
+pathpack-v9,pathpack-v4,4096,file_recall,20,0.15,"[0.0, 0.35]",3,17,0
+pathpack-v9,pathpack-v4,4096,function_recall,18,0.035714,"[-0.111111, 0.202381]",3,14,1
+pathpack-v9,pathpack-v4,4096,complete_function_recall,18,0.063492,"[0.0, 0.18254]",2,16,0
+pathpack-v9,pathpack-v4,4096,changed_line_recall,14,-0.044785,"[-0.211451, 0.066327]",2,10,2
+pathpack-v9,pathpack-v4,4096,relevant_line_density,10,-0.007682,"[-0.034904, 0.016404]",2,5,3

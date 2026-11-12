@@ -1,0 +1,10 @@
+{
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "split": "test",
+  "seed": 42,
+  "requested": 80,
+  "selected": 80,
+  "dev": 20,
+  "held_out": 60,
+  "note": "Do not give gold_labels.jsonl to the retriever. Checkout each repo at base_commit."
+}

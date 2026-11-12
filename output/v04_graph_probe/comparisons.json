@@ -1,0 +1,226 @@
+[
+  {
+    "candidate": "v4-hops-1",
+    "baseline": "v4-hops-2",
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.025,
+    "ci95": [
+      -0.15,
+      0.075
+    ],
+    "wins": 1,
+    "ties": 18,
+    "losses": 1
+  },
+  {
+    "candidate": "v4-hops-1",
+    "baseline": "v4-hops-2",
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.055556,
+    "ci95": [
+      -0.166667,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 1
+  },
+  {
+    "candidate": "v4-hops-1",
+    "baseline": "v4-hops-2",
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-hops-1",
+    "baseline": "v4-hops-2",
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-hops-3",
+    "baseline": "v4-hops-2",
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 20,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-hops-3",
+    "baseline": "v4-hops-2",
+    "metric": "function_recall",
+    "n": 18,
+    "difference": 0.059524,
+    "ci95": [
+      0.0,
+      0.170635
+    ],
+    "wins": 2,
+    "ties": 16,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-hops-3",
+    "baseline": "v4-hops-2",
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.003968,
+    "ci95": [
+      0.0,
+      0.011905
+    ],
+    "wins": 1,
+    "ties": 17,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-hops-3",
+    "baseline": "v4-hops-2",
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.071429,
+    "ci95": [
+      0.0,
+      0.214286
+    ],
+    "wins": 1,
+    "ties": 13,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-callers",
+    "baseline": "v4-hops-2",
+    "metric": "file_recall",
+    "n": 20,
+    "difference": -0.125,
+    "ci95": [
+      -0.275,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 3
+  },
+  {
+    "candidate": "v4-callers",
+    "baseline": "v4-hops-2",
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.087302,
+    "ci95": [
+      -0.22619,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 15,
+    "losses": 3
+  },
+  {
+    "candidate": "v4-callers",
+    "baseline": "v4-hops-2",
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": -0.031746,
+    "ci95": [
+      -0.087302,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 2
+  },
+  {
+    "candidate": "v4-callers",
+    "baseline": "v4-hops-2",
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-callees",
+    "baseline": "v4-hops-2",
+    "metric": "file_recall",
+    "n": 20,
+    "difference": 0.025,
+    "ci95": [
+      0.0,
+      0.075
+    ],
+    "wins": 1,
+    "ties": 19,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-callees",
+    "baseline": "v4-hops-2",
+    "metric": "function_recall",
+    "n": 18,
+    "difference": -0.055556,
+    "ci95": [
+      -0.166667,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 17,
+    "losses": 1
+  },
+  {
+    "candidate": "v4-callees",
+    "baseline": "v4-hops-2",
+    "metric": "complete_function_recall",
+    "n": 18,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "candidate": "v4-callees",
+    "baseline": "v4-hops-2",
+    "metric": "changed_line_recall",
+    "n": 14,
+    "difference": 0.02381,
+    "ci95": [
+      0.0,
+      0.071429
+    ],
+    "wins": 1,
+    "ties": 13,
+    "losses": 0
+  }
+]

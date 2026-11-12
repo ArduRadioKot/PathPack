@@ -1,0 +1,10 @@
+# PathPack v0.7. Frozen before the dev measurement.
+# The file order is v0.4 (hops 2, both directions, file diversity).
+# The first unit of a file is a whole function when it fits in 192 tokens,
+# otherwise the best lexical AST slice of the best function in that file.
+whole_max_tokens: 192
+enable_hierarchy: true
+enable_adaptive: true
+enable_graph: true
+enable_diversity: true
+enable_budget: true

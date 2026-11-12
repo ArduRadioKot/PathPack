@@ -1,0 +1,1229 @@
+{
+  "instance_id": "scikit-learn__scikit-learn-13439",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "D",
+    "E"
+  ],
+  "graph_subtype": null,
+  "illustrative": true,
+  "problem_statement": "Pipeline should implement __len__\n#### Description\r\n\r\nWith the new indexing support `pipe[:len(pipe)]` raises an error.\r\n\r\n#### Steps/Code to Reproduce\r\n\r\n```python\r\nfrom sklearn import svm\r\nfrom sklearn.datasets import samples_generator\r\nfrom sklearn.feature_selection import SelectKBest\r\nfrom sklearn.feature_selection import f_regression\r\nfrom sklearn.pipeline import Pipeline\r\n\r\n# generate some data to play with\r\nX, y = samples_generator.make_classification(\r\n    n_informative=5, n_redundant=0, random_state=42)\r\n\r\nanova_filter = SelectKBest(f_regression, k=5)\r\nclf = svm.SVC(kernel='linear')\r\npipe = Pipeline([('anova', anova_filter), ('svc', clf)])\r\n\r\nlen(pipe)\r\n```\r\n\r\n#### Versions\r\n\r\n```\r\nSystem:\r\n    python: 3.6.7 | packaged by conda-forge | (default, Feb 19 2019, 18:37:23)  [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]\r\nexecutable: /Users/krisz/.conda/envs/arrow36/bin/python\r\n   machine: Darwin-18.2.0-x86_64-i386-64bit\r\n\r\nBLAS:\r\n    macros: HAVE_CBLAS=None\r\n  lib_dirs: /Users/krisz/.conda/envs/arrow36/lib\r\ncblas_libs: openblas, openblas\r\n\r\nPython deps:\r\n       pip: 19.0.3\r\nsetuptools: 40.8.0\r\n   sklearn: 0.21.dev0\r\n     numpy: 1.16.2\r\n     scipy: 1.2.1\r\n    Cython: 0.29.6\r\n    pandas: 0.24.1\r\n```\n",
+  "gold_files": [
+    "sklearn/pipeline.py"
+  ],
+  "gold_functions": [],
+  "changed_lines": {
+    "sklearn/pipeline.py": []
+  },
+  "insertion_anchors": {
+    "sklearn/pipeline.py": [
+      200,
+      202
+    ]
+  },
+  "exclusions": [
+    {
+      "path": "sklearn/pipeline.py",
+      "reason": "new_definition_no_base_function"
+    }
+  ],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 1,
+    "changed_lines_outside_function_bodies": [],
+    "removed_lines_out_of_range": [],
+    "class_methods": [],
+    "nested_functions": [],
+    "module_level_exclusions": 0,
+    "new_definition_exclusions": 1
+  },
+  "metrics": {
+    "file_recall": 1.0,
+    "function_recall": null,
+    "complete_function_recall": null,
+    "changed_line_recall": null,
+    "label_completeness": "partial"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": 0.0,
+    "insertion_anchor_reason": null,
+    "base_touch_recall": 0.0,
+    "base_touch_reason": null,
+    "relevant_line_density": null,
+    "relevant_line_density_reason": "no_evaluable_changed_lines",
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 0,
+    "evaluable_anchor_lines": 2,
+    "emitted_nonempty_lines": 6
+  },
+  "selected_files": [
+    "examples/cluster/plot_feature_agglomeration_vs_univariate_selection.py",
+    "examples/compose/plot_compare_reduction.py",
+    "examples/compose/plot_digits_pipe.py",
+    "examples/compose/plot_feature_union.py",
+    "examples/feature_selection/plot_feature_selection_pipeline.py",
+    "examples/feature_selection/plot_rfe_with_cross_validation.py",
+    "examples/preprocessing/plot_map_data_to_normal.py",
+    "examples/svm/plot_svm_anova.py",
+    "examples/svm/plot_svm_kernels.py",
+    "examples/svm/plot_svm_margin.py",
+    "sklearn/_build_utils/__init__.py",
+    "sklearn/datasets/__init__.py",
+    "sklearn/datasets/samples_generator.py",
+    "sklearn/feature_selection/__init__.py",
+    "sklearn/pipeline.py",
+    "sklearn/utils/_show_versions.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "examples/feature_selection/plot_feature_selection_pipeline.py::__module__::chunk_2",
+      "path": "examples/feature_selection/plot_feature_selection_pipeline.py",
+      "qualname": "__module__",
+      "function_id": "examples/feature_selection/plot_feature_selection_pipeline.py::__module__",
+      "line_start": 23,
+      "line_end": 40,
+      "tokens_est": 146,
+      "source_spans": [
+        [
+          23,
+          0,
+          64
+        ],
+        [
+          24,
+          0,
+          28
+        ],
+        [
+          26,
+          0,
+          75
+        ],
+        [
+          30,
+          0,
+          46
+        ],
+        [
+          32,
+          0,
+          22
+        ],
+        [
+          34,
+          0,
+          45
+        ],
+        [
+          35,
+          0,
+          32
+        ],
+        [
+          36,
+          0,
+          35
+        ],
+        [
+          37,
+          0,
+          45
+        ],
+        [
+          39,
+          0,
+          70
+        ],
+        [
+          40,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/utils/_show_versions.py::show_versions::chunk_0",
+      "path": "sklearn/utils/_show_versions.py",
+      "qualname": "show_versions",
+      "function_id": "sklearn/utils/_show_versions.py::show_versions",
+      "line_start": 99,
+      "line_end": 116,
+      "tokens_est": 159,
+      "source_spans": [
+        [
+          99,
+          0,
+          21
+        ],
+        [
+          100,
+          0,
+          41
+        ],
+        [
+          101,
+          0,
+          1
+        ],
+        [
+          102,
+          0,
+          31
+        ],
+        [
+          103,
+          0,
+          33
+        ],
+        [
+          104,
+          0,
+          33
+        ],
+        [
+          105,
+          0,
+          1
+        ],
+        [
+          106,
+          0,
+          23
+        ],
+        [
+          107,
+          0,
+          37
+        ],
+        [
+          108,
+          0,
+          56
+        ],
+        [
+          109,
+          0,
+          1
+        ],
+        [
+          110,
+          0,
+          21
+        ],
+        [
+          111,
+          0,
+          38
+        ],
+        [
+          112,
+          0,
+          56
+        ],
+        [
+          113,
+          0,
+          1
+        ],
+        [
+          114,
+          0,
+          28
+        ],
+        [
+          115,
+          0,
+          38
+        ],
+        [
+          116,
+          0,
+          56
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/feature_selection/__init__.py::__module__::chunk_2",
+      "path": "sklearn/feature_selection/__init__.py",
+      "qualname": "__module__",
+      "function_id": "sklearn/feature_selection/__init__.py::__module__",
+      "line_start": 21,
+      "line_end": 25,
+      "tokens_est": 55,
+      "source_spans": [
+        [
+          21,
+          0,
+          23
+        ],
+        [
+          23,
+          0,
+          40
+        ],
+        [
+          25,
+          0,
+          70
+        ]
+      ]
+    },
+    {
+      "id": "examples/svm/plot_svm_margin.py::__module__::chunk_0",
+      "path": "examples/svm/plot_svm_margin.py",
+      "qualname": "__module__",
+      "function_id": "examples/svm/plot_svm_margin.py::__module__",
+      "line_start": 1,
+      "line_end": 3,
+      "tokens_est": 30,
+      "source_spans": [
+        [
+          1,
+          0,
+          18
+        ],
+        [
+          2,
+          0,
+          24
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "examples/compose/plot_compare_reduction.py::__module__::chunk_3",
+      "path": "examples/compose/plot_compare_reduction.py",
+      "qualname": "__module__",
+      "function_id": "examples/compose/plot_compare_reduction.py::__module__",
+      "line_start": 40,
+      "line_end": 51,
+      "tokens_est": 98,
+      "source_spans": [
+        [
+          40,
+          0,
+          56
+        ],
+        [
+          42,
+          0,
+          15
+        ],
+        [
+          44,
+          0,
+          18
+        ],
+        [
+          45,
+          0,
+          58
+        ],
+        [
+          46,
+          0,
+          35
+        ],
+        [
+          47,
+          0,
+          56
+        ],
+        [
+          48,
+          0,
+          3
+        ],
+        [
+          50,
+          0,
+          31
+        ],
+        [
+          51,
+          0,
+          31
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/utils/_show_versions.py::_get_deps_info::chunk_0",
+      "path": "sklearn/utils/_show_versions.py",
+      "qualname": "_get_deps_info",
+      "function_id": "sklearn/utils/_show_versions.py::_get_deps_info",
+      "line_start": 33,
+      "line_end": 68,
+      "tokens_est": 209,
+      "source_spans": [
+        [
+          33,
+          0,
+          22
+        ],
+        [
+          34,
+          0,
+          62
+        ],
+        [
+          35,
+          0,
+          1
+        ],
+        [
+          36,
+          0,
+          12
+        ],
+        [
+          37,
+          0,
+          12
+        ],
+        [
+          38,
+          0,
+          20
+        ],
+        [
+          39,
+          0,
+          57
+        ],
+        [
+          40,
+          0,
+          1
+        ],
+        [
+          41,
+          0,
+          8
+        ],
+        [
+          42,
+          0,
+          13
+        ],
+        [
+          43,
+          0,
+          15
+        ],
+        [
+          44,
+          0,
+          22
+        ],
+        [
+          45,
+          0,
+          19
+        ],
+        [
+          46,
+          0,
+          17
+        ],
+        [
+          47,
+          0,
+          17
+        ],
+        [
+          48,
+          0,
+          18
+        ],
+        [
+          49,
+          0,
+          18
+        ],
+        [
+          50,
+          0,
+          6
+        ],
+        [
+          51,
+          0,
+          1
+        ],
+        [
+          54,
+          0,
+          1
+        ],
+        [
+          55,
+          0,
+          19
+        ],
+        [
+          56,
+          0,
+          1
+        ],
+        [
+          57,
+          0,
+          25
+        ],
+        [
+          58,
+          0,
+          13
+        ],
+        [
+          59,
+          0,
+          39
+        ],
+        [
+          60,
+          0,
+          43
+        ],
+        [
+          61,
+          0,
+          18
+        ],
+        [
+          62,
+          0,
+          55
+        ],
+        [
+          63,
+          0,
+          35
+        ],
+        [
+          64,
+          0,
+          37
+        ],
+        [
+          65,
+          0,
+          28
+        ],
+        [
+          66,
+          0,
+          38
+        ],
+        [
+          67,
+          0,
+          1
+        ],
+        [
+          68,
+          0,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/datasets/samples_generator.py::make_classification::chunk_39",
+      "path": "sklearn/datasets/samples_generator.py",
+      "qualname": "make_classification",
+      "function_id": "sklearn/datasets/samples_generator.py::make_classification",
+      "line_start": 251,
+      "line_end": 254,
+      "tokens_est": 88,
+      "source_spans": [
+        [
+          251,
+          0,
+          35
+        ],
+        [
+          252,
+          0,
+          32
+        ],
+        [
+          254,
+          0,
+          16
+        ]
+      ]
+    },
+    {
+      "id": "examples/svm/plot_svm_anova.py::__module__::chunk_2",
+      "path": "examples/svm/plot_svm_anova.py",
+      "qualname": "__module__",
+      "function_id": "examples/svm/plot_svm_anova.py::__module__",
+      "line_start": 25,
+      "line_end": 41,
+      "tokens_est": 108,
+      "source_spans": [
+        [
+          25,
+          0,
+          34
+        ],
+        [
+          27,
+          0,
+          18
+        ],
+        [
+          28,
+          0,
+          59
+        ],
+        [
+          33,
+          0,
+          51
+        ],
+        [
+          34,
+          0,
+          46
+        ],
+        [
+          35,
+          0,
+          45
+        ],
+        [
+          39,
+          0,
+          21
+        ],
+        [
+          40,
+          0,
+          20
+        ],
+        [
+          41,
+          0,
+          57
+        ]
+      ]
+    },
+    {
+      "id": "examples/compose/plot_feature_union.py::__module__::chunk_1",
+      "path": "examples/compose/plot_feature_union.py",
+      "qualname": "__module__",
+      "function_id": "examples/compose/plot_feature_union.py::__module__",
+      "line_start": 15,
+      "line_end": 37,
+      "tokens_est": 129,
+      "source_spans": [
+        [
+          15,
+          0,
+          66
+        ],
+        [
+          16,
+          0,
+          4
+        ],
+        [
+          22,
+          0,
+          52
+        ],
+        [
+          23,
+          0,
+          49
+        ],
+        [
+          24,
+          0,
+          28
+        ],
+        [
+          25,
+          0,
+          39
+        ],
+        [
+          26,
+          0,
+          38
+        ],
+        [
+          27,
+          0,
+          50
+        ],
+        [
+          29,
+          0,
+          19
+        ],
+        [
+          31,
+          0,
+          30
+        ],
+        [
+          34,
+          0,
+          26
+        ],
+        [
+          37,
+          0,
+          29
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/pipeline.py::make_pipeline::chunk_5",
+      "path": "sklearn/pipeline.py",
+      "qualname": "make_pipeline",
+      "function_id": "sklearn/pipeline.py::make_pipeline",
+      "line_start": 631,
+      "line_end": 636,
+      "tokens_est": 90,
+      "source_spans": [
+        [
+          631,
+          0,
+          8
+        ],
+        [
+          632,
+          0,
+          40
+        ],
+        [
+          633,
+          0,
+          15
+        ],
+        [
+          634,
+          0,
+          58
+        ],
+        [
+          635,
+          0,
+          57
+        ],
+        [
+          636,
+          0,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "examples/feature_selection/plot_rfe_with_cross_validation.py::__module__::chunk_1",
+      "path": "examples/feature_selection/plot_rfe_with_cross_validation.py",
+      "qualname": "__module__",
+      "function_id": "examples/feature_selection/plot_rfe_with_cross_validation.py::__module__",
+      "line_start": 11,
+      "line_end": 23,
+      "tokens_est": 138,
+      "source_spans": [
+        [
+          11,
+          0,
+          32
+        ],
+        [
+          12,
+          0,
+          28
+        ],
+        [
+          13,
+          0,
+          52
+        ],
+        [
+          14,
+          0,
+          44
+        ],
+        [
+          15,
+          0,
+          49
+        ],
+        [
+          18,
+          0,
+          75
+        ],
+        [
+          19,
+          0,
+          69
+        ],
+        [
+          20,
+          0,
+          67
+        ],
+        [
+          23,
+          0,
+          27
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/_build_utils/__init__.py::get_blas_info::chunk_0",
+      "path": "sklearn/_build_utils/__init__.py",
+      "qualname": "get_blas_info",
+      "function_id": "sklearn/_build_utils/__init__.py::get_blas_info",
+      "line_start": 19,
+      "line_end": 40,
+      "tokens_est": 101,
+      "source_spans": [
+        [
+          19,
+          0,
+          21
+        ],
+        [
+          32,
+          0,
+          1
+        ],
+        [
+          33,
+          0,
+          40
+        ],
+        [
+          34,
+          0,
+          54
+        ],
+        [
+          35,
+          0,
+          31
+        ],
+        [
+          36,
+          0,
+          41
+        ],
+        [
+          37,
+          0,
+          10
+        ],
+        [
+          38,
+          0,
+          52
+        ],
+        [
+          39,
+          0,
+          1
+        ],
+        [
+          40,
+          0,
+          33
+        ]
+      ]
+    },
+    {
+      "id": "examples/preprocessing/plot_map_data_to_normal.py::__module__::chunk_7",
+      "path": "examples/preprocessing/plot_map_data_to_normal.py",
+      "qualname": "__module__",
+      "function_id": "examples/preprocessing/plot_map_data_to_normal.py::__module__",
+      "line_start": 91,
+      "line_end": 102,
+      "tokens_est": 134,
+      "source_spans": [
+        [
+          91,
+          0,
+          27
+        ],
+        [
+          92,
+          0,
+          2
+        ],
+        [
+          94,
+          0,
+          50
+        ],
+        [
+          95,
+          0,
+          49
+        ],
+        [
+          97,
+          0,
+          69
+        ],
+        [
+          98,
+          0,
+          22
+        ],
+        [
+          99,
+          0,
+          75
+        ],
+        [
+          100,
+          0,
+          49
+        ],
+        [
+          101,
+          0,
+          50
+        ],
+        [
+          102,
+          0,
+          44
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/utils/_show_versions.py::_get_sys_info::chunk_0",
+      "path": "sklearn/utils/_show_versions.py",
+      "qualname": "_get_sys_info",
+      "function_id": "sklearn/utils/_show_versions.py::_get_sys_info",
+      "line_start": 13,
+      "line_end": 30,
+      "tokens_est": 115,
+      "source_spans": [
+        [
+          13,
+          0,
+          21
+        ],
+        [
+          14,
+          0,
+          26
+        ],
+        [
+          15,
+          0,
+          1
+        ],
+        [
+          16,
+          0,
+          11
+        ],
+        [
+          17,
+          0,
+          11
+        ],
+        [
+          18,
+          0,
+          20
+        ],
+        [
+          19,
+          0,
+          46
+        ],
+        [
+          20,
+          0,
+          1
+        ],
+        [
+          21,
+          0,
+          8
+        ],
+        [
+          22,
+          0,
+          44
+        ],
+        [
+          23,
+          0,
+          1
+        ],
+        [
+          24,
+          0,
+          13
+        ],
+        [
+          25,
+          0,
+          28
+        ],
+        [
+          26,
+          0,
+          40
+        ],
+        [
+          27,
+          0,
+          42
+        ],
+        [
+          28,
+          0,
+          6
+        ],
+        [
+          29,
+          0,
+          1
+        ],
+        [
+          30,
+          0,
+          22
+        ]
+      ]
+    },
+    {
+      "id": "examples/svm/plot_svm_kernels.py::__module__::chunk_2",
+      "path": "examples/svm/plot_svm_kernels.py",
+      "qualname": "__module__",
+      "function_id": "examples/svm/plot_svm_kernels.py::__module__",
+      "line_start": 44,
+      "line_end": 59,
+      "tokens_est": 120,
+      "source_spans": [
+        [
+          44,
+          0,
+          22
+        ],
+        [
+          47,
+          0,
+          11
+        ],
+        [
+          50,
+          0,
+          41
+        ],
+        [
+          51,
+          0,
+          42
+        ],
+        [
+          52,
+          0,
+          18
+        ],
+        [
+          53,
+          0,
+          1
+        ],
+        [
+          54,
+          0,
+          70
+        ],
+        [
+          55,
+          0,
+          39
+        ],
+        [
+          56,
+          0,
+          14
+        ],
+        [
+          57,
+          0,
+          1
+        ],
+        [
+          58,
+          0,
+          78
+        ],
+        [
+          59,
+          0,
+          62
+        ]
+      ]
+    },
+    {
+      "id": "examples/cluster/plot_feature_agglomeration_vs_univariate_selection.py::__module__::chunk_6",
+      "path": "examples/cluster/plot_feature_agglomeration_vs_univariate_selection.py",
+      "qualname": "__module__",
+      "function_id": "examples/cluster/plot_feature_agglomeration_vs_univariate_selection.py::__module__",
+      "line_start": 82,
+      "line_end": 95,
+      "tokens_est": 144,
+      "source_spans": [
+        [
+          82,
+          0,
+          57
+        ],
+        [
+          83,
+          0,
+          53
+        ],
+        [
+          85,
+          0,
+          67
+        ],
+        [
+          86,
+          0,
+          41
+        ],
+        [
+          87,
+          0,
+          47
+        ],
+        [
+          88,
+          0,
+          80
+        ],
+        [
+          89,
+          0,
+          44
+        ],
+        [
+          93,
+          0,
+          17
+        ],
+        [
+          94,
+          0,
+          31
+        ],
+        [
+          95,
+          0,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "sklearn/datasets/__init__.py::__module__::chunk_3",
+      "path": "sklearn/datasets/__init__.py",
+      "qualname": "__module__",
+      "function_id": "sklearn/datasets/__init__.py::__module__",
+      "line_start": 31,
+      "line_end": 40,
+      "tokens_est": 140,
+      "source_spans": [
+        [
+          31,
+          0,
+          42
+        ],
+        [
+          32,
+          0,
+          44
+        ],
+        [
+          33,
+          0,
+          46
+        ],
+        [
+          34,
+          0,
+          46
+        ],
+        [
+          35,
+          0,
+          46
+        ],
+        [
+          36,
+          0,
+          52
+        ],
+        [
+          37,
+          0,
+          56
+        ],
+        [
+          38,
+          0,
+          56
+        ],
+        [
+          39,
+          0,
+          47
+        ],
+        [
+          40,
+          0,
+          47
+        ]
+      ]
+    },
+    {
+      "id": "examples/compose/plot_digits_pipe.py::__module__::chunk_2",
+      "path": "examples/compose/plot_digits_pipe.py",
+      "qualname": "__module__",
+      "function_id": "examples/compose/plot_digits_pipe.py::__module__",
+      "line_start": 37,
+      "line_end": 38,
+      "tokens_est": 40,
+      "source_spans": [
+        [
+          37,
+          0,
+          67
+        ],
+        [
+          38,
+          0,
+          12
+        ]
+      ]
+    }
+  ],
+  "context": "# File: examples/feature_selection/plot_feature_selection_pipeline.py\n# Function: __module__\n# Lines: 23-40\n    n_features=20, n_informative=3, n_redundant=0, n_classes=4,\n    n_clusters_per_class=2)\nX_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)\nanova_filter = SelectKBest(f_regression, k=3)\nclf = svm.LinearSVC()\nanova_svm = make_pipeline(anova_filter, clf)\nanova_svm.fit(X_train, y_train)\ny_pred = anova_svm.predict(X_test)\nprint(classification_report(y_test, y_pred))\ncoef = anova_svm[:-1].inverse_transform(anova_svm['linearsvc'].coef_)\nprint(coef)\n\n\n# File: sklearn/utils/_show_versions.py\n# Function: show_versions\n# Lines: 99-116\n# Signature: def show_versions():\ndef show_versions():\n    \"Print useful debugging information\"\n\n    sys_info = _get_sys_info()\n    deps_info = _get_deps_info()\n    blas_info = _get_blas_info()\n\n    print('\\nSystem:')\n    for k, stat in sys_info.items():\n        print(\"{k:>10}: {stat}\".format(k=k, stat=stat))\n\n    print('\\nBLAS:')\n    for k, stat in blas_info.items():\n        print(\"{k:>10}: {stat}\".format(k=k, stat=stat))\n\n    print('\\nPython deps:')\n    for k, stat in deps_info.items():\n        print(\"{k:>10}: {stat}\".format(k=k, stat=stat))\n\n\n# File: sklearn/feature_selection/__init__.py\n# Function: __module__\n# Lines: 21-25\nfrom .rfe import RFECV\nfrom .from_model import SelectFromModel\nfrom .mutual_info_ import mutual_info_regression, mutual_info_classif\n\n\n# File: examples/svm/plot_svm_margin.py\n# Function: __module__\n# Lines: 1-3\n#!/usr/bin/python\n# -*- coding: utf-8 -*-\n\n\n\n# File: examples/compose/plot_compare_reduction.py\n# Function: __module__\n# Lines: 40-51\nfrom sklearn.feature_selection import SelectKBest, chi2\nprint(__doc__)\npipe = Pipeline([\n    # the reduce_dim stage is populated by the param_grid\n    ('reduce_dim', 'passthrough'),\n    ('classify', LinearSVC(dual=False, max_iter=10000))\n])\nN_FEATURES_OPTIONS = [2, 4, 8]\nC_OPTIONS = [1, 10, 100, 1000]\n\n\n# File: sklearn/utils/_show_versions.py\n# Function: _get_deps_info\n# Lines: 33-68\n# Signature: def _get_deps_info():\ndef _get_deps_info():\n    \"\"\"Overview of the installed version of main dependencies\n\n    Returns\n    -------\n    deps_info: dict\n        version information on relevant Python libraries\n\n    \"\"\"\n    deps = [\n        \"pip\",\n        \"setuptools\",\n        \"sklearn\",\n        \"numpy\",\n        \"scipy\",\n        \"Cython\",\n        \"pandas\",\n    ]\n\n\n    deps_info = {}\n\n    for modname in deps:\n        try:\n            if modname in sys.modules:\n                mod = sys.modules[modname]\n            else:\n                mod = importlib.import_module(modname)\n            ver = get_version(mod)\n            deps_info[modname] = ver\n        except ImportError:\n            deps_info[modname] = None\n\n    return deps_info\n\n\n# File: sklearn/datasets/samples_generator.py\n# Function: make_classification\n# Lines: 251-254\n# Signature: def make_classification(n_samples=100, n_features=20, n_informative=2, n_redundant=2, n_repeated=0, n_classes=2, n_clusters_per_class=2, weights=None, flip_y...\n        generator.shuffle(indices)\n        X[:, :] = X[:, indices]\n    return X, y\n\n\n# File: examples/svm/plot_svm_anova.py\n# Function: __module__\n# Lines: 25-41\nX, y = load_iris(return_X_y=True)\nnp.random.seed(0)\nX = np.hstack((X, 2 * np.random.random((X.shape[0], 36))))\nclf = Pipeline([('anova', SelectPercentile(chi2)),\n                ('scaler', StandardScaler()),\n                ('svc', SVC(gamma=\"auto\"))])\nscore_means = list()\nscore_stds = list()\npercentiles = (1, 3, 6, 10, 15, 20, 30, 40, 60, 80, 100)\n\n\n# File: examples/compose/plot_feature_union.py\n# Function: __module__\n# Lines: 15-37\ndataset and is only used to illustrate the usage of FeatureUnion.\n\"\"\"\nfrom sklearn.pipeline import Pipeline, FeatureUnion\nfrom sklearn.model_selection import GridSearchCV\nfrom sklearn.svm import SVC\nfrom sklearn.datasets import load_iris\nfrom sklearn.decomposition import PCA\nfrom sklearn.feature_selection import SelectKBest\niris = load_iris()\nX, y = iris.data, iris.target\npca = PCA(n_components=2)\nselection = SelectKBest(k=1)\n\n\n# File: sklearn/pipeline.py\n# Function: make_pipeline\n# Lines: 631-636\n# Signature: def make_pipeline(*steps, **kwargs):\n    \"\"\"\n    memory = kwargs.pop('memory', None)\n    if kwargs:\n        raise TypeError('Unknown keyword arguments: \"{}\"'\n                        .format(list(kwargs.keys())[0]))\n    return Pipeline(_name_estimators(steps), memory=memory)\n\n\n# File: examples/feature_selection/plot_rfe_with_cross_validation.py\n# Function: __module__\n# Lines: 11-23\nimport matplotlib.pyplot as plt\nfrom sklearn.svm import SVC\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.feature_selection import RFECV\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=1000, n_features=25, n_informative=3,\n                           n_redundant=2, n_repeated=0, n_classes=8,\n                           n_clusters_per_class=1, random_state=0)\nsvc = SVC(kernel=\"linear\")\n\n\n# File: sklearn/_build_utils/__init__.py\n# Function: get_blas_info\n# Lines: 19-40\n# Signature: def get_blas_info():\ndef get_blas_info():\n\n    blas_info = get_info('blas_opt', 0)\n    if (not blas_info) or atlas_not_found(blas_info):\n        cblas_libs = ['cblas']\n        blas_info.pop('libraries', None)\n    else:\n        cblas_libs = blas_info.pop('libraries', [])\n\n    return cblas_libs, blas_info\n\n\n# File: examples/preprocessing/plot_map_data_to_normal.py\n# Function: __module__\n# Lines: 91-102\n    ('Bimodal', X_bimodal)\n]\ncolors = ['firebrick', 'darkorange', 'goldenrod',\n          'seagreen', 'royalblue', 'darkorchid']\nfig, axes = plt.subplots(nrows=8, ncols=3, figsize=plt.figaspect(2))\naxes = axes.flatten()\naxes_idxs = [(0, 3, 6, 9), (1, 4, 7, 10), (2, 5, 8, 11), (12, 15, 18, 21),\n             (13, 16, 19, 22), (14, 17, 20, 23)]\naxes_list = [(axes[i], axes[j], axes[k], axes[l])\n             for (i, j, k, l) in axes_idxs]\n\n\n# File: sklearn/utils/_show_versions.py\n# Function: _get_sys_info\n# Lines: 13-30\n# Signature: def _get_sys_info():\ndef _get_sys_info():\n    \"\"\"System information\n\n    Return\n    ------\n    sys_info : dict\n        system and Python version information\n\n    \"\"\"\n    python = sys.version.replace('\\n', ' ')\n\n    blob = [\n        (\"python\", python),\n        ('executable', sys.executable),\n        (\"machine\", platform.platform()),\n    ]\n\n    return dict(blob)\n\n\n# File: examples/svm/plot_svm_kernels.py\n# Function: __module__\n# Lines: 44-59\nY = [0] * 8 + [1] * 8\nfignum = 1\nfor kernel in ('linear', 'poly', 'rbf'):\n    clf = svm.SVC(kernel=kernel, gamma=2)\n    clf.fit(X, Y)\n\n    # plot the line, the points, and the nearest vectors to the plane\n    plt.figure(fignum, figsize=(4, 3))\n    plt.clf()\n\n    plt.scatter(clf.support_vectors_[:, 0], clf.support_vectors_[:, 1], s=80,\n                facecolors='none', zorder=10, edgecolors='k')\n\n\n# File: examples/cluster/plot_feature_agglomeration_vs_univariate_selection.py\n# Function: __module__\n# Lines: 82-95\nanova = feature_selection.SelectPercentile(f_regression)\nclf = Pipeline([('anova', anova), ('ridge', ridge)])\nclf = GridSearchCV(clf, {'anova__percentile': [5, 10, 20]}, cv=cv)\nclf.fit(X, y)  # set the best parameters\ncoef_ = clf.best_estimator_.steps[-1][1].coef_\ncoef_ = clf.best_estimator_.steps[0][1].inverse_transform(coef_.reshape(1, -1))\ncoef_selection_ = coef_.reshape(size, size)\nplt.close('all')\nplt.figure(figsize=(7.3, 2.7))\nplt.subplot(1, 3, 1)\n\n\n# File: sklearn/datasets/__init__.py\n# Function: __module__\n# Lines: 31-40\nfrom .samples_generator import make_moons\nfrom .samples_generator import make_circles\nfrom .samples_generator import make_friedman1\nfrom .samples_generator import make_friedman2\nfrom .samples_generator import make_friedman3\nfrom .samples_generator import make_low_rank_matrix\nfrom .samples_generator import make_sparse_coded_signal\nfrom .samples_generator import make_sparse_uncorrelated\nfrom .samples_generator import make_spd_matrix\nfrom .samples_generator import make_swiss_roll\n\n\n# File: examples/compose/plot_digits_pipe.py\n# Function: __module__\n# Lines: 37-52\n                         max_iter=10000, tol=1e-5, random_state=0)\npca = PCA()\n",
+  "summary_ru": "Случаи D, E. File Recall=1.0, Function Recall=None, Changed Line Recall=None."
+}

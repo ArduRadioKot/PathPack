@@ -1,0 +1,10 @@
+# PathPack v0.8. Written before the dev measurement and not retuned after it.
+# v0.4 openers and their order stay. The gap before the next new file is
+# reallocated to the highest-lexical slice of an already opened file, or to
+# the whole function when that function fits in the gap and in 192 tokens.
+# The replacement cannot cost more than the gap.
+whole_max_tokens: 192
+enable_deepen: true
+enable_adaptive: true
+enable_graph: true
+enable_diversity: true

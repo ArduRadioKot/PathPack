@@ -1,0 +1,14 @@
+{
+  "status": "retrieval_complete",
+  "split": "dev",
+  "budget": 2048,
+  "variants": [
+    "v4-hops-1",
+    "v4-hops-2",
+    "v4-hops-3",
+    "v4-callers",
+    "v4-callees"
+  ],
+  "note": "Same v0.4 ranker and token counter. Only hops and edge direction change. Gold is not in this file.",
+  "index_time_excluded_from_latency": true
+}

@@ -1,0 +1,889 @@
+{
+  "instance_id": "sphinx-doc__sphinx-7985",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "A",
+    "C",
+    "D",
+    "F"
+  ],
+  "graph_subtype": "unreached",
+  "illustrative": true,
+  "problem_statement": "linkcheck could also check local (internal) links\nSubject: linkcheck currently doesn't check local (internal) links, but this would be useful.\r\n\r\n<!--\r\n  Important: This is a list of issues for Sphinx, not a forum.\r\n  If you'd like to post a question, please move to sphinx-users group.\r\n  https://groups.google.com/forum/#!forum/sphinx-users\r\n\r\n  Thanks,\r\n-->\r\n\r\n### Problem\r\nSee above.\r\n\r\n#### Procedure to reproduce the problem\r\nCreate a template project with sphinx-quickstart, put the following in index.rst\r\n```\r\nbroken external-link_\r\nbroken local-link_\r\n\r\n.. _external-link: https://lkfqhlkghflkhs\r\n.. _local-link: doesntexist\r\n```\r\n\r\nRun `make linkcheck`\r\n\r\n#### Error logs / results\r\n```\r\nRunning Sphinx v1.7.6\r\nmaking output directory...\r\nloading pickled environment... done\r\nbuilding [mo]: targets for 0 po files that are out of date\r\nbuilding [linkcheck]: targets for 1 source files that are out of date\r\nupdating environment: 0 added, 0 changed, 0 removed\r\nlooking for now-outdated files... none found\r\npreparing documents... done\r\nwriting output... [100%] index                                                                   \r\n(line   14) -local-   doesntexist\r\n(line   14) broken    https://lkfqhlkghflkhs - HTTPSConnectionPool(host='lkfqhlkghflkhs', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7faed7ddfc88>: Failed to establish a new connection: [Errno -2] Name or service not known',))\r\n\r\nbu",
+  "gold_files": [
+    "sphinx/builders/linkcheck.py"
+  ],
+  "gold_functions": [
+    {
+      "id": "sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.check_thread.check",
+      "qualname": "CheckExternalLinksBuilder.check_thread.check",
+      "path": "sphinx/builders/linkcheck.py",
+      "coverage": 0.0,
+      "best_candidate": {
+        "id": "sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.check_thread.check::chunk_2",
+        "order": 80,
+        "decision": "after_budget_cutoff",
+        "score": 0.29154315745504,
+        "utility": 0.021790958693360007,
+        "lexical_score": 0.6286505061418327,
+        "symbol_score": 0.033783783783783786,
+        "graph_score": 0.0,
+        "line_start": 221,
+        "line_end": 231,
+        "tokens_est": 147,
+        "reason": ""
+      }
+    }
+  ],
+  "changed_lines": {
+    "sphinx/builders/linkcheck.py": [
+      213,
+      216
+    ]
+  },
+  "insertion_anchors": {
+    "sphinx/builders/linkcheck.py": [
+      36,
+      39
+    ]
+  },
+  "exclusions": [
+    {
+      "path": "sphinx/builders/linkcheck.py",
+      "reason": "insertion_boundary_unmapped"
+    }
+  ],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 1,
+    "changed_lines_outside_function_bodies": [],
+    "removed_lines_out_of_range": [],
+    "class_methods": [],
+    "nested_functions": [
+      "sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.check_thread.check"
+    ],
+    "module_level_exclusions": 0,
+    "new_definition_exclusions": 0
+  },
+  "metrics": {
+    "file_recall": 1.0,
+    "function_recall": 0.0,
+    "complete_function_recall": 0.0,
+    "changed_line_recall": 0.0,
+    "label_completeness": "partial"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": 0.0,
+    "insertion_anchor_reason": null,
+    "base_touch_recall": 0.0,
+    "base_touch_reason": null,
+    "relevant_line_density": 0.0,
+    "relevant_line_density_reason": null,
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 2,
+    "evaluable_anchor_lines": 2,
+    "emitted_nonempty_lines": 7
+  },
+  "selected_files": [
+    "sphinx/application.py",
+    "sphinx/builders/__init__.py",
+    "sphinx/builders/linkcheck.py",
+    "sphinx/cmd/quickstart.py",
+    "sphinx/ext/autosummary/generate.py",
+    "sphinx/ext/imgmath.py",
+    "sphinx/locale/__init__.py",
+    "sphinx/util/osutil.py",
+    "sphinx/util/pycompat.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "sphinx/cmd/quickstart.py::main::chunk_2",
+      "path": "sphinx/cmd/quickstart.py",
+      "qualname": "main",
+      "function_id": "sphinx/cmd/quickstart.py::main",
+      "line_start": 574,
+      "line_end": 582,
+      "tokens_est": 106,
+      "source_spans": [
+        [
+          574,
+          0,
+          51
+        ],
+        [
+          576,
+          0,
+          9
+        ],
+        [
+          577,
+          0,
+          25
+        ],
+        [
+          578,
+          0,
+          54
+        ],
+        [
+          579,
+          0,
+          74
+        ],
+        [
+          580,
+          0,
+          56
+        ],
+        [
+          581,
+          0,
+          25
+        ],
+        [
+          582,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/builders/__init__.py::Builder.build::chunk_1",
+      "path": "sphinx/builders/__init__.py",
+      "qualname": "Builder.build",
+      "function_id": "sphinx/builders/__init__.py::Builder.build",
+      "line_start": 306,
+      "line_end": 314,
+      "tokens_est": 123,
+      "source_spans": [
+        [
+          306,
+          0,
+          20
+        ],
+        [
+          307,
+          0,
+          75
+        ],
+        [
+          310,
+          0,
+          41
+        ],
+        [
+          311,
+          0,
+          48
+        ],
+        [
+          313,
+          0,
+          41
+        ],
+        [
+          314,
+          0,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/cmd/quickstart.py::get_parser::chunk_1",
+      "path": "sphinx/cmd/quickstart.py",
+      "qualname": "get_parser",
+      "function_id": "sphinx/cmd/quickstart.py::get_parser",
+      "line_start": 468,
+      "line_end": 476,
+      "tokens_est": 128,
+      "source_spans": [
+        [
+          468,
+          0,
+          45
+        ],
+        [
+          469,
+          0,
+          22
+        ],
+        [
+          470,
+          0,
+          13
+        ],
+        [
+          471,
+          0,
+          58
+        ],
+        [
+          472,
+          0,
+          13
+        ],
+        [
+          473,
+          0,
+          89
+        ],
+        [
+          474,
+          0,
+          85
+        ],
+        [
+          475,
+          0,
+          51
+        ],
+        [
+          476,
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/util/osutil.py::ensuredir::chunk_0",
+      "path": "sphinx/util/osutil.py",
+      "qualname": "ensuredir",
+      "function_id": "sphinx/util/osutil.py::ensuredir",
+      "line_start": 81,
+      "line_end": 83,
+      "tokens_est": 56,
+      "source_spans": [
+        [
+          81,
+          0,
+          34
+        ],
+        [
+          82,
+          0,
+          37
+        ],
+        [
+          83,
+          0,
+          37
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/builders/__init__.py::Builder.read::chunk_2",
+      "path": "sphinx/builders/__init__.py",
+      "qualname": "Builder.read",
+      "function_id": "sphinx/builders/__init__.py::Builder.read",
+      "line_start": 382,
+      "line_end": 389,
+      "tokens_est": 109,
+      "source_spans": [
+        [
+          382,
+          0,
+          93
+        ],
+        [
+          383,
+          0,
+          60
+        ],
+        [
+          387,
+          0,
+          29
+        ],
+        [
+          388,
+          0,
+          58
+        ],
+        [
+          389,
+          0,
+          73
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/builders/__init__.py::Builder.get_outdated_docs::chunk_0",
+      "path": "sphinx/builders/__init__.py",
+      "qualname": "Builder.get_outdated_docs",
+      "function_id": "sphinx/builders/__init__.py::Builder.get_outdated_docs",
+      "line_start": 165,
+      "line_end": 173,
+      "tokens_est": 150,
+      "source_spans": [
+        [
+          165,
+          0,
+          62
+        ],
+        [
+          166,
+          0,
+          77
+        ],
+        [
+          167,
+          0,
+          52
+        ],
+        [
+          168,
+          0,
+          1
+        ],
+        [
+          169,
+          0,
+          73
+        ],
+        [
+          170,
+          0,
+          76
+        ],
+        [
+          171,
+          0,
+          48
+        ],
+        [
+          172,
+          0,
+          12
+        ],
+        [
+          173,
+          0,
+          34
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/cmd/quickstart.py::main::chunk_5",
+      "path": "sphinx/cmd/quickstart.py",
+      "qualname": "main",
+      "function_id": "sphinx/cmd/quickstart.py::main",
+      "line_start": 609,
+      "line_end": 613,
+      "tokens_est": 74,
+      "source_spans": [
+        [
+          609,
+          0,
+          27
+        ],
+        [
+          610,
+          0,
+          66
+        ],
+        [
+          612,
+          0,
+          63
+        ],
+        [
+          613,
+          0,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.write_doc::chunk_3",
+      "path": "sphinx/builders/linkcheck.py",
+      "qualname": "CheckExternalLinksBuilder.write_doc",
+      "function_id": "sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.write_doc",
+      "line_start": 330,
+      "line_end": 338,
+      "tokens_est": 93,
+      "source_spans": [
+        [
+          330,
+          0,
+          23
+        ],
+        [
+          332,
+          0,
+          17
+        ],
+        [
+          333,
+          0,
+          24
+        ],
+        [
+          334,
+          0,
+          51
+        ],
+        [
+          335,
+          0,
+          22
+        ],
+        [
+          337,
+          0,
+          24
+        ],
+        [
+          338,
+          0,
+          36
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/locale/__init__.py::setlocale::chunk_0",
+      "path": "sphinx/locale/__init__.py",
+      "qualname": "setlocale",
+      "function_id": "sphinx/locale/__init__.py::setlocale",
+      "line_start": 149,
+      "line_end": 166,
+      "tokens_est": 184,
+      "source_spans": [
+        [
+          149,
+          0,
+          79
+        ],
+        [
+          150,
+          0,
+          31
+        ],
+        [
+          151,
+          0,
+          1
+        ],
+        [
+          152,
+          0,
+          60
+        ],
+        [
+          153,
+          0,
+          41
+        ],
+        [
+          154,
+          0,
+          1
+        ],
+        [
+          155,
+          0,
+          22
+        ],
+        [
+          156,
+          0,
+          1
+        ],
+        [
+          157,
+          0,
+          55
+        ],
+        [
+          158,
+          0,
+          51
+        ],
+        [
+          159,
+          0,
+          1
+        ],
+        [
+          160,
+          0,
+          85
+        ],
+        [
+          161,
+          0,
+          46
+        ],
+        [
+          162,
+          0,
+          8
+        ],
+        [
+          163,
+          0,
+          9
+        ],
+        [
+          164,
+          0,
+          42
+        ],
+        [
+          165,
+          0,
+          25
+        ],
+        [
+          166,
+          0,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/application.py::Sphinx.__init__::chunk_12",
+      "path": "sphinx/application.py",
+      "qualname": "Sphinx.__init__",
+      "function_id": "sphinx/application.py::Sphinx.__init__",
+      "line_start": 199,
+      "line_end": 208,
+      "tokens_est": 187,
+      "source_spans": [
+        [
+          199,
+          0,
+          58
+        ],
+        [
+          202,
+          0,
+          81
+        ],
+        [
+          205,
+          0,
+          89
+        ],
+        [
+          206,
+          0,
+          95
+        ],
+        [
+          207,
+          0,
+          86
+        ],
+        [
+          208,
+          0,
+          86
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/builders/__init__.py::Builder.build::chunk_4",
+      "path": "sphinx/builders/__init__.py",
+      "qualname": "Builder.build",
+      "function_id": "sphinx/builders/__init__.py::Builder.build",
+      "line_start": 336,
+      "line_end": 345,
+      "tokens_est": 108,
+      "source_spans": [
+        [
+          336,
+          0,
+          69
+        ],
+        [
+          337,
+          0,
+          23
+        ],
+        [
+          339,
+          0,
+          46
+        ],
+        [
+          344,
+          0,
+          49
+        ],
+        [
+          345,
+          0,
+          59
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/util/pycompat.py::execfile_::chunk_2",
+      "path": "sphinx/util/pycompat.py",
+      "qualname": "execfile_",
+      "function_id": "sphinx/util/pycompat.py::execfile_",
+      "line_start": 87,
+      "line_end": 89,
+      "tokens_est": 69,
+      "source_spans": [
+        [
+          87,
+          0,
+          61
+        ],
+        [
+          88,
+          0,
+          33
+        ],
+        [
+          89,
+          0,
+          25
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/ext/autosummary/generate.py::generate_autosummary_docs::chunk_7",
+      "path": "sphinx/ext/autosummary/generate.py",
+      "qualname": "generate_autosummary_docs",
+      "function_id": "sphinx/ext/autosummary/generate.py::generate_autosummary_docs",
+      "line_start": 386,
+      "line_end": 397,
+      "tokens_est": 126,
+      "source_spans": [
+        [
+          386,
+          0,
+          78
+        ],
+        [
+          388,
+          0,
+          40
+        ],
+        [
+          391,
+          0,
+          47
+        ],
+        [
+          394,
+          0,
+          19
+        ],
+        [
+          397,
+          0,
+          46
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/cmd/quickstart.py::get_parser::chunk_13",
+      "path": "sphinx/cmd/quickstart.py",
+      "qualname": "get_parser",
+      "function_id": "sphinx/cmd/quickstart.py::get_parser",
+      "line_start": 538,
+      "line_end": 548,
+      "tokens_est": 162,
+      "source_spans": [
+        [
+          538,
+          0,
+          78
+        ],
+        [
+          540,
+          0,
+          64
+        ],
+        [
+          541,
+          0,
+          69
+        ],
+        [
+          542,
+          0,
+          43
+        ],
+        [
+          543,
+          0,
+          73
+        ],
+        [
+          544,
+          0,
+          68
+        ],
+        [
+          545,
+          0,
+          41
+        ],
+        [
+          546,
+          0,
+          62
+        ],
+        [
+          548,
+          0,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/ext/imgmath.py::render_math::chunk_2",
+      "path": "sphinx/ext/imgmath.py",
+      "qualname": "render_math",
+      "function_id": "sphinx/ext/imgmath.py::render_math",
+      "line_start": 253,
+      "line_end": 257,
+      "tokens_est": 103,
+      "source_spans": [
+        [
+          253,
+          0,
+          55
+        ],
+        [
+          254,
+          0,
+          8
+        ],
+        [
+          255,
+          0,
+          68
+        ],
+        [
+          256,
+          0,
+          43
+        ],
+        [
+          257,
+          0,
+          81
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/builders/__init__.py::Builder.read::chunk_0",
+      "path": "sphinx/builders/__init__.py",
+      "qualname": "Builder.read",
+      "function_id": "sphinx/builders/__init__.py::Builder.read",
+      "line_start": 369,
+      "line_end": 377,
+      "tokens_est": 118,
+      "source_spans": [
+        [
+          369,
+          0,
+          33
+        ],
+        [
+          370,
+          0,
+          65
+        ],
+        [
+          371,
+          0,
+          1
+        ],
+        [
+          372,
+          0,
+          80
+        ],
+        [
+          373,
+          0,
+          46
+        ],
+        [
+          374,
+          0,
+          12
+        ],
+        [
+          375,
+          0,
+          67
+        ],
+        [
+          377,
+          0,
+          47
+        ]
+      ]
+    },
+    {
+      "id": "sphinx/cmd/quickstart.py::term_input::chunk_0",
+      "path": "sphinx/cmd/quickstart.py",
+      "qualname": "term_input",
+      "function_id": "sphinx/cmd/quickstart.py::term_input",
+      "line_start": 82,
+      "line_end": 90,
+      "tokens_est": 130,
+      "source_spans": [
+        [
+          82,
+          0,
+          36
+        ],
+        [
+          83,
+          0,
+          32
+        ],
+        [
+          84,
+          0,
+          79
+        ],
+        [
+          85,
+          0,
+          83
+        ],
+        [
+          86,
+          0,
+          74
+        ],
+        [
+          87,
+          0,
+          30
+        ],
+        [
+          88,
+          0,
+          25
+        ],
+        [
+          89,
+          0,
+          10
+        ],
+        [
+          90,
+          0,
+          29
+        ]
+      ]
+    }
+  ],
+  "context": "# File: sphinx/cmd/quickstart.py\n# Function: main\n# Lines: 574-582\n# Signature: def main(argv: List[str]=sys.argv[1:]) -> int:\n            d['extensions'].extend(ext.split(','))\n    try:\n        if 'quiet' in d:\n            if not {'project', 'author'}.issubset(d):\n                print(__('\"quiet\" is specified, but any of \"project\" or '\n                         '\"author\" is not specified.'))\n                return 1\n\n\n\n# File: sphinx/builders/__init__.py\n# Function: Builder.build\n# Lines: 306-314\n# Signature: def build(self, docnames: Iterable[str], summary: str=None, method: str='update') -> None:\n        if summary:\n            logger.info(bold(__('building [%s]: ') % self.name) + summary)\n        with logging.pending_warnings():\n            updated_docnames = set(self.read())\n        doccount = len(updated_docnames)\n        logger.info(bold(__('looking for now-outdated files... ')), nonl=True)\n\n\n# File: sphinx/cmd/quickstart.py\n# Function: get_parser\n# Lines: 468-476\n# Signature: def get_parser() -> argparse.ArgumentParser:\ndef get_parser() -> argparse.ArgumentParser:\n    description = __(\n        \"\\n\"\n        \"Generate required files for a Sphinx project.\\n\"\n        \"\\n\"\n        \"sphinx-quickstart is an interactive tool that asks some questions about your\\n\"\n        \"project and then generates a complete documentation directory and sample\\n\"\n        \"Makefile to be used with sphinx-build.\\n\"\n    )\n\n\n# File: sphinx/util/osutil.py\n# Function: ensuredir\n# Lines: 81-83\n# Signature: def ensuredir(path: str) -> None:\ndef ensuredir(path: str) -> None:\n    \"\"\"Ensure that a path exists.\"\"\"\n    os.makedirs(path, exist_ok=True)\n\n\n# File: sphinx/builders/__init__.py\n# Function: Builder.read\n# Lines: 382-389\n# Signature: def read(self) -> List[str]:\n        for docs in self.events.emit('env-get-outdated', self.env, added, changed, removed):\n            changed.update(set(docs) & self.env.found_docs)\n        if added or removed:\n            # ... but not those that already were removed\n            changed.update(self.env.glob_toctrees & self.env.found_docs)\n\n\n# File: sphinx/builders/__init__.py\n# Function: Builder.get_outdated_docs\n# Lines: 165-173\n# Signature: def get_outdated_docs(self) -> Union[str, Iterable[str]]:\n    def get_outdated_docs(self) -> Union[str, Iterable[str]]:\n        \"\"\"Return an iterable of output files that are outdated, or a string\n        describing what an update build will build.\n\n        If the builder does not output individual files corresponding to\n        source files, return a string here.  If it does, return an iterable\n        of those files that need to be written.\n        \"\"\"\n        raise NotImplementedError\n\n\n# File: sphinx/cmd/quickstart.py\n# Function: main\n# Lines: 609-613\n# Signature: def main(argv: List[str]=sys.argv[1:]) -> int:\n        except ValueError:\n            print(__('Invalid template variable: %s') % variable)\n    generate(d, overwrite=False, templatedir=args.templatedir)\n    return 0\n\n\n# File: sphinx/builders/linkcheck.py\n# Function: CheckExternalLinksBuilder.write_doc\n# Lines: 330-338\n# Signature: def write_doc(self, docname: str, doctree: Node) -> None:\n                n += 1\n        done = 0\n        while done < n:\n            self.process_result(self.rqueue.get())\n            done += 1\n        if self.broken:\n            self.app.statuscode = 1\n\n\n# File: sphinx/locale/__init__.py\n# Function: setlocale\n# Lines: 149-166\n# Signature: def setlocale(category: int, value: Union[str, Iterable[str]]=None) -> None:\ndef setlocale(category: int, value: Union[str, Iterable[str]] = None) -> None:\n    \"\"\"Update locale settings.\n\n    This does not throw any exception even if update fails.\n    This is workaround for Python's bug.\n\n    For more details:\n\n    * https://github.com/sphinx-doc/sphinx/issues/5724\n    * https://bugs.python.org/issue18378#msg215215\n\n    .. note:: Only for internal use.  Please don't call this method from extensions.\n              This will be removed in future.\n    \"\"\"\n    try:\n        locale.setlocale(category, value)\n    except locale.Error:\n        pass\n\n\n# File: sphinx/application.py\n# Function: Sphinx.__init__\n# Lines: 199-208\n# Signature: def __init__(self, srcdir: str, confdir: str, outdir: str, doctreedir: str, buildername: str, confoverrides: Dict=None, status: IO=sys.stdout, warning: IO=sy...\n        self.messagelog = deque(maxlen=10)  # type: deque\n        logger.info(bold(__('Running Sphinx v%s') % sphinx.__display_version__))\n        if sys.version_info > (3, 8) and platform.system() == 'Darwin' and parallel > 1:\n            logger.info(bold(__(\"For security reason, parallel mode is disabled on macOS and \"\n                                \"python3.8 and above. For more details, please read \"\n                                \"https://github.com/sphinx-doc/sphinx/issues/6803\")))\n\n\n# File: sphinx/builders/__init__.py\n# Function: Builder.build\n# Lines: 336-345\n# Signature: def build(self, docnames: Iterable[str], summary: str=None, method: str='update') -> None:\n                logger.info(bold(__('no targets are out of date.')))\n                return\n        self.app.phase = BuildPhase.RESOLVING\n        if docnames and docnames != ['__all__']:\n            docnames = set(docnames) & self.env.found_docs\n\n\n# File: sphinx/util/pycompat.py\n# Function: execfile_\n# Lines: 87-89\n# Signature: def execfile_(filepath: str, _globals: Any, open: Callable=open) -> None:\n                          'Convert %s to Python 3 syntax.'),\n                       filepath)\n    exec(code, _globals)\n\n\n# File: sphinx/ext/autosummary/generate.py\n# Function: generate_autosummary_docs\n# Lines: 386-397\n# Signature: def generate_autosummary_docs(sources: List[str], output_dir: str=None, suffix: str='.rst', warn: Callable=None, info: Callable=None, base_path: str=None, bu...\n        sources = [os.path.join(base_path, filename) for filename in sources]\n    template = AutosummaryRenderer(app)\n    items = find_autosummary_in_files(sources)\n    new_files = []\n    for entry in sorted(set(items), key=str):\n\n\n# File: sphinx/cmd/quickstart.py\n# Function: get_parser\n# Lines: 538-548\n# Signature: def get_parser() -> argparse.ArgumentParser:\n                       help=__('do not use make-mode for Makefile/make.bat'))\n    group = parser.add_argument_group(__('Project templating'))\n    group.add_argument('-t', '--templatedir', metavar='TEMPLATEDIR',\n                       dest='templatedir',\n                       help=__('template directory for template files'))\n    group.add_argument('-d', metavar='NAME=VALUE', action='append',\n                       dest='variables',\n                       help=__('define a template variable'))\n    return parser\n\n\n# File: sphinx/ext/imgmath.py\n# Function: render_math\n# Lines: 253-257\n# Signature: def render_math(self: HTMLTranslator, math: str) -> Tuple[str, int]:\n    since that indicates a problem in the math source.\n    \"\"\"\n    image_format = self.builder.config.imgmath_image_format.lower()\n    if image_format not in SUPPORT_FORMAT:\n        raise MathExtError('imgmath_image_format must be either \"png\" or \"svg\"')\n\n\n# File: sphinx/builders/__init__.py\n# Function: Builder.read\n# Lines: 369-377\n# Signature: def read(self) -> List[str]:\n    def read(self) -> List[str]:\n        \"\"\"(Re-)read all files new or changed since last update.\n\n        Store all environment docnames in the canonical format (ie using SEP as\n        a separator in place of os.path.sep).\n        \"\"\"\n        logger.info(bold(__('updating environment: ')), nonl=True)\n        self.env.find_files(self.config, self)\n\n\n# File: sphinx/cmd/quickstart.py\n# Function: term_input\n# Lines: 82-90\n# Signature: def term_input(prompt: str) -> str:\ndef term_input(prompt: str) -> str:\n    if sys.platform == 'win32':\n        # Important: On windows, readline is not enabled by default.  In these\n        #            environment, escape sequences have been broken.  To avoid the\n        #            problem, quickstart uses ``print()`` to show prompt.\n        print(prompt, end='')\n        return input('')\n    else:\n        return input(prompt)\n\n\n",
+  "summary_ru": "Случаи A, C, D, F. File Recall=1.0, Function Recall=0.0, Changed Line Recall=0.0. Лучший чанк sphinx/builders/linkcheck.py::CheckExternalLinksBuilder.check_thread.check: order=80, decision=after_budget_cutoff, score=0.29154315745504, lexical=0.6286505061418327, graph=0.0, строки 221-231. Граф: unreached."
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codegraph-rag"
+version = "0.3.0"
+description = "Reproducible Python code graph and SWE-bench retrieval preparation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+benchmark = ["datasets>=3.0,<5"]
+viz = ["matplotlib>=3.7", "networkx>=3.1"]
+
+[project.scripts]
+codegraph = "codegraph_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

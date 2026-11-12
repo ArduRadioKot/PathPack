@@ -1,0 +1,967 @@
+{
+  "instance_id": "sympy__sympy-24213",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "A",
+    "B",
+    "C",
+    "F"
+  ],
+  "graph_subtype": "unreached",
+  "illustrative": true,
+  "problem_statement": "collect_factor_and_dimension does not detect equivalent dimensions in addition\nCode to reproduce:\r\n```python\r\nfrom sympy.physics import units\r\nfrom sympy.physics.units.systems.si import SI\r\n\r\nv1 = units.Quantity('v1')\r\nSI.set_quantity_dimension(v1, units.velocity)\r\nSI.set_quantity_scale_factor(v1, 2 * units.meter / units.second)\r\n\r\na1 = units.Quantity('a1')\r\nSI.set_quantity_dimension(a1, units.acceleration)\r\nSI.set_quantity_scale_factor(a1, -9.8 * units.meter / units.second**2)\r\n\r\nt1 = units.Quantity('t1')\r\nSI.set_quantity_dimension(t1, units.time)\r\nSI.set_quantity_scale_factor(t1, 5 * units.second)\r\n\r\nexpr1 = a1*t1 + v1\r\nSI._collect_factor_and_dimension(expr1)\r\n```\r\nResults in:\r\n```\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"C:\\Python\\Python310\\lib\\site-packages\\sympy\\physics\\units\\unitsystem.py\", line 179, in _collect_factor_and_dimension\r\n    raise ValueError(\r\nValueError: Dimension of \"v1\" is Dimension(velocity), but it should be Dimension(acceleration*time)\r\n```\n",
+  "gold_files": [
+    "sympy/physics/units/unitsystem.py"
+  ],
+  "gold_functions": [
+    {
+      "id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension",
+      "qualname": "UnitSystem._collect_factor_and_dimension",
+      "path": "sympy/physics/units/unitsystem.py",
+      "coverage": 0.1590909090909091,
+      "best_candidate": {
+        "id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension::chunk_5",
+        "order": 4,
+        "decision": "selected",
+        "score": 0.3490943752330126,
+        "utility": 0.033748227065835204,
+        "lexical_score": 0.5172781540165157,
+        "symbol_score": 0.13636363636363635,
+        "graph_score": 0.0,
+        "line_start": 182,
+        "line_end": 184,
+        "tokens_est": 75,
+        "reason": ""
+      }
+    }
+  ],
+  "changed_lines": {
+    "sympy/physics/units/unitsystem.py": [
+      178
+    ]
+  },
+  "insertion_anchors": {},
+  "exclusions": [],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 0,
+    "changed_lines_outside_function_bodies": [],
+    "removed_lines_out_of_range": [],
+    "class_methods": [
+      "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension"
+    ],
+    "nested_functions": [],
+    "module_level_exclusions": 0,
+    "new_definition_exclusions": 0
+  },
+  "metrics": {
+    "file_recall": 1.0,
+    "function_recall": 0.0,
+    "complete_function_recall": 0.0,
+    "changed_line_recall": 0.0,
+    "label_completeness": "complete"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": null,
+    "insertion_anchor_reason": "no_insertion_hunk",
+    "base_touch_recall": 0.0,
+    "base_touch_reason": null,
+    "relevant_line_density": 0.0,
+    "relevant_line_density_reason": null,
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 1,
+    "evaluable_anchor_lines": 0,
+    "emitted_nonempty_lines": 11
+  },
+  "selected_files": [
+    "sympy/physics/units/definitions/dimension_definitions.py",
+    "sympy/physics/units/definitions/unit_definitions.py",
+    "sympy/physics/units/dimensions.py",
+    "sympy/physics/units/prefixes.py",
+    "sympy/physics/units/systems/__init__.py",
+    "sympy/physics/units/systems/cgs.py",
+    "sympy/physics/units/systems/length_weight_time.py",
+    "sympy/physics/units/systems/mks.py",
+    "sympy/physics/units/systems/mksa.py",
+    "sympy/physics/units/systems/si.py",
+    "sympy/physics/units/unitsystem.py",
+    "sympy/physics/wigner.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "sympy/physics/units/systems/si.py::__module__::chunk_27",
+      "path": "sympy/physics/units/systems/si.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/si.py::__module__",
+      "line_start": 317,
+      "line_end": 326,
+      "tokens_est": 109,
+      "source_spans": [
+        [
+          317,
+          0,
+          61
+        ],
+        [
+          318,
+          0,
+          80
+        ],
+        [
+          322,
+          0,
+          43
+        ],
+        [
+          323,
+          0,
+          59
+        ],
+        [
+          325,
+          0,
+          48
+        ],
+        [
+          326,
+          0,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/mks.py::__module__::chunk_0",
+      "path": "sympy/physics/units/systems/mks.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/mks.py::__module__",
+      "line_start": 1,
+      "line_end": 8,
+      "tokens_est": 86,
+      "source_spans": [
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          2,
+          0,
+          17
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          4,
+          0,
+          42
+        ],
+        [
+          5,
+          0,
+          4
+        ],
+        [
+          7,
+          0,
+          43
+        ],
+        [
+          8,
+          0,
+          150
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/__init__.py::__module__::chunk_0",
+      "path": "sympy/physics/units/systems/__init__.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/__init__.py::__module__",
+      "line_start": 1,
+      "line_end": 6,
+      "tokens_est": 82,
+      "source_spans": [
+        [
+          1,
+          0,
+          48
+        ],
+        [
+          2,
+          0,
+          50
+        ],
+        [
+          3,
+          0,
+          56
+        ],
+        [
+          4,
+          0,
+          46
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          43
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/length_weight_time.py::__module__::chunk_7",
+      "path": "sympy/physics/units/systems/length_weight_time.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/length_weight_time.py::__module__",
+      "line_start": 54,
+      "line_end": 70,
+      "tokens_est": 130,
+      "source_spans": [
+        [
+          54,
+          0,
+          27
+        ],
+        [
+          55,
+          0,
+          3
+        ],
+        [
+          58,
+          0,
+          12
+        ],
+        [
+          62,
+          0,
+          64
+        ],
+        [
+          63,
+          0,
+          64
+        ],
+        [
+          66,
+          0,
+          61
+        ],
+        [
+          67,
+          0,
+          63
+        ],
+        [
+          69,
+          0,
+          63
+        ],
+        [
+          70,
+          0,
+          65
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension::chunk_5",
+      "path": "sympy/physics/units/unitsystem.py",
+      "qualname": "UnitSystem._collect_factor_and_dimension",
+      "function_id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension",
+      "line_start": 182,
+      "line_end": 184,
+      "tokens_est": 75,
+      "source_spans": [
+        [
+          182,
+          0,
+          54
+        ],
+        [
+          183,
+          0,
+          40
+        ],
+        [
+          184,
+          0,
+          31
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/mksa.py::__module__::chunk_2",
+      "path": "sympy/physics/units/systems/mksa.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/mksa.py::__module__",
+      "line_start": 20,
+      "line_end": 27,
+      "tokens_est": 76,
+      "source_spans": [
+        [
+          20,
+          0,
+          74
+        ],
+        [
+          22,
+          0,
+          39
+        ],
+        [
+          23,
+          0,
+          16
+        ],
+        [
+          24,
+          0,
+          47
+        ],
+        [
+          25,
+          0,
+          24
+        ],
+        [
+          27,
+          0,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/si.py::__module__::chunk_17",
+      "path": "sympy/physics/units/systems/si.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/si.py::__module__",
+      "line_start": 210,
+      "line_end": 229,
+      "tokens_est": 164,
+      "source_spans": [
+        [
+          210,
+          0,
+          83
+        ],
+        [
+          214,
+          0,
+          69
+        ],
+        [
+          215,
+          0,
+          83
+        ],
+        [
+          219,
+          0,
+          67
+        ],
+        [
+          220,
+          0,
+          79
+        ],
+        [
+          224,
+          0,
+          69
+        ],
+        [
+          225,
+          0,
+          65
+        ],
+        [
+          229,
+          0,
+          55
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/definitions/unit_definitions.py::__module__::chunk_32",
+      "path": "sympy/physics/units/definitions/unit_definitions.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/definitions/unit_definitions.py::__module__",
+      "line_start": 387,
+      "line_end": 394,
+      "tokens_est": 90,
+      "source_spans": [
+        [
+          387,
+          0,
+          54
+        ],
+        [
+          388,
+          0,
+          54
+        ],
+        [
+          389,
+          0,
+          54
+        ],
+        [
+          392,
+          0,
+          44
+        ],
+        [
+          394,
+          0,
+          54
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/wigner.py::gaunt::chunk_3",
+      "path": "sympy/physics/wigner.py",
+      "qualname": "gaunt",
+      "function_id": "sympy/physics/wigner.py::gaunt",
+      "line_start": 646,
+      "line_end": 659,
+      "tokens_est": 138,
+      "source_spans": [
+        [
+          646,
+          0,
+          28
+        ],
+        [
+          647,
+          0,
+          20
+        ],
+        [
+          648,
+          0,
+          44
+        ],
+        [
+          649,
+          0,
+          30
+        ],
+        [
+          650,
+          0,
+          1
+        ],
+        [
+          651,
+          0,
+          63
+        ],
+        [
+          652,
+          0,
+          1
+        ],
+        [
+          653,
+          0,
+          37
+        ],
+        [
+          654,
+          0,
+          43
+        ],
+        [
+          655,
+          0,
+          12
+        ],
+        [
+          656,
+          0,
+          45
+        ],
+        [
+          657,
+          0,
+          38
+        ],
+        [
+          658,
+          0,
+          43
+        ],
+        [
+          659,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/si.py::__module__::chunk_28",
+      "path": "sympy/physics/units/systems/si.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/si.py::__module__",
+      "line_start": 330,
+      "line_end": 339,
+      "tokens_est": 141,
+      "source_spans": [
+        [
+          330,
+          0,
+          38
+        ],
+        [
+          331,
+          0,
+          41
+        ],
+        [
+          332,
+          0,
+          40
+        ],
+        [
+          333,
+          0,
+          3
+        ],
+        [
+          334,
+          0,
+          51
+        ],
+        [
+          335,
+          0,
+          19
+        ],
+        [
+          336,
+          0,
+          77
+        ],
+        [
+          337,
+          0,
+          49
+        ],
+        [
+          338,
+          0,
+          94
+        ],
+        [
+          339,
+          0,
+          70
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/prefixes.py::prefix_unit::chunk_4",
+      "path": "sympy/physics/units/prefixes.py",
+      "qualname": "prefix_unit",
+      "function_id": "sympy/physics/units/prefixes.py::prefix_unit",
+      "line_start": 150,
+      "line_end": 153,
+      "tokens_est": 72,
+      "source_spans": [
+        [
+          150,
+          0,
+          90
+        ],
+        [
+          151,
+          0,
+          40
+        ],
+        [
+          153,
+          0,
+          26
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/si.py::__module__::chunk_11",
+      "path": "sympy/physics/units/systems/si.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/si.py::__module__",
+      "line_start": 117,
+      "line_end": 135,
+      "tokens_est": 146,
+      "source_spans": [
+        [
+          117,
+          0,
+          47
+        ],
+        [
+          119,
+          0,
+          51
+        ],
+        [
+          121,
+          0,
+          50
+        ],
+        [
+          123,
+          0,
+          56
+        ],
+        [
+          125,
+          0,
+          58
+        ],
+        [
+          127,
+          0,
+          50
+        ],
+        [
+          130,
+          0,
+          65
+        ],
+        [
+          131,
+          0,
+          62
+        ],
+        [
+          135,
+          0,
+          61
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/cgs.py::__module__::chunk_7",
+      "path": "sympy/physics/units/systems/cgs.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/cgs.py::__module__",
+      "line_start": 65,
+      "line_end": 72,
+      "tokens_est": 131,
+      "source_spans": [
+        [
+          65,
+          0,
+          75
+        ],
+        [
+          66,
+          0,
+          84
+        ],
+        [
+          67,
+          0,
+          83
+        ],
+        [
+          68,
+          0,
+          89
+        ],
+        [
+          71,
+          0,
+          54
+        ],
+        [
+          72,
+          0,
+          57
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/dimensions.py::Dimension.__rsub__::chunk_0",
+      "path": "sympy/physics/units/dimensions.py",
+      "qualname": "Dimension.__rsub__",
+      "function_id": "sympy/physics/units/dimensions.py::Dimension.__rsub__",
+      "line_start": 213,
+      "line_end": 216,
+      "tokens_est": 85,
+      "source_spans": [
+        [
+          213,
+          0,
+          31
+        ],
+        [
+          214,
+          0,
+          73
+        ],
+        [
+          215,
+          0,
+          76
+        ],
+        [
+          216,
+          0,
+          28
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/si.py::__module__::chunk_19",
+      "path": "sympy/physics/units/systems/si.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/si.py::__module__",
+      "line_start": 237,
+      "line_end": 250,
+      "tokens_est": 138,
+      "source_spans": [
+        [
+          237,
+          0,
+          59
+        ],
+        [
+          239,
+          0,
+          42
+        ],
+        [
+          240,
+          0,
+          93
+        ],
+        [
+          242,
+          0,
+          49
+        ],
+        [
+          243,
+          0,
+          69
+        ],
+        [
+          245,
+          0,
+          46
+        ],
+        [
+          246,
+          0,
+          64
+        ],
+        [
+          250,
+          0,
+          45
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension::chunk_0",
+      "path": "sympy/physics/units/unitsystem.py",
+      "qualname": "UnitSystem._collect_factor_and_dimension",
+      "function_id": "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension",
+      "line_start": 152,
+      "line_end": 159,
+      "tokens_est": 125,
+      "source_spans": [
+        [
+          152,
+          0,
+          51
+        ],
+        [
+          153,
+          0,
+          12
+        ],
+        [
+          154,
+          0,
+          76
+        ],
+        [
+          155,
+          0,
+          12
+        ],
+        [
+          156,
+          0,
+          49
+        ],
+        [
+          157,
+          0,
+          39
+        ],
+        [
+          158,
+          0,
+          53
+        ],
+        [
+          159,
+          0,
+          36
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/definitions/dimension_definitions.py::__module__::chunk_0",
+      "path": "sympy/physics/units/definitions/dimension_definitions.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/definitions/dimension_definitions.py::__module__",
+      "line_start": 1,
+      "line_end": 15,
+      "tokens_est": 114,
+      "source_spans": [
+        [
+          1,
+          0,
+          42
+        ],
+        [
+          4,
+          0,
+          51
+        ],
+        [
+          7,
+          0,
+          46
+        ],
+        [
+          8,
+          0,
+          42
+        ],
+        [
+          9,
+          0,
+          42
+        ],
+        [
+          12,
+          0,
+          67
+        ],
+        [
+          15,
+          0,
+          63
+        ]
+      ]
+    },
+    {
+      "id": "sympy/physics/units/systems/mks.py::__module__::chunk_3",
+      "path": "sympy/physics/units/systems/mks.py",
+      "qualname": "__module__",
+      "function_id": "sympy/physics/units/systems/mks.py::__module__",
+      "line_start": 26,
+      "line_end": 44,
+      "tokens_est": 142,
+      "source_spans": [
+        [
+          26,
+          0,
+          47
+        ],
+        [
+          27,
+          0,
+          59
+        ],
+        [
+          30,
+          0,
+          144
+        ],
+        [
+          31,
+          0,
+          17
+        ],
+        [
+          32,
+          0,
+          18
+        ],
+        [
+          33,
+          0,
+          22
+        ],
+        [
+          34,
+          0,
+          19
+        ],
+        [
+          35,
+          0,
+          22
+        ],
+        [
+          36,
+          0,
+          20
+        ],
+        [
+          37,
+          0,
+          19
+        ],
+        [
+          38,
+          0,
+          19
+        ],
+        [
+          39,
+          0,
+          28
+        ],
+        [
+          40,
+          0,
+          37
+        ],
+        [
+          41,
+          0,
+          3
+        ],
+        [
+          44,
+          0,
+          12
+        ]
+      ]
+    }
+  ],
+  "context": "# File: sympy/physics/units/systems/si.py\n# Function: __module__\n# Lines: 317-326\nSI.set_quantity_dimension(planck_acceleration, acceleration)\nSI.set_quantity_scale_factor(planck_acceleration, speed_of_light / planck_time)\nSI.set_quantity_dimension(curie, 1 / time)\nSI.set_quantity_scale_factor(curie, 37000000000*becquerel)\nSI.set_quantity_dimension(rutherford, 1 / time)\nSI.set_quantity_scale_factor(rutherford, 1000000*becquerel)\n\n\n# File: sympy/physics/units/systems/mks.py\n# Function: __module__\n# Lines: 1-8\n\"\"\"\nMKS unit system.\n\nMKS stands for \"meter, kilogram, second\".\n\"\"\"\nfrom sympy.physics.units import UnitSystem\nfrom sympy.physics.units.definitions import gravitational_constant, hertz, joule, newton, pascal, watt, speed_of_light, gram, kilogram, meter, second\n\n\n# File: sympy/physics/units/systems/__init__.py\n# Function: __module__\n# Lines: 1-6\nfrom sympy.physics.units.systems.mks import MKS\nfrom sympy.physics.units.systems.mksa import MKSA\nfrom sympy.physics.units.systems.natural import natural\nfrom sympy.physics.units.systems.si import SI\n\n__all__ = ['MKS', 'MKSA', 'natural', 'SI']\n\n\n# File: sympy/physics/units/systems/length_weight_time.py\n# Function: __module__\n# Lines: 54-70\n    volume=dict(length=3),\n))\nOne = S.One\ndimsys_length_weight_time.set_quantity_dimension(meter, length)\ndimsys_length_weight_time.set_quantity_scale_factor(meter, One)\ndimsys_length_weight_time.set_quantity_dimension(gram, mass)\ndimsys_length_weight_time.set_quantity_scale_factor(gram, One)\ndimsys_length_weight_time.set_quantity_dimension(second, time)\ndimsys_length_weight_time.set_quantity_scale_factor(second, One)\n\n\n# File: sympy/physics/units/unitsystem.py\n# Function: UnitSystem._collect_factor_and_dimension\n# Lines: 182-184\n# Signature: def _collect_factor_and_dimension(self, expr):\n                            addend, addend_dim, dim))\n                factor += addend_factor\n            return factor, dim\n\n\n# File: sympy/physics/units/systems/mksa.py\n# Function: __module__\n# Lines: 20-27\nunits = [ampere, volt, ohm, siemens, farad, henry, coulomb, tesla, weber]\nall_units = []  # type: List[Quantity]\nfor u in units:\n    all_units.extend(prefix_unit(u, PREFIXES))\nall_units.extend(units)\nall_units.append(Z0)\n\n\n# File: sympy/physics/units/systems/si.py\n# Function: __module__\n# Lines: 210-229\nSI.set_quantity_scale_factor(von_klitzing_constant, hbar / elementary_charge ** 2)\nSI.set_quantity_dimension(acceleration_due_to_gravity, acceleration)\nSI.set_quantity_scale_factor(acceleration_due_to_gravity, 9.80665*meter/second**2)\nSI.set_quantity_dimension(magnetic_constant, force / current ** 2)\nSI.set_quantity_scale_factor(magnetic_constant, 4*pi/10**7 * newton/ampere**2)\nSI.set_quantity_dimension(vacuum_permittivity, capacitance / length)\nSI.set_quantity_scale_factor(vacuum_permittivity, 1/(u0 * c**2))\nSI.set_quantity_dimension(vacuum_impedance, impedance)\n\n\n# File: sympy/physics/units/definitions/unit_definitions.py\n# Function: __module__\n# Lines: 387-394\ntebibyte.set_global_relative_scale_factor(tebi, byte)\npebibyte.set_global_relative_scale_factor(pebi, byte)\nexbibyte.set_global_relative_scale_factor(exbi, byte)\ncurie = Ci = Quantity(\"curie\", abbrev=\"Ci\")\nrutherford = Rd = Quantity(\"rutherford\", abbrev=\"Rd\")\n\n\n# File: sympy/physics/wigner.py\n# Function: gaunt\n# Lines: 646-659\n# Signature: def gaunt(l_1, l_2, l_3, m_1, m_2, m_3, prec=None):\n    >>> gaunt(1,0,1,1,0,-1)\n    -1/(2*sqrt(pi))\n    >>> gaunt(1000,1000,1200,9,3,-12).n(64)\n    0.00689500421922113448...\n\n    It is an error to use non-integer values for `l` and `m`::\n\n        sage: gaunt(1.2,0,1.2,0,0,0)\n        Traceback (most recent call last):\n        ...\n        ValueError: l values must be integer\n        sage: gaunt(1,0,1,1.1,0,-1.1)\n        Traceback (most recent call last):\n        ...\n\n\n# File: sympy/physics/units/systems/si.py\n# Function: __module__\n# Lines: 330-339\nfor _scale_factor, _dimension in zip(\n    SI._quantity_scale_factors.values(),\n    SI._quantity_dimension_map.values()\n):\n    dimex = SI.get_dimensional_expr(_scale_factor)\n    if dimex != 1:\n        # XXX: equivalent_dims is an instance method taking two arguments in\n        # addition to self so this can not work:\n        if not DimensionSystem.equivalent_dims(_dimension, Dimension(dimex)):  # type: ignore\n            raise ValueError(\"quantity value and dimension mismatch\")\n\n\n# File: sympy/physics/units/prefixes.py\n# Function: prefix_unit\n# Lines: 150-153\n# Signature: def prefix_unit(unit, prefixes):\n        UnitSystem._quantity_scale_factors_global[quantity] = (prefix.scale_factor, unit)\n        prefixed_units.append(quantity)\n    return prefixed_units\n\n\n# File: sympy/physics/units/systems/si.py\n# Function: __module__\n# Lines: 117-135\nSI.set_quantity_scale_factor(ohm, volt/ampere)\nSI.set_quantity_scale_factor(siemens, ampere/volt)\nSI.set_quantity_scale_factor(farad, coulomb/volt)\nSI.set_quantity_scale_factor(henry, volt*second/ampere)\nSI.set_quantity_scale_factor(tesla, volt*second/meter**2)\nSI.set_quantity_scale_factor(weber, joule/ampere)\nSI.set_quantity_dimension(lux, luminous_intensity / length ** 2)\nSI.set_quantity_scale_factor(lux, steradian*candela/meter**2)\nSI.set_quantity_dimension(katal, amount_of_substance / time)\n\n\n# File: sympy/physics/units/systems/cgs.py\n# Function: __module__\n# Lines: 65-72\ncgs_gauss.set_quantity_scale_factor(oersted, sqrt(gram/centimeter)/second)\ncgs_gauss.set_quantity_scale_factor(ohm, 10**9/speed_of_light**2*second/centimeter)\ncgs_gauss.set_quantity_scale_factor(farad, One/10**9*speed_of_light**2*centimeter)\ncgs_gauss.set_quantity_scale_factor(henry, 10**9/speed_of_light**2/centimeter*second**2)\ncgs_gauss.set_quantity_dimension(coulomb_constant, 1)\ncgs_gauss.set_quantity_scale_factor(coulomb_constant, 1)\n\n\n# File: sympy/physics/units/dimensions.py\n# Function: Dimension.__rsub__\n# Lines: 213-216\n# Signature: def __rsub__(self, other):\n    def __rsub__(self, other):\n        # there is no notion of ordering (or magnitude) among dimension,\n        # subtraction is equivalent to addition when the operation is legal\n        return self + other\n\n\n# File: sympy/physics/units/systems/si.py\n# Function: __module__\n# Lines: 237-250\nSI.set_quantity_scale_factor(psi, pound * gee / inch ** 2)\nSI.set_quantity_dimension(mmHg, pressure)\nSI.set_quantity_scale_factor(mmHg, dHg0 * acceleration_due_to_gravity * kilogram / meter**2)\nSI.set_quantity_dimension(milli_mass_unit, mass)\nSI.set_quantity_scale_factor(milli_mass_unit, atomic_mass_unit/1000)\nSI.set_quantity_dimension(quart, length ** 3)\nSI.set_quantity_scale_factor(quart, Rational(231, 4) * inch**3)\nSI.set_quantity_dimension(lightyear, length)\n\n\n# File: sympy/physics/units/unitsystem.py\n# Function: UnitSystem._collect_factor_and_dimension\n# Lines: 152-159\n# Signature: def _collect_factor_and_dimension(self, expr):\n    def _collect_factor_and_dimension(self, expr):\n        \"\"\"\n        Return tuple with scale factor expression and dimension expression.\n        \"\"\"\n        from sympy.physics.units import Quantity\n        if isinstance(expr, Quantity):\n            return expr.scale_factor, expr.dimension\n        elif isinstance(expr, Mul):\n\n\n# File: sympy/physics/units/definitions/dimension_definitions.py\n# Function: __module__\n# Lines: 1-15\nfrom sympy.physics.units import Dimension\nangle = Dimension(name=\"angle\")  # type: Dimension\nlength = Dimension(name=\"length\", symbol=\"L\")\nmass = Dimension(name=\"mass\", symbol=\"M\")\ntime = Dimension(name=\"time\", symbol=\"T\")\ncurrent = Dimension(name='current', symbol='I')  # type: Dimension\ntemperature = Dimension(\"temperature\", \"T\")  # type: Dimension\n\n\n# File: sympy/physics/units/systems/mks.py\n# Function: __module__\n# Lines: 26-46\n    all_units.extend(prefix_unit(u, PREFIXES))\nall_units.extend([gravitational_constant, speed_of_light])\nMKS = UnitSystem(base_units=(meter, kilogram, second), units=all_units, name=\"MKS\", dimension_system=dimsys_length_weight_time, derived_units={\n    power: watt,\n    time: second,\n    pressure: pascal,\n    length: meter,\n    frequency: hertz,\n    mass: kilogram,\n    force: newton,\n    energy: joule,\n    velocity: meter/second,\n    acceleration: meter/(second**2),\n})\n__all__ = [\n",
+  "summary_ru": "Случаи A, B, C, F. File Recall=1.0, Function Recall=0.0, Changed Line Recall=0.0. Лучший чанк sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension: order=4, decision=selected, score=0.3490943752330126, lexical=0.5172781540165157, graph=0.0, строки 182-184. Граф: unreached. Якоря вставок: no_insertion_hunk, recall=None. Это не Changed Line Recall."
+}

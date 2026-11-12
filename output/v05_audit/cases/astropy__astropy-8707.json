@@ -1,0 +1,986 @@
+{
+  "instance_id": "astropy__astropy-8707",
+  "method": "pathpack-v4",
+  "budget": 2048,
+  "cases": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "graph_subtype": "unreached",
+  "illustrative": true,
+  "problem_statement": "Header.fromstring does not accept Python 3 bytes\nAccording to [the docs](http://docs.astropy.org/en/stable/_modules/astropy/io/fits/header.html#Header.fromstring), the method `Header.fromstring` \"...creates an HDU header from a byte string containing the entire header data.\"\r\n\r\nBy \"byte string\" here it really means the `str` type which on Python 2 could be raw binary data, but on Python 3 explicitly is not.   In fact it does work on Python 3's unicode `str`s, but here it assumes that the data can be ASCII-encoded.\r\n\r\nIts counterpart, `Header.fromfile` will work with files opened in text or binary mode.  So probably the simplest solution for now (as opposed to adding new methods or something like that) is to change `Header.fromstring` to accept unicode or bytes string types.\r\n\r\n`Card.fromstring` likely needs a similar treatment.\n",
+  "gold_files": [
+    "astropy/io/fits/card.py",
+    "astropy/io/fits/header.py"
+  ],
+  "gold_functions": [
+    {
+      "id": "astropy/io/fits/card.py::Card.fromstring",
+      "qualname": "Card.fromstring",
+      "path": "astropy/io/fits/card.py",
+      "coverage": 1.0,
+      "best_candidate": {
+        "id": "astropy/io/fits/card.py::Card.fromstring::chunk_0",
+        "order": 3,
+        "decision": "selected",
+        "score": 0.5011246637468678,
+        "utility": 0.03866260718238429,
+        "lexical_score": 0.5512490294374143,
+        "symbol_score": 0.056179775280898875,
+        "graph_score": 0.8,
+        "line_start": 547,
+        "line_end": 559,
+        "tokens_est": 136,
+        "reason": ""
+      }
+    },
+    {
+      "id": "astropy/io/fits/header.py::Header.fromstring",
+      "qualname": "Header.fromstring",
+      "path": "astropy/io/fits/header.py",
+      "coverage": 0.0,
+      "best_candidate": {
+        "id": "astropy/io/fits/header.py::Header.fromstring::chunk_1",
+        "order": 68,
+        "decision": "after_budget_cutoff",
+        "score": 0.33322284958433723,
+        "utility": 0.023160589077168944,
+        "lexical_score": 0.9368976398405598,
+        "symbol_score": 0.056179775280898875,
+        "graph_score": 0.0,
+        "line_start": 329,
+        "line_end": 349,
+        "tokens_est": 175,
+        "reason": ""
+      }
+    }
+  ],
+  "changed_lines": {
+    "astropy/io/fits/card.py": [],
+    "astropy/io/fits/header.py": [
+      37,
+      337,
+      338,
+      343,
+      377,
+      380,
+      383,
+      387,
+      395
+    ]
+  },
+  "insertion_anchors": {
+    "astropy/io/fits/card.py": [
+      556,
+      557
+    ],
+    "astropy/io/fits/header.py": [
+      358,
+      360
+    ]
+  },
+  "exclusions": [
+    {
+      "path": "astropy/io/fits/card.py",
+      "reason": "insertion_only_no_exact_old_changed_line"
+    },
+    {
+      "path": "astropy/io/fits/header.py",
+      "line": 37,
+      "reason": "module_level_change"
+    },
+    {
+      "path": "astropy/io/fits/header.py",
+      "reason": "insertion_only_no_exact_old_changed_line"
+    }
+  ],
+  "anchor_exclusions": [],
+  "line_audit": {
+    "changed_line_definition": "nonempty_removed_or_replaced_base_lines",
+    "insertion_anchor_definition": "bracket_base_lines_of_addition_only_hunks_blank_skip_1",
+    "metrics_are_mixed": false,
+    "added_lines_are_absent_from_base": true,
+    "insertion_hunks": 2,
+    "changed_lines_outside_function_bodies": [
+      {
+        "path": "astropy/io/fits/header.py",
+        "line": 37
+      },
+      {
+        "path": "astropy/io/fits/header.py",
+        "line": 337
+      },
+      {
+        "path": "astropy/io/fits/header.py",
+        "line": 338
+      },
+      {
+        "path": "astropy/io/fits/header.py",
+        "line": 343
+      }
+    ],
+    "removed_lines_out_of_range": [],
+    "class_methods": [
+      "astropy/io/fits/card.py::Card.fromstring",
+      "astropy/io/fits/header.py::Header.fromstring"
+    ],
+    "nested_functions": [],
+    "module_level_exclusions": 1,
+    "new_definition_exclusions": 0
+  },
+  "metrics": {
+    "file_recall": 1.0,
+    "function_recall": 0.5,
+    "complete_function_recall": 0.5,
+    "changed_line_recall": 0.0,
+    "label_completeness": "partial"
+  },
+  "extra_metrics": {
+    "insertion_anchor_recall": 0.5,
+    "insertion_anchor_reason": null,
+    "base_touch_recall": 0.15384615384615385,
+    "base_touch_reason": null,
+    "relevant_line_density": 0.0,
+    "relevant_line_density_reason": null,
+    "relevant_line_density_definition": "changed_line_hits_over_emitted_nonempty_lines",
+    "evaluable_changed_lines": 9,
+    "evaluable_anchor_lines": 4,
+    "emitted_nonempty_lines": 45
+  },
+  "selected_files": [
+    "astropy/io/ascii/docs.py",
+    "astropy/io/fits/card.py",
+    "astropy/io/fits/column.py",
+    "astropy/io/fits/diff.py",
+    "astropy/io/fits/fitsrec.py",
+    "astropy/io/fits/hdu/base.py",
+    "astropy/io/fits/hdu/hdulist.py",
+    "astropy/io/fits/header.py",
+    "astropy/io/fits/util.py"
+  ],
+  "selected_chunks": [
+    {
+      "id": "astropy/io/fits/util.py::decode_ascii::chunk_0",
+      "path": "astropy/io/fits/util.py",
+      "qualname": "decode_ascii",
+      "function_id": "astropy/io/fits/util.py::decode_ascii",
+      "line_start": 277,
+      "line_end": 278,
+      "tokens_est": 40,
+      "source_spans": [
+        [
+          277,
+          0,
+          21
+        ],
+        [
+          278,
+          0,
+          29
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/header.py::Header.fromfile::chunk_0",
+      "path": "astropy/io/fits/header.py",
+      "qualname": "Header.fromfile",
+      "function_id": "astropy/io/fits/header.py::Header.fromfile",
+      "line_start": 399,
+      "line_end": 407,
+      "tokens_est": 113,
+      "source_spans": [
+        [
+          399,
+          0,
+          17
+        ],
+        [
+          400,
+          0,
+          68
+        ],
+        [
+          401,
+          0,
+          12
+        ],
+        [
+          402,
+          0,
+          79
+        ],
+        [
+          403,
+          0,
+          46
+        ],
+        [
+          404,
+          0,
+          1
+        ],
+        [
+          405,
+          0,
+          19
+        ],
+        [
+          406,
+          0,
+          19
+        ],
+        [
+          407,
+          0,
+          33
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/hdu/base.py::_BaseHDU.fromstring::chunk_1",
+      "path": "astropy/io/fits/hdu/base.py",
+      "qualname": "_BaseHDU.fromstring",
+      "function_id": "astropy/io/fits/hdu/base.py::_BaseHDU.fromstring",
+      "line_start": 252,
+      "line_end": 259,
+      "tokens_est": 142,
+      "source_spans": [
+        [
+          252,
+          0,
+          70
+        ],
+        [
+          253,
+          0,
+          1
+        ],
+        [
+          254,
+          0,
+          75
+        ],
+        [
+          255,
+          0,
+          78
+        ],
+        [
+          256,
+          0,
+          80
+        ],
+        [
+          257,
+          0,
+          65
+        ],
+        [
+          258,
+          0,
+          1
+        ],
+        [
+          259,
+          0,
+          19
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/card.py::Card.fromstring::chunk_0",
+      "path": "astropy/io/fits/card.py",
+      "qualname": "Card.fromstring",
+      "function_id": "astropy/io/fits/card.py::Card.fromstring",
+      "line_start": 547,
+      "line_end": 559,
+      "tokens_est": 136,
+      "source_spans": [
+        [
+          547,
+          0,
+          17
+        ],
+        [
+          548,
+          0,
+          32
+        ],
+        [
+          549,
+          0,
+          12
+        ],
+        [
+          550,
+          0,
+          78
+        ],
+        [
+          551,
+          0,
+          75
+        ],
+        [
+          552,
+          0,
+          73
+        ],
+        [
+          553,
+          0,
+          17
+        ],
+        [
+          554,
+          0,
+          12
+        ],
+        [
+          555,
+          0,
+          1
+        ],
+        [
+          556,
+          0,
+          21
+        ],
+        [
+          557,
+          0,
+          34
+        ],
+        [
+          558,
+          0,
+          31
+        ],
+        [
+          559,
+          0,
+          20
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/hdu/base.py::_BaseHDU.fromstring::chunk_0",
+      "path": "astropy/io/fits/hdu/base.py",
+      "qualname": "_BaseHDU.fromstring",
+      "function_id": "astropy/io/fits/hdu/base.py::_BaseHDU.fromstring",
+      "line_start": 247,
+      "line_end": 251,
+      "tokens_est": 95,
+      "source_spans": [
+        [
+          247,
+          0,
+          17
+        ],
+        [
+          248,
+          0,
+          72
+        ],
+        [
+          249,
+          0,
+          30
+        ],
+        [
+          250,
+          0,
+          12
+        ],
+        [
+          251,
+          0,
+          71
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/fitsrec.py::FITS_rec._convert_other::chunk_8",
+      "path": "astropy/io/fits/fitsrec.py",
+      "qualname": "FITS_rec._convert_other",
+      "function_id": "astropy/io/fits/fitsrec.py::FITS_rec._convert_other",
+      "line_start": 933,
+      "line_end": 939,
+      "tokens_est": 132,
+      "source_spans": [
+        [
+          933,
+          0,
+          46
+        ],
+        [
+          934,
+          0,
+          47
+        ],
+        [
+          936,
+          0,
+          76
+        ],
+        [
+          937,
+          0,
+          70
+        ],
+        [
+          938,
+          0,
+          79
+        ],
+        [
+          939,
+          0,
+          55
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/hdu/hdulist.py::HDUList.fromstring::chunk_0",
+      "path": "astropy/io/fits/hdu/hdulist.py",
+      "qualname": "HDUList.fromstring",
+      "function_id": "astropy/io/fits/hdu/hdulist.py::HDUList.fromstring",
+      "line_start": 392,
+      "line_end": 399,
+      "tokens_est": 124,
+      "source_spans": [
+        [
+          392,
+          0,
+          17
+        ],
+        [
+          393,
+          0,
+          41
+        ],
+        [
+          394,
+          0,
+          12
+        ],
+        [
+          395,
+          0,
+          76
+        ],
+        [
+          396,
+          0,
+          59
+        ],
+        [
+          397,
+          0,
+          73
+        ],
+        [
+          398,
+          0,
+          77
+        ],
+        [
+          399,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/header.py::Header.fromfile::chunk_4",
+      "path": "astropy/io/fits/header.py",
+      "qualname": "Header.fromfile",
+      "function_id": "astropy/io/fits/header.py::Header.fromfile",
+      "line_start": 431,
+      "line_end": 439,
+      "tokens_est": 127,
+      "source_spans": [
+        [
+          431,
+          0,
+          12
+        ],
+        [
+          433,
+          0,
+          27
+        ],
+        [
+          434,
+          0,
+          37
+        ],
+        [
+          435,
+          0,
+          77
+        ],
+        [
+          436,
+          0,
+          77
+        ],
+        [
+          437,
+          0,
+          47
+        ],
+        [
+          438,
+          0,
+          41
+        ],
+        [
+          439,
+          0,
+          30
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/header.py::Header.fromfile::chunk_1",
+      "path": "astropy/io/fits/header.py",
+      "qualname": "Header.fromfile",
+      "function_id": "astropy/io/fits/header.py::Header.fromfile",
+      "line_start": 408,
+      "line_end": 413,
+      "tokens_est": 115,
+      "source_spans": [
+        [
+          408,
+          0,
+          79
+        ],
+        [
+          409,
+          0,
+          79
+        ],
+        [
+          410,
+          0,
+          37
+        ],
+        [
+          411,
+          0,
+          1
+        ],
+        [
+          412,
+          0,
+          28
+        ],
+        [
+          413,
+          0,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/ascii/docs.py::__module__::chunk_9",
+      "path": "astropy/io/ascii/docs.py",
+      "qualname": "__module__",
+      "function_id": "astropy/io/ascii/docs.py::__module__",
+      "line_start": 85,
+      "line_end": 98,
+      "tokens_est": 119,
+      "source_spans": [
+        [
+          85,
+          0,
+          8
+        ],
+        [
+          87,
+          0,
+          22
+        ],
+        [
+          88,
+          0,
+          77
+        ],
+        [
+          89,
+          0,
+          62
+        ],
+        [
+          90,
+          0,
+          1
+        ],
+        [
+          91,
+          0,
+          14
+        ],
+        [
+          92,
+          0,
+          1
+        ],
+        [
+          93,
+          0,
+          50
+        ],
+        [
+          94,
+          0,
+          60
+        ],
+        [
+          95,
+          0,
+          1
+        ],
+        [
+          96,
+          0,
+          15
+        ],
+        [
+          97,
+          0,
+          15
+        ],
+        [
+          98,
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/diff.py::HeaderDiff.__init__::chunk_17",
+      "path": "astropy/io/fits/diff.py",
+      "qualname": "HeaderDiff.__init__",
+      "function_id": "astropy/io/fits/diff.py::HeaderDiff.__init__",
+      "line_start": 774,
+      "line_end": 781,
+      "tokens_est": 141,
+      "source_spans": [
+        [
+          774,
+          0,
+          31
+        ],
+        [
+          775,
+          0,
+          37
+        ],
+        [
+          777,
+          0,
+          66
+        ],
+        [
+          778,
+          0,
+          79
+        ],
+        [
+          779,
+          0,
+          75
+        ],
+        [
+          781,
+          0,
+          31
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/header.py::Header._find_end_card::chunk_0",
+      "path": "astropy/io/fits/header.py",
+      "qualname": "Header._find_end_card",
+      "function_id": "astropy/io/fits/header.py::Header._find_end_card",
+      "line_start": 544,
+      "line_end": 552,
+      "tokens_est": 118,
+      "source_spans": [
+        [
+          544,
+          0,
+          17
+        ],
+        [
+          545,
+          0,
+          46
+        ],
+        [
+          546,
+          0,
+          12
+        ],
+        [
+          547,
+          0,
+          76
+        ],
+        [
+          548,
+          0,
+          27
+        ],
+        [
+          549,
+          0,
+          1
+        ],
+        [
+          550,
+          0,
+          80
+        ],
+        [
+          551,
+          0,
+          59
+        ],
+        [
+          552,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/util.py::decode_ascii::chunk_5",
+      "path": "astropy/io/fits/util.py",
+      "qualname": "decode_ascii",
+      "function_id": "astropy/io/fits/util.py::decode_ascii",
+      "line_start": 302,
+      "line_end": 310,
+      "tokens_est": 130,
+      "source_spans": [
+        [
+          302,
+          0,
+          56
+        ],
+        [
+          303,
+          0,
+          18
+        ],
+        [
+          304,
+          0,
+          40
+        ],
+        [
+          305,
+          0,
+          50
+        ],
+        [
+          306,
+          0,
+          74
+        ],
+        [
+          307,
+          0,
+          74
+        ],
+        [
+          308,
+          0,
+          24
+        ],
+        [
+          309,
+          0,
+          64
+        ],
+        [
+          310,
+          0,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/hdu/base.py::_BaseHDU._readfrom_internal::chunk_4",
+      "path": "astropy/io/fits/hdu/base.py",
+      "qualname": "_BaseHDU._readfrom_internal",
+      "function_id": "astropy/io/fits/hdu/base.py::_BaseHDU._readfrom_internal",
+      "line_start": 385,
+      "line_end": 387,
+      "tokens_est": 104,
+      "source_spans": [
+        [
+          385,
+          0,
+          74
+        ],
+        [
+          386,
+          0,
+          63
+        ],
+        [
+          387,
+          0,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/hdu/hdulist.py::HDUList._readfrom::chunk_1",
+      "path": "astropy/io/fits/hdu/hdulist.py",
+      "qualname": "HDUList._readfrom",
+      "function_id": "astropy/io/fits/hdu/hdulist.py::HDUList._readfrom",
+      "line_start": 1028,
+      "line_end": 1034,
+      "tokens_est": 137,
+      "source_spans": [
+        [
+          1028,
+          0,
+          62
+        ],
+        [
+          1029,
+          0,
+          50
+        ],
+        [
+          1030,
+          0,
+          12
+        ],
+        [
+          1031,
+          0,
+          63
+        ],
+        [
+          1032,
+          0,
+          69
+        ],
+        [
+          1033,
+          0,
+          46
+        ],
+        [
+          1034,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/column.py::_makep::chunk_0",
+      "path": "astropy/io/fits/column.py",
+      "qualname": "_makep",
+      "function_id": "astropy/io/fits/column.py::_makep",
+      "line_start": 2083,
+      "line_end": 2083,
+      "tokens_est": 48,
+      "source_spans": [
+        [
+          2083,
+          0,
+          53
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/hdu/base.py::_BaseHDU.fromstring::chunk_3",
+      "path": "astropy/io/fits/hdu/base.py",
+      "qualname": "_BaseHDU.fromstring",
+      "function_id": "astropy/io/fits/hdu/base.py::_BaseHDU.fromstring",
+      "line_start": 266,
+      "line_end": 271,
+      "tokens_est": 132,
+      "source_spans": [
+        [
+          266,
+          0,
+          1
+        ],
+        [
+          267,
+          0,
+          44
+        ],
+        [
+          268,
+          0,
+          80
+        ],
+        [
+          269,
+          0,
+          77
+        ],
+        [
+          270,
+          0,
+          76
+        ],
+        [
+          271,
+          0,
+          72
+        ]
+      ]
+    },
+    {
+      "id": "astropy/io/fits/header.py::Header.fromfile::chunk_2",
+      "path": "astropy/io/fits/header.py",
+      "qualname": "Header.fromfile",
+      "function_id": "astropy/io/fits/header.py::Header.fromfile",
+      "line_start": 414,
+      "line_end": 418,
+      "tokens_est": 92,
+      "source_spans": [
+        [
+          414,
+          0,
+          77
+        ],
+        [
+          415,
+          0,
+          19
+        ],
+        [
+          416,
+          0,
+          1
+        ],
+        [
+          417,
+          0,
+          33
+        ],
+        [
+          418,
+          0,
+          80
+        ]
+      ]
+    }
+  ],
+  "context": "# File: astropy/io/fits/util.py\n# Function: decode_ascii\n# Lines: 277-278\n# Signature: def decode_ascii(s):\ndef decode_ascii(s):\n    if isinstance(s, bytes):\n\n\n# File: astropy/io/fits/header.py\n# Function: Header.fromfile\n# Lines: 399-407\n# Signature: def fromfile(cls, fileobj, sep='', endcard=True, padding=True):\n    @classmethod\n    def fromfile(cls, fileobj, sep='', endcard=True, padding=True):\n        \"\"\"\n        Similar to :meth:`Header.fromstring`, but reads the header string from\n        a given file-like object or filename.\n\n        Parameters\n        ----------\n        fileobj : str, file-like\n\n\n# File: astropy/io/fits/hdu/base.py\n# Function: _BaseHDU.fromstring\n# Lines: 252-259\n# Signature: def fromstring(cls, data, checksum=False, ignore_missing_end=False, **kwargs):\n        containing the HDU's entire header and, optionally, its data.\n\n        Note: When creating a new HDU from a string without a backing file\n        object, the data of that HDU may be read-only.  It depends on whether\n        the underlying string was an immutable Python str/bytes object, or some\n        kind of read-write memory buffer such as a `memoryview`.\n\n        Parameters\n\n\n# File: astropy/io/fits/card.py\n# Function: Card.fromstring\n# Lines: 547-559\n# Signature: def fromstring(cls, image):\n    @classmethod\n    def fromstring(cls, image):\n        \"\"\"\n        Construct a `Card` object from a (raw) string. It will pad the string\n        if it is not the length of a card image (80 columns).  If the card\n        image is longer than 80 columns, assume it contains ``CONTINUE``\n        card(s).\n        \"\"\"\n\n        card = cls()\n        card._image = _pad(image)\n        card._verified = False\n        return card\n\n\n# File: astropy/io/fits/hdu/base.py\n# Function: _BaseHDU.fromstring\n# Lines: 247-251\n# Signature: def fromstring(cls, data, checksum=False, ignore_missing_end=False, **kwargs):\n    @classmethod\n    def fromstring(cls, data, checksum=False, ignore_missing_end=False,\n                   **kwargs):\n        \"\"\"\n        Creates a new HDU object of the appropriate type from a string\n\n\n# File: astropy/io/fits/fitsrec.py\n# Function: FITS_rec._convert_other\n# Lines: 933-939\n# Signature: def _convert_other(self, column, field, recformat):\n            # format is something like P or Q\n            format_code = column.format.format\n        if (_number and (_scale or _zero) and not column._physical_values):\n            # This is to handle pseudo unsigned ints in table columns\n            # TODO: For now this only really works correctly for binary tables\n            # Should it work for ASCII tables as well?\n\n\n# File: astropy/io/fits/hdu/hdulist.py\n# Function: HDUList.fromstring\n# Lines: 392-399\n# Signature: def fromstring(cls, data, **kwargs):\n    @classmethod\n    def fromstring(cls, data, **kwargs):\n        \"\"\"\n        Creates an `HDUList` instance from a string or other in-memory data\n        buffer containing an entire FITS file.  Similar to\n        :meth:`HDUList.fromfile`, but does not accept the mode or memmap\n        arguments, as they are only relevant to reading from a file on disk.\n\n\n\n# File: astropy/io/fits/header.py\n# Function: Header.fromfile\n# Lines: 431-439\n# Signature: def fromfile(cls, fileobj, sep='', endcard=True, padding=True):\n        \"\"\"\n        close_file = False\n        if isinstance(fileobj, str):\n            # Open in text mode by default to support newline handling; if a\n            # binary-mode file object is passed in, the user is on their own\n            # with respect to newline handling\n            fileobj = open(fileobj, 'r')\n            close_file = True\n\n\n# File: astropy/io/fits/header.py\n# Function: Header.fromfile\n# Lines: 408-413\n# Signature: def fromfile(cls, fileobj, sep='', endcard=True, padding=True):\n            A filename or an open file-like object from which a FITS header is\n            to be read.  For open file handles the file pointer must be at the\n            beginning of the header.\n\n        sep : str, optional\n            The string separating cards from each other, such as a newline.  By\n\n\n# File: astropy/io/ascii/docs.py\n# Function: __module__\n# Lines: 85-98\n    \"\"\"\nWRITE_DOCSTRING = \"\"\"\n    Write the input ``table`` to ``filename``.  Most of the default behavior\n    for various parameters is determined by the Writer class.\n\n    See also:\n\n    - http://docs.astropy.org/en/stable/io/ascii/\n    - http://docs.astropy.org/en/stable/io/ascii/write.html\n\n    Parameters\n    ----------\n    table : `~astropy.io.ascii.BaseReader`, array_like, str, file_like, list\n\n\n# File: astropy/io/fits/diff.py\n# Function: HeaderDiff.__init__\n# Lines: 774-781\n# Signature: def __init__(self, a, b, ignore_keywords=[], ignore_comments=[], rtol=0.0, atol=0.0, ignore_blanks=True, ignore_blank_cards=True, tolerance=None):\n        if isinstance(b, str):\n            b = Header.fromstring(b)\n        if not (isinstance(a, Header) and isinstance(b, Header)):\n            raise TypeError('HeaderDiff can only diff astropy.io.fits.Header '\n                            'objects or strings containing FITS headers.')\n        super().__init__(a, b)\n\n\n# File: astropy/io/fits/header.py\n# Function: Header._find_end_card\n# Lines: 544-552\n# Signature: def _find_end_card(cls, block, card_len):\n    @classmethod\n    def _find_end_card(cls, block, card_len):\n        \"\"\"\n        Utility method to search a header block for the END card and handle\n        invalid END cards.\n\n        This method can also returned a modified copy of the input header block\n        in case an invalid end card needs to be sanitized.\n        \"\"\"\n\n\n# File: astropy/io/fits/util.py\n# Function: decode_ascii\n# Lines: 302-310\n# Signature: def decode_ascii(s):\n            ns = ns.astype((np.str_, s.dtype.itemsize))\n        return ns\n    elif (isinstance(s, np.ndarray) and\n          not issubclass(s.dtype.type, np.str_)):\n        # Don't silently pass through on non-string arrays; we don't want\n        # to hide errors where things that are not stringy are attempting\n        # to be decoded\n        raise TypeError('string operation on non-string array')\n    return s\n\n\n# File: astropy/io/fits/hdu/base.py\n# Function: _BaseHDU._readfrom_internal\n# Lines: 385-387\n# Signature: def _readfrom_internal(cls, data, header=None, checksum=False, ignore_missing_end=False, **kwargs):\n                    # 8 character keywords to get the structural keywords\n                    # that are needed to build the HDU object.\n                    header_str, header = _BasicHeader.fromfile(data)\n\n\n# File: astropy/io/fits/hdu/hdulist.py\n# Function: HDUList._readfrom\n# Lines: 1028-1034\n# Signature: def _readfrom(cls, fileobj=None, data=None, mode=None, memmap=None, save_backup=False, cache=True, lazy_load_hdus=True, **kwargs):\n                  memmap=None, save_backup=False, cache=True,\n                  lazy_load_hdus=True, **kwargs):\n        \"\"\"\n        Provides the implementations from HDUList.fromfile and\n        HDUList.fromstring, both of which wrap this method, as their\n        implementations are largely the same.\n        \"\"\"\n\n\n# File: astropy/io/fits/column.py\n# Function: _makep\n# Lines: 2083-2083\n# Signature: def _makep(array, descr_output, format, nrows=None):\ndef _makep(array, descr_output, format, nrows=None):\n\n\n# File: astropy/io/fits/hdu/base.py\n# Function: _BaseHDU.fromstring\n# Lines: 266-271\n# Signature: def fromstring(cls, data, checksum=False, ignore_missing_end=False, **kwargs):\n\n        ignore_missing_end : bool, optional\n           Ignore a missing end card in the header data.  Note that without the\n           end card the end of the header may be ambiguous and resulted in a\n           corrupt HDU.  In this case the assumption is that the first 2880\n           block that does not begin with valid FITS header data is the\n\n\n# File: astropy/io/fits/header.py\n# Function: Header.fromfile\n# Lines: 414-422\n# Signature: def fromfile(cls, fileobj, sep='', endcard=True, padding=True):\n            default there is no card separator (as is the case in a raw FITS\n            file).\n\n        endcard : bool, optional\n            If True (the default) the header must end with an END card in order\n",
+  "summary_ru": "Случаи A, C, D, E, F. File Recall=1.0, Function Recall=0.5, Changed Line Recall=0.0. Лучший чанк astropy/io/fits/card.py::Card.fromstring: order=3, decision=selected, score=0.5011246637468678, lexical=0.5512490294374143, graph=0.8, строки 547-559. Лучший чанк astropy/io/fits/header.py::Header.fromstring: order=68, decision=after_budget_cutoff, score=0.33322284958433723, lexical=0.9368976398405598, graph=0.0, строки 329-349. Граф: unreached."
+}

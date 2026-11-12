@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "tasks": 20,
+  "predictions": 300,
+  "violations": [],
+  "legacy_non_prefix": [],
+  "token_counter": "utf8_bytes_div4_ceil_serialized_context_v1"
+}

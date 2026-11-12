@@ -1,0 +1,8 @@
+{
+  "notebook_schema_and_syntax": "pass",
+  "default_configuration": "pass",
+  "holdout_instance_overlap": 0,
+  "holdout_count": 60,
+  "retrieval_source_snapshot_sha256": "pass",
+  "historical_artifact_sha256": "pass"
+}

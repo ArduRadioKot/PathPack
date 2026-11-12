@@ -1,0 +1,15 @@
+# PathPack v0.9 name channel. Written before this measurement.
+# The pool cap plus coverage bonus (configs/pathpack_v09.yaml, output/v09_dev)
+# lost all four metrics at 2048. This file does not repeat that hypothesis.
+# A rare identifier from the qualified name that also occurs in the query
+# adds name_prior to the evidence. Rare means document frequency at most
+# max(3, 1% of functions), and the identifier has at least 5 characters.
+# KMeans and k_means share the joined form. Graph depth stays at 2.
+# Pool cap and coverage bonus stay off, so the v0.4 order is the baseline
+# this term is added to.
+per_file_pool: 0
+coverage_bonus: 0
+name_prior: 0.55
+name_df_max: 0.01
+enable_graph: true
+enable_diversity: true
